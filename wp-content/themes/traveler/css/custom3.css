@@ -1,0 +1,358 @@
+/* Single Room */
+.hotel-room-form .alert{
+    margin-top: 10px;
+}
+#single-room .room-facility{
+    margin-bottom: 20px;
+}
+#single-room .calendar-wrapper{
+    margin-top: 10px;
+}
+.vc_custom_1439366124092{
+    padding-top: 0 !important;
+}
+.comments-area .alert{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#btn-booking-now{
+    position: fixed;
+    bottom: 80px;
+    z-index: 999999;
+    border-radius: 3px !important;
+    display: none;
+    right: 15px;
+}
+
+
+.hotel-room-form:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+@media screen and (min-width: 993px) {
+    #btn-booking-now{
+        display: none !important;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+    #single-room .title {
+        margin-top: 10px;
+    }
+    #btn-booking-now{
+        display: block;
+    }
+    .packge-info-wrapper-style2 .div_btn_book_tour input {
+        float: none;
+    }
+    .st-tab-payment .service-detail-item .service-detail-content {
+        width: 100% !important;
+    }
+}
+.single-room-form{
+    position: relative;
+}
+/* Custom price for extra service */
+#form-booking-room-over{
+    display: none;
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    left:0;
+    background: rgba(255,255,255,0.7);
+    height:100%;
+    width: 100%;
+    text-align: center;
+}
+.over-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+#form-booking-room-over img{
+    vertical-align: middle;
+    width: 35px;
+}
+.sroom-extra-service .collapse-extra{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.sroom-extra-service .well{
+    background: transparent;
+    margin-bottom: 0px;
+    box-shadow: none;
+    margin-top: 10px;
+    padding: 3px;
+}
+.sroom-extra-service .well .extra-price table.table{
+    margin-bottom: 0px;
+}
+.accordion-toggle:after {
+    font-family: 'FontAwesome';
+    content: "\f054";
+    float: right;
+}
+.accordion-toggle.collapsed:after {
+    content: "\f078";
+}
+.stour-accor{
+    margin-bottom: 15px;
+}
+.stour-accor .accordion-toggle{
+    text-decoration: none;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    display: block;
+}
+.stour-accor .accordion-inner{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: 0pc;
+}
+.stour-accor .accordion-group{
+    margin-bottom: 10px;
+}
+.stour-required-extra{
+    color: #cc0000;
+    font-weight: bold;
+}
+.stour-required-extra span{
+    position: relative;
+    top: 2px;
+}
+
+/* Hotels Combined */
+.hcsb_container .hcsb_outer h2.hcsb_topTitle{
+    font-weight: normal !important;
+    padding-top: 0px !important;
+    margin-top: 5px !important;
+    margin-bottom: 15px !important;
+}
+.hcsb_container .hcsb_outer{
+    padding: 0 !important;
+}
+.hcsb_container .hcsb_outer .hcsb_poweredBy{
+    top: 0 !important;
+}
+.hcsb_container .hcsb_outer .hcsb_citySearchWrapper {
+    padding-bottom: 2em !important;
+}
+.hcsb_container .hcsb_outer .hcsb_guests,
+.hcsb_container .hcsb_outer .hcsb_checkinDay,
+.hcsb_container .hcsb_outer .hcsb_checkinMonth,
+.hcsb_container .hcsb_outer .hcsb_checkoutDay,
+.hcsb_container .hcsb_outer .hcsb_checkoutMonth{
+    line-height: 2em !important;
+    height:3em !important;
+}
+.hcsb_container .hcsb_outer .hcsb_checkinDateContent img,
+.hcsb_container .hcsb_outer .hcsb_checkoutDateContent img{
+    top: 0.6em !important;
+}
+.hcsb_container .hcsb_outer .hcsb_noDatesWrapper {
+    bottom: 4em !important;
+}
+.hcsb_container .hcsb_outer a.hcsb_searchButton,
+.hcsb_container .hcsb_outer a.hcsb_searchButton:hover {
+    margin-top: 5.75em !important;
+}
+.hcsb_container .hcsb_outer .hcsb_noDate {
+    position: relative !important;
+    top: 5px !important;
+}
+.hcsb_container .hcsb_outer{
+
+}
+.hcsb_container .hcsb_outer{
+
+}
+.hcsb_container .hcsb_outer{
+
+}
+@media (max-width: 1199px) {
+    .hcsb_container .hcsb_outer .hcsb_noDatesWrapper {
+        bottom: 0em !important;
+    }
+    .hcsb_container .hcsb_outer a.hcsb_searchButton, .hcsb_container .hcsb_outer a.hcsb_searchButton:hover {
+        margin-top: 0.75em !important;
+    }
+}
+/* End hotelcombined css */
+
+/* CSS for booking.com */
+.bookingaff iframe .searchheader__container{
+    font-size: 21px !important;
+    margin-bottom: 13px !important;
+    color: #565656 !important;
+}
+.bookingaff iframe .searchbox__wrapper{
+    padding: 10px 5px !important;
+    border-radius: 0px !important;
+    border: 1px solid #dfdfdf !important;
+}
+
+.bookingaff iframe .searchbox__wrapper .searchbox__inp {
+    font-size: 18px !important;
+    color: #565656 !important;
+}
+
+.bookingaff iframe .ui-autocomplete.ui-menu .ui-menu-item a {
+    font-size: 15px !important;
+}
+
+.bookingdc-age-children{
+    margin-top: 10px;
+}
+.bookingdc-age-children select{
+    padding: 2px;
+    margin-right: 5px;
+}
+/* End CSS for booking.com */
+
+/* SQUARED TWO */
+.hcsb_container .hcsb_outer .hcsb_noDate {
+    width: 20px;
+    height: 20px;
+    background: transparent !important;
+    margin: 20px auto;
+    position: relative;
+}
+
+
+
+/* Amadeus AFF */
+.amd-form-passengers .amd_group_display {
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    position: relative;
+    cursor: pointer;
+    height: 45px;
+    line-height: 44px;
+}
+
+@media screen and (max-width: 768px) {
+    .amd-form-passengers .amd_group_display {
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+.amd-form-passengers .display-icon-dropdown {
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+}
+
+.amd-form-passengers .amd_group_display .display-passengers {
+    display: block;
+}
+
+.amd-form-passengers .amd-form-passengers-class {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 99%;
+    width: 100%;
+    display: block;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    -webkit-box-shadow: 5px 8px 33px -4px rgba(0,0,0,.75);
+    -moz-box-shadow: 5px 8px 33px -4px rgba(0,0,0,.75);
+    box-shadow: 5px 8px 33px -4px rgba(0,0,0,.75);
+}
+
+.amd-form-passengers .amd-form-passengers-class .twidget-age-group {
+    padding-left: 0;
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.amd-form-passengers .amd-form-passengers-class .notice.none {
+    display: none;
+}
+
+.amd-form-passengers .amd-form-passengers-class .twidget-age-group li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amd-form-passengers .twidget-age-group li .twidget-age-name {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.amd-form-passengers .amd-form-passengers-class .twidget-age-group li div.twidget-cell {
+    display: inline-block;
+    height: auto;
+}
+
+.amd-form-passengers .twidget-age-group li .twidget-age-select {
+    text-align: right;
+}
+
+.amd-form-passengers .amd-form-passengers-class .twidget-age-group li div.twidget-cell {
+    display: inline-block;
+    height: auto;
+}
+
+.amd-form-passengers .amd-form-passengers-class .twidget-age-group li .twidget-num input {
+    width: 50px;
+    border: 1px solid #CCC;
+    padding: 5px 10px;
+}
+.amd-form-passengers .amd-form-passengers-class.none {
+    display: none;
+}
+.amd-form-passengers .amd-form-passengers-class .notice {
+    font-size: 11px;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+.amd-form-passengers .amd-form-passengers-class .notice {
+    display: block;
+    line-height: 14px;
+    margin-bottom: 5px;
+    top: 0;
+    left: 102%;
+    width: 160px;
+    padding: 5px 7px;
+    -webkit-box-shadow: 10px 10px 18px -10px rgba(0,0,0,.75);
+    -moz-box-shadow: 10px 10px 18px -10px rgba(0,0,0,.75);
+    box-shadow: 10px 10px 18px -10px rgba(0,0,0,.75);
+}
+.amd_group_display.error{
+    border: 1px solid red;
+}
+
+.form-group.form-group-sm.amd-form-passengers .amd_group_display {
+    height: 25px;
+    line-height: 24px;
+}
+@media screen and (max-width: 768px) {
+    .page-template-template-amadeus-flights-search .search-tabs {
+        margin-bottom: 55px;
+    }
+}
+.st-tab-payment .service-detail-item .service-detail-content{
+    width: auto;
+}
+.single-st_tours .icon-group.booking-item-rating-stars{
+    display: inline-flex;
+}
+.single-st_tours .icon-group.booking-item-rating-stars li i{
+    margin-right: 0px;
+}

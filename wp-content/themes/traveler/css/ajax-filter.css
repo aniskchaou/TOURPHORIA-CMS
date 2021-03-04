@@ -1,0 +1,174 @@
+.ajax-filter-cover{
+    position: relative;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    min-height: 55px;
+    /* overflow: hidden; */
+}
+.ajax-filter-cover:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.ajax-filter-loading{
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    display: none;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+}
+.ajax-filter-loading:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.ajax-filter-loading img{
+    width: 40px;
+    height:auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+h3.ajax-filter-not-found{
+    padding: 10px;
+    text-align: center;
+}
+.add-item-to-wishlist{
+    display: inline-block;
+    height: 35px;
+    margin-left: 5px;
+    padding: 11px 0px;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+.add-item-to-wishlist i{
+    display: block;
+}
+.add-item-to-wishlist i.loading{
+    display: none;
+}
+.add-item-to-wishlist.loading i{
+    display: none;
+}
+.add-item-to-wishlist.loading i.loading{
+    display: block;
+    animation: spinner 1.5s linear infinite;
+}
+@keyframes spinner {
+    from {transform:rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.style_box .add-item-to-wishlist{
+    position: absolute;
+    bottom: 12px;
+    left: 3px;
+    z-index: 9999;
+    height: 0;
+    font-size: 16px;
+    line-height: 0;
+}
+.style_list .add-item-to-wishlist.pos2{
+    display: none;
+}
+@media (max-width: 1024px) {
+    .page-template-template-tour-search .booking-list .btn_book,
+    .page-template-template-activity-search .booking-list .btn_book{
+        float: left;
+        margin-top: 10px;
+    }
+    .style_list .add-item-to-wishlist {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 991px) {
+    .page-template-template-tour-search .booking-list .btn_book,
+    .page-template-template-activity-search .booking-list .btn_book{
+        float: right;
+    }
+    .style_list .add-item-to-wishlist{
+        display: none;
+    }
+    .style_list .add-item-to-wishlist.pos2{
+        display: block;
+        position: absolute;
+        left: 5px;
+        bottom: 2px;
+        font-size: 17px;
+    }
+
+    .page-template-template-activity-search .style_list .add-item-to-wishlist.pos2{
+        display: block;
+        position: absolute;
+        left: 55px;
+        bottom: -2px;
+        font-size: 17px;
+    }
+}
+
+.seat-availability{
+    display: inline-block;
+    margin-top: 5px;
+    width: 100%;
+}
+.seat-availability .slabel{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 7px;
+    float: left;
+    width: 56px;
+}
+.style_box .seat-availability .slabel{
+    width: 100%;
+}
+.seat-availability .seat-toogle{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: calc(~"100% - 56px");
+}
+.style_box .seat-availability .seat-toogle{
+    width: 100%;
+}
+.seat-availability .seat-toogle .first{
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    background: #ed8323;
+    color: #fff;
+    margin-right: 5px;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+.seat-availability .seat-toogle .first span{
+    display: block;
+}
+.seat-availability .seat-toogle .sub-item{
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    overflow: hidden;
+    padding: 0px 5px;
+    box-shadow: 0 3px 8px 1px #dfdfdf;
+    z-index: 99;
+    min-width: 115px;
+    display: none;
+}
+.seat-availability:hover .sub-item{
+    display: block;
+}
+.seat-availability .seat-toogle .sub-item .item{
+    padding: 4px 5px;
+    font-size: 12px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.seat-availability .seat-toogle .sub-item .item:last-child{
+    border-bottom: none;
+}
+
+

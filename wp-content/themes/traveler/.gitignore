@@ -1,0 +1,9 @@
+.idea/
+.idea/workspace.xml
+spa/node_modules/
+node_modules/
+bower_components/
+assets/vendors/
+assets/dist/fonts/17bb9012467490abc5d49ce1999f9ba9.svg
+assets/dist/fonts/7e8ef9e85be5c60441d1ca73b57b6087.svg
+assets/dist/fonts/8781d0e37758807ff8e792296d72fe77.svg

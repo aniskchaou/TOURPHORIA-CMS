@@ -1,0 +1,3688 @@
+@charset "UTF-8";
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+datepicker {
+  padding: 4px;
+  direction: ltr;
+}
+
+.datepicker-inline {
+  width: 250px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+.datepicker-dropdown:after,
+.datepicker-dropdown:before {
+  display: inline-block;
+  border-top: 0;
+  position: absolute;
+  content: "";
+}
+
+.datepicker.datepicker-rtl {
+  direction: rtl;
+}
+
+.datepicker.datepicker-rtl table tr td span {
+  float: right;
+}
+
+.datepicker-dropdown {
+  top: 0;
+  left: 0;
+}
+
+main.page-content .infor-st-setting .form-group textarea {
+  border: 1px solid #DAE1E7;
+  border-radius: 3px;
+}
+
+.datepicker-dropdown:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+.datepicker-dropdown:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #fff;
+}
+
+.datepicker-dropdown.datepicker-orient-left:before {
+  left: 6px;
+}
+
+.datepicker-dropdown.datepicker-orient-left:after {
+  left: 7px;
+}
+
+.datepicker-dropdown.datepicker-orient-right:before {
+  right: 6px;
+}
+
+.datepicker-dropdown.datepicker-orient-right:after {
+  right: 7px;
+}
+
+.datepicker-dropdown.datepicker-orient-top:before {
+  top: -7px;
+}
+
+.datepicker-dropdown.datepicker-orient-top:after {
+  top: -6px;
+}
+
+.datepicker-dropdown.datepicker-orient-bottom:before {
+  bottom: -7px;
+  border-bottom: 0;
+  border-top: 7px solid #999;
+}
+
+.datepicker-dropdown.datepicker-orient-bottom:after {
+  bottom: -6px;
+  border-bottom: 0;
+  border-top: 6px solid #fff;
+}
+
+.datepicker > div {
+  display: none;
+}
+
+.datepicker.days div.datepicker-days,
+.datepicker.months div.datepicker-months,
+.datepicker.years div.datepicker-years {
+  display: block;
+}
+
+.datepicker table {
+  margin: 0;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.datepicker table tr td,
+.datepicker table tr th {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.table-striped .datepicker table tr td,
+.table-striped .datepicker table tr th {
+  background-color: transparent;
+}
+
+.datepicker table tr td.day.focused,
+.datepicker table tr td.day:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.datepicker table tr td.day {
+  border: 1px solid #e6e6e6;
+}
+
+.datepicker table tr td.new,
+.datepicker table tr td.old {
+  color: #999;
+}
+
+.datepicker table tr td.disabled,
+.datepicker table tr td.disabled:hover {
+  background: 0 0;
+  color: #999;
+  cursor: default;
+}
+
+.datepicker table tr td.today,
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.today:hover {
+  color: #000;
+  position: relative;
+}
+
+.datepicker table tr td.today.disabled:before,
+.datepicker table tr td.today.disabled:hover:before,
+.datepicker table tr td.today:before,
+.datepicker table tr td.today:hover:before {
+  content: "";
+  bottom: 2px;
+  right: 2px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 7px 7px;
+  border-color: transparent transparent #ed8323;
+  position: absolute;
+}
+
+.datepicker table tr td.today.active,
+.datepicker table tr td.today.disabled.active,
+.datepicker table tr td.today.disabled:active,
+.datepicker table tr td.today.disabled:hover.active,
+.datepicker table tr td.today.disabled:hover:active,
+.datepicker table tr td.today:active,
+.datepicker table tr td.today:hover.active,
+.datepicker table tr td.today:hover:active,
+.open .dropdown-toggle.datepicker table tr td.today,
+.open .dropdown-toggle.datepicker table tr td.today.disabled,
+.open .dropdown-toggle.datepicker table tr td.today.disabled:hover,
+.open .dropdown-toggle.datepicker table tr td.today:hover {
+  background-image: none;
+}
+
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled.active,
+.datepicker table tr td.today.disabled.disabled,
+.datepicker table tr td.today.disabled.disabled.active,
+.datepicker table tr td.today.disabled.disabled:active,
+.datepicker table tr td.today.disabled.disabled:focus,
+.datepicker table tr td.today.disabled.disabled:hover,
+.datepicker table tr td.today.disabled:active,
+.datepicker table tr td.today.disabled:focus,
+.datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.today.disabled:hover.disabled,
+.datepicker table tr td.today.disabled:hover.disabled.active,
+.datepicker table tr td.today.disabled:hover.disabled:active,
+.datepicker table tr td.today.disabled:hover.disabled:focus,
+.datepicker table tr td.today.disabled:hover.disabled:hover,
+.datepicker table tr td.today.disabled:hover[disabled],
+.datepicker table tr td.today.disabled:hover[disabled].active,
+.datepicker table tr td.today.disabled:hover[disabled]:active,
+.datepicker table tr td.today.disabled:hover[disabled]:focus,
+.datepicker table tr td.today.disabled:hover[disabled]:hover,
+.datepicker table tr td.today.disabled[disabled],
+.datepicker table tr td.today.disabled[disabled].active,
+.datepicker table tr td.today.disabled[disabled]:active,
+.datepicker table tr td.today.disabled[disabled]:focus,
+.datepicker table tr td.today.disabled[disabled]:hover,
+.datepicker table tr td.today:hover.disabled,
+.datepicker table tr td.today:hover.disabled.active,
+.datepicker table tr td.today:hover.disabled:active,
+.datepicker table tr td.today:hover.disabled:focus,
+.datepicker table tr td.today:hover.disabled:hover,
+.datepicker table tr td.today:hover[disabled],
+.datepicker table tr td.today:hover[disabled].active,
+.datepicker table tr td.today:hover[disabled]:active,
+.datepicker table tr td.today:hover[disabled]:focus,
+.datepicker table tr td.today:hover[disabled]:hover,
+.datepicker table tr td.today[disabled],
+.datepicker table tr td.today[disabled].active,
+.datepicker table tr td.today[disabled]:active,
+.datepicker table tr td.today[disabled]:focus,
+.datepicker table tr td.today[disabled]:hover,
+fieldset[disabled] .datepicker table tr td.today,
+fieldset[disabled] .datepicker table tr td.today.active,
+fieldset[disabled] .datepicker table tr td.today.disabled,
+fieldset[disabled] .datepicker table tr td.today.disabled.active,
+fieldset[disabled] .datepicker table tr td.today.disabled:active,
+fieldset[disabled] .datepicker table tr td.today.disabled:focus,
+fieldset[disabled] .datepicker table tr td.today.disabled:hover,
+fieldset[disabled] .datepicker table tr td.today.disabled:hover.active,
+fieldset[disabled] .datepicker table tr td.today.disabled:hover:active,
+fieldset[disabled] .datepicker table tr td.today.disabled:hover:focus,
+fieldset[disabled] .datepicker table tr td.today.disabled:hover:hover,
+fieldset[disabled] .datepicker table tr td.today:active,
+fieldset[disabled] .datepicker table tr td.today:focus,
+fieldset[disabled] .datepicker table tr td.today:hover,
+fieldset[disabled] .datepicker table tr td.today:hover.active,
+fieldset[disabled] .datepicker table tr td.today:hover:active,
+fieldset[disabled] .datepicker table tr td.today:hover:focus,
+fieldset[disabled] .datepicker table tr td.today:hover:hover {
+  background-color: #ffdb99;
+  border-color: #ffb733;
+}
+
+.datepicker table tr td.today:hover:hover {
+  color: #000;
+}
+
+.datepicker table tr td.today.active:hover {
+  color: #fff;
+}
+
+.datepicker table tr td.range,
+.datepicker table tr td.range.disabled,
+.datepicker table tr td.range.disabled:hover,
+.datepicker table tr td.range:hover {
+  background: #eee;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.range.today.active,
+.datepicker table tr td.range.today.disabled.active,
+.datepicker table tr td.range.today.disabled:active,
+.datepicker table tr td.range.today.disabled:hover.active,
+.datepicker table tr td.range.today.disabled:hover:active,
+.datepicker table tr td.range.today:active,
+.datepicker table tr td.range.today:hover.active,
+.datepicker table tr td.range.today:hover:active,
+.datepicker table tr td.selected.active,
+.datepicker table tr td.selected.disabled.active,
+.datepicker table tr td.selected.disabled:active,
+.datepicker table tr td.selected.disabled:hover.active,
+.datepicker table tr td.selected.disabled:hover:active,
+.datepicker table tr td.selected:active,
+.datepicker table tr td.selected:hover.active,
+.datepicker table tr td.selected:hover:active,
+.open .dropdown-toggle.datepicker table tr td.active,
+.open .dropdown-toggle.datepicker table tr td.active.disabled,
+.open .dropdown-toggle.datepicker table tr td.active.disabled:hover,
+.open .dropdown-toggle.datepicker table tr td.active:hover,
+.open .dropdown-toggle.datepicker table tr td.range.today,
+.open .dropdown-toggle.datepicker table tr td.range.today.disabled,
+.open .dropdown-toggle.datepicker table tr td.range.today.disabled:hover,
+.open .dropdown-toggle.datepicker table tr td.range.today:hover,
+.open .dropdown-toggle.datepicker table tr td.selected,
+.open .dropdown-toggle.datepicker table tr td.selected.disabled,
+.open .dropdown-toggle.datepicker table tr td.selected.disabled:hover,
+.open .dropdown-toggle.datepicker table tr td.selected:hover {
+  background-image: none;
+}
+
+.datepicker table tr td.range.today,
+.datepicker table tr td.range.today.disabled,
+.datepicker table tr td.range.today.disabled:hover,
+.datepicker table tr td.range.today:hover {
+  color: #000;
+  background-color: #f7ca77;
+  border-color: #f1a417;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.datepicker table tr td.range.today.active,
+.datepicker table tr td.range.today.disabled.active,
+.datepicker table tr td.range.today.disabled:active,
+.datepicker table tr td.range.today.disabled:focus,
+.datepicker table tr td.range.today.disabled:hover,
+.datepicker table tr td.range.today.disabled:hover.active,
+.datepicker table tr td.range.today.disabled:hover:active,
+.datepicker table tr td.range.today.disabled:hover:focus,
+.datepicker table tr td.range.today.disabled:hover:hover,
+.datepicker table tr td.range.today:active,
+.datepicker table tr td.range.today:focus,
+.datepicker table tr td.range.today:hover,
+.datepicker table tr td.range.today:hover.active,
+.datepicker table tr td.range.today:hover:active,
+.datepicker table tr td.range.today:hover:focus,
+.datepicker table tr td.range.today:hover:hover,
+.open .dropdown-toggle.datepicker table tr td.range.today,
+.open .dropdown-toggle.datepicker table tr td.range.today.disabled,
+.open .dropdown-toggle.datepicker table tr td.range.today.disabled:hover,
+.open .dropdown-toggle.datepicker table tr td.range.today:hover {
+  color: #000;
+  background-color: #f4bb51;
+  border-color: #bf800c;
+}
+
+.datepicker table tr td.range.today.disabled,
+.datepicker table tr td.range.today.disabled.active,
+.datepicker table tr td.range.today.disabled.disabled,
+.datepicker table tr td.range.today.disabled.disabled.active,
+.datepicker table tr td.range.today.disabled.disabled:active,
+.datepicker table tr td.range.today.disabled.disabled:focus,
+.datepicker table tr td.range.today.disabled.disabled:hover,
+.datepicker table tr td.range.today.disabled:active,
+.datepicker table tr td.range.today.disabled:focus,
+.datepicker table tr td.range.today.disabled:hover,
+.datepicker table tr td.range.today.disabled:hover.disabled,
+.datepicker table tr td.range.today.disabled:hover.disabled.active,
+.datepicker table tr td.range.today.disabled:hover.disabled:active,
+.datepicker table tr td.range.today.disabled:hover.disabled:focus,
+.datepicker table tr td.range.today.disabled:hover.disabled:hover,
+.datepicker table tr td.range.today.disabled:hover[disabled],
+.datepicker table tr td.range.today.disabled:hover[disabled].active,
+.datepicker table tr td.range.today.disabled:hover[disabled]:active,
+.datepicker table tr td.range.today.disabled:hover[disabled]:focus,
+.datepicker table tr td.range.today.disabled:hover[disabled]:hover,
+.datepicker table tr td.range.today.disabled[disabled],
+.datepicker table tr td.range.today.disabled[disabled].active,
+.datepicker table tr td.range.today.disabled[disabled]:active,
+.datepicker table tr td.range.today.disabled[disabled]:focus,
+.datepicker table tr td.range.today.disabled[disabled]:hover,
+.datepicker table tr td.range.today:hover.disabled,
+.datepicker table tr td.range.today:hover.disabled.active,
+.datepicker table tr td.range.today:hover.disabled:active,
+.datepicker table tr td.range.today:hover.disabled:focus,
+.datepicker table tr td.range.today:hover.disabled:hover,
+.datepicker table tr td.range.today:hover[disabled],
+.datepicker table tr td.range.today:hover[disabled].active,
+.datepicker table tr td.range.today:hover[disabled]:active,
+.datepicker table tr td.range.today:hover[disabled]:focus,
+.datepicker table tr td.range.today:hover[disabled]:hover,
+.datepicker table tr td.range.today[disabled],
+.datepicker table tr td.range.today[disabled].active,
+.datepicker table tr td.range.today[disabled]:active,
+.datepicker table tr td.range.today[disabled]:focus,
+.datepicker table tr td.range.today[disabled]:hover,
+fieldset[disabled] .datepicker table tr td.range.today,
+fieldset[disabled] .datepicker table tr td.range.today.active,
+fieldset[disabled] .datepicker table tr td.range.today.disabled,
+fieldset[disabled] .datepicker table tr td.range.today.disabled.active,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:active,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:focus,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:hover,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:hover.active,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:active,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:focus,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:hover,
+fieldset[disabled] .datepicker table tr td.range.today:active,
+fieldset[disabled] .datepicker table tr td.range.today:focus,
+fieldset[disabled] .datepicker table tr td.range.today:hover,
+fieldset[disabled] .datepicker table tr td.range.today:hover.active,
+fieldset[disabled] .datepicker table tr td.range.today:hover:active,
+fieldset[disabled] .datepicker table tr td.range.today:hover:focus,
+fieldset[disabled] .datepicker table tr td.range.today:hover:hover {
+  background-color: #f7ca77;
+  border-color: #f1a417;
+}
+
+.datepicker table tr td.selected,
+.datepicker table tr td.selected.disabled,
+.datepicker table tr td.selected.disabled:hover,
+.datepicker table tr td.selected:hover {
+  color: #fff;
+  background-color: #999;
+  border-color: #555;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.datepicker table tr td.selected.active,
+.datepicker table tr td.selected.disabled.active,
+.datepicker table tr td.selected.disabled:active,
+.datepicker table tr td.selected.disabled:focus,
+.datepicker table tr td.selected.disabled:hover,
+.datepicker table tr td.selected.disabled:hover.active,
+.datepicker table tr td.selected.disabled:hover:active,
+.datepicker table tr td.selected.disabled:hover:focus,
+.datepicker table tr td.selected.disabled:hover:hover,
+.datepicker table tr td.selected:active,
+.datepicker table tr td.selected:focus,
+.datepicker table tr td.selected:hover,
+.datepicker table tr td.selected:hover.active,
+.datepicker table tr td.selected:hover:active,
+.datepicker table tr td.selected:hover:focus,
+.datepicker table tr td.selected:hover:hover,
+.open .dropdown-toggle.datepicker table tr td.selected,
+.open .dropdown-toggle.datepicker table tr td.selected.disabled,
+.open .dropdown-toggle.datepicker table tr td.selected.disabled:hover,
+.open .dropdown-toggle.datepicker table tr td.selected:hover {
+  border-color: #373737;
+  background-color: #858585;
+}
+
+.datepicker table tr td.selected.disabled,
+.datepicker table tr td.selected.disabled.active,
+.datepicker table tr td.selected.disabled.disabled,
+.datepicker table tr td.selected.disabled.disabled.active,
+.datepicker table tr td.selected.disabled.disabled:active,
+.datepicker table tr td.selected.disabled.disabled:focus,
+.datepicker table tr td.selected.disabled.disabled:hover,
+.datepicker table tr td.selected.disabled:active,
+.datepicker table tr td.selected.disabled:focus,
+.datepicker table tr td.selected.disabled:hover,
+.datepicker table tr td.selected.disabled:hover.disabled,
+.datepicker table tr td.selected.disabled:hover.disabled.active,
+.datepicker table tr td.selected.disabled:hover.disabled:active,
+.datepicker table tr td.selected.disabled:hover.disabled:focus,
+.datepicker table tr td.selected.disabled:hover.disabled:hover,
+.datepicker table tr td.selected.disabled:hover[disabled],
+.datepicker table tr td.selected.disabled:hover[disabled].active,
+.datepicker table tr td.selected.disabled:hover[disabled]:active,
+.datepicker table tr td.selected.disabled:hover[disabled]:focus,
+.datepicker table tr td.selected.disabled:hover[disabled]:hover,
+.datepicker table tr td.selected.disabled[disabled],
+.datepicker table tr td.selected.disabled[disabled].active,
+.datepicker table tr td.selected.disabled[disabled]:active,
+.datepicker table tr td.selected.disabled[disabled]:focus,
+.datepicker table tr td.selected.disabled[disabled]:hover,
+.datepicker table tr td.selected:hover.disabled,
+.datepicker table tr td.selected:hover.disabled.active,
+.datepicker table tr td.selected:hover.disabled:active,
+.datepicker table tr td.selected:hover.disabled:focus,
+.datepicker table tr td.selected:hover.disabled:hover,
+.datepicker table tr td.selected:hover[disabled],
+.datepicker table tr td.selected:hover[disabled].active,
+.datepicker table tr td.selected:hover[disabled]:active,
+.datepicker table tr td.selected:hover[disabled]:focus,
+.datepicker table tr td.selected:hover[disabled]:hover,
+.datepicker table tr td.selected[disabled],
+.datepicker table tr td.selected[disabled].active,
+.datepicker table tr td.selected[disabled]:active,
+.datepicker table tr td.selected[disabled]:focus,
+.datepicker table tr td.selected[disabled]:hover,
+fieldset[disabled] .datepicker table tr td.selected,
+fieldset[disabled] .datepicker table tr td.selected.active,
+fieldset[disabled] .datepicker table tr td.selected.disabled,
+fieldset[disabled] .datepicker table tr td.selected.disabled.active,
+fieldset[disabled] .datepicker table tr td.selected.disabled:active,
+fieldset[disabled] .datepicker table tr td.selected.disabled:focus,
+fieldset[disabled] .datepicker table tr td.selected.disabled:hover,
+fieldset[disabled] .datepicker table tr td.selected.disabled:hover.active,
+fieldset[disabled] .datepicker table tr td.selected.disabled:hover:active,
+fieldset[disabled] .datepicker table tr td.selected.disabled:hover:focus,
+fieldset[disabled] .datepicker table tr td.selected.disabled:hover:hover,
+fieldset[disabled] .datepicker table tr td.selected:active,
+fieldset[disabled] .datepicker table tr td.selected:focus,
+fieldset[disabled] .datepicker table tr td.selected:hover,
+fieldset[disabled] .datepicker table tr td.selected:hover.active,
+fieldset[disabled] .datepicker table tr td.selected:hover:active,
+fieldset[disabled] .datepicker table tr td.selected:hover:focus,
+fieldset[disabled] .datepicker table tr td.selected:hover:hover {
+  background-color: #999;
+  border-color: #555;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active:hover {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:focus,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.disabled:hover:focus,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:focus,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active:hover:focus,
+.datepicker table tr td.active:hover:hover,
+.open .dropdown-toggle.datepicker table tr td.active,
+.open .dropdown-toggle.datepicker table tr td.active.disabled,
+.open .dropdown-toggle.datepicker table tr td.active.disabled:hover,
+.open .dropdown-toggle.datepicker table tr td.active:hover {
+  color: #fff;
+  background-color: #ed8323;
+  border-color: #e27513;
+}
+
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled.disabled.active,
+.datepicker table tr td.active.disabled.disabled:active,
+.datepicker table tr td.active.disabled.disabled:focus,
+.datepicker table tr td.active.disabled.disabled:hover,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:focus,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active.disabled:hover.disabled.active,
+.datepicker table tr td.active.disabled:hover.disabled:active,
+.datepicker table tr td.active.disabled:hover.disabled:focus,
+.datepicker table tr td.active.disabled:hover.disabled:hover,
+.datepicker table tr td.active.disabled:hover[disabled],
+.datepicker table tr td.active.disabled:hover[disabled].active,
+.datepicker table tr td.active.disabled:hover[disabled]:active,
+.datepicker table tr td.active.disabled:hover[disabled]:focus,
+.datepicker table tr td.active.disabled:hover[disabled]:hover,
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active.disabled[disabled].active,
+.datepicker table tr td.active.disabled[disabled]:active,
+.datepicker table tr td.active.disabled[disabled]:focus,
+.datepicker table tr td.active.disabled[disabled]:hover,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active:hover.disabled.active,
+.datepicker table tr td.active:hover.disabled:active,
+.datepicker table tr td.active:hover.disabled:focus,
+.datepicker table tr td.active:hover.disabled:hover,
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active:hover[disabled].active,
+.datepicker table tr td.active:hover[disabled]:active,
+.datepicker table tr td.active:hover[disabled]:focus,
+.datepicker table tr td.active:hover[disabled]:hover,
+.datepicker table tr td.active[disabled],
+.datepicker table tr td.active[disabled].active,
+.datepicker table tr td.active[disabled]:active,
+.datepicker table tr td.active[disabled]:focus,
+.datepicker table tr td.active[disabled]:hover,
+fieldset[disabled] .datepicker table tr td.active,
+fieldset[disabled] .datepicker table tr td.active.active,
+fieldset[disabled] .datepicker table tr td.active.disabled,
+fieldset[disabled] .datepicker table tr td.active.disabled.active,
+fieldset[disabled] .datepicker table tr td.active.disabled:active,
+fieldset[disabled] .datepicker table tr td.active.disabled:focus,
+fieldset[disabled] .datepicker table tr td.active.disabled:hover,
+fieldset[disabled] .datepicker table tr td.active.disabled:hover.active,
+fieldset[disabled] .datepicker table tr td.active.disabled:hover:active,
+fieldset[disabled] .datepicker table tr td.active.disabled:hover:focus,
+fieldset[disabled] .datepicker table tr td.active.disabled:hover:hover,
+fieldset[disabled] .datepicker table tr td.active:active,
+fieldset[disabled] .datepicker table tr td.active:focus,
+fieldset[disabled] .datepicker table tr td.active:hover,
+fieldset[disabled] .datepicker table tr td.active:hover.active,
+fieldset[disabled] .datepicker table tr td.active:hover:active,
+fieldset[disabled] .datepicker table tr td.active:hover:focus,
+fieldset[disabled] .datepicker table tr td.active:hover:hover {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.datepicker table tr td span {
+  display: block;
+  width: 23%;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+  margin: 1%;
+  cursor: pointer;
+}
+
+.datepicker table tr td span:hover {
+  background: #eee;
+}
+
+.datepicker table tr td span.disabled,
+.datepicker table tr td span.disabled:hover {
+  background: 0 0;
+  color: #999;
+  cursor: default;
+}
+
+.datepicker table tr td span.active,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active:hover {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:focus,
+.datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active.disabled:hover.active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active.disabled:hover:focus,
+.datepicker table tr td span.active.disabled:hover:hover,
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:focus,
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active:hover:focus,
+.datepicker table tr td span.active:hover:hover,
+.open .dropdown-toggle.datepicker table tr td span.active,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled:hover,
+.open .dropdown-toggle.datepicker table tr td span.active:hover {
+  color: #fff;
+  background-color: #ed8323;
+  border-color: #e27513;
+}
+
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover.active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active:hover:active,
+.open .dropdown-toggle.datepicker table tr td span.active,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled:hover,
+.open .dropdown-toggle.datepicker table tr td span.active:hover {
+  background-image: none;
+}
+
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled.disabled,
+.datepicker table tr td span.active.disabled.disabled.active,
+.datepicker table tr td span.active.disabled.disabled:active,
+.datepicker table tr td span.active.disabled.disabled:focus,
+.datepicker table tr td span.active.disabled.disabled:hover,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:focus,
+.datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active.disabled:hover.disabled,
+.datepicker table tr td span.active.disabled:hover.disabled.active,
+.datepicker table tr td span.active.disabled:hover.disabled:active,
+.datepicker table tr td span.active.disabled:hover.disabled:focus,
+.datepicker table tr td span.active.disabled:hover.disabled:hover,
+.datepicker table tr td span.active.disabled:hover[disabled],
+.datepicker table tr td span.active.disabled:hover[disabled].active,
+.datepicker table tr td span.active.disabled:hover[disabled]:active,
+.datepicker table tr td span.active.disabled:hover[disabled]:focus,
+.datepicker table tr td span.active.disabled:hover[disabled]:hover,
+.datepicker table tr td span.active.disabled[disabled],
+.datepicker table tr td span.active.disabled[disabled].active,
+.datepicker table tr td span.active.disabled[disabled]:active,
+.datepicker table tr td span.active.disabled[disabled]:focus,
+.datepicker table tr td span.active.disabled[disabled]:hover,
+.datepicker table tr td span.active:hover.disabled,
+.datepicker table tr td span.active:hover.disabled.active,
+.datepicker table tr td span.active:hover.disabled:active,
+.datepicker table tr td span.active:hover.disabled:focus,
+.datepicker table tr td span.active:hover.disabled:hover,
+.datepicker table tr td span.active:hover[disabled],
+.datepicker table tr td span.active:hover[disabled].active,
+.datepicker table tr td span.active:hover[disabled]:active,
+.datepicker table tr td span.active:hover[disabled]:focus,
+.datepicker table tr td span.active:hover[disabled]:hover,
+.datepicker table tr td span.active[disabled],
+.datepicker table tr td span.active[disabled].active,
+.datepicker table tr td span.active[disabled]:active,
+.datepicker table tr td span.active[disabled]:focus,
+.datepicker table tr td span.active[disabled]:hover,
+fieldset[disabled] .datepicker table tr td span.active,
+fieldset[disabled] .datepicker table tr td span.active.active,
+fieldset[disabled] .datepicker table tr td span.active.disabled,
+fieldset[disabled] .datepicker table tr td span.active.disabled.active,
+fieldset[disabled] .datepicker table tr td span.active.disabled:active,
+fieldset[disabled] .datepicker table tr td span.active.disabled:focus,
+fieldset[disabled] .datepicker table tr td span.active.disabled:hover,
+fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active,
+fieldset[disabled] .datepicker table tr td span.active.disabled:hover:active,
+fieldset[disabled] .datepicker table tr td span.active.disabled:hover:focus,
+fieldset[disabled] .datepicker table tr td span.active.disabled:hover:hover,
+fieldset[disabled] .datepicker table tr td span.active:active,
+fieldset[disabled] .datepicker table tr td span.active:focus,
+fieldset[disabled] .datepicker table tr td span.active:hover,
+fieldset[disabled] .datepicker table tr td span.active:hover.active,
+fieldset[disabled] .datepicker table tr td span.active:hover:active,
+fieldset[disabled] .datepicker table tr td span.active:hover:focus,
+fieldset[disabled] .datepicker table tr td span.active:hover:hover {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.datepicker table tr td span.new,
+.datepicker table tr td span.old {
+  color: #999;
+}
+
+.datepicker th.datepicker-switch {
+  width: 145px;
+}
+
+.datepicker tfoot tr th,
+.datepicker thead tr:first-child th {
+  cursor: pointer;
+}
+
+.datepicker tfoot tr th:hover,
+.datepicker thead tr:first-child th:hover {
+  background: #eee;
+}
+
+.datepicker .cw {
+  font-size: 10px;
+  width: 12px;
+  padding: 0 2px 0 5px;
+  vertical-align: middle;
+}
+
+.datepicker thead tr:first-child th.cw {
+  cursor: default;
+  background-color: transparent;
+}
+
+.input-group.date .input-group-addon i {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.input-daterange .input-group-addon {
+  width: auto;
+  min-width: 16px;
+  padding: 4px 5px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  vertical-align: middle;
+  background-color: #eee;
+  border: solid #ccc;
+  border-width: 1px 0;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.datepicker.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  display: none;
+  min-width: 160px;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 7px 10px;
+}
+
+.fotorama__arr:before,
+.fotorama__fullscreen-icon:before,
+.fotorama__video-close:before,
+.fotorama__video-play:before,
+.i-check:before,
+.i-radio:before,
+.owl-controls .owl-buttons div:before,
+.twitter .tweet-list li:before {
+  font-family: FontAwesome;
+}
+
+.datepicker.datepicker-inline td,
+.datepicker.datepicker-inline th,
+.datepicker.dropdown-menu td,
+.datepicker.dropdown-menu th {
+  padding: 0 5px;
+}
+
+.datepicker thead tr:first-child th.next:before,
+.datepicker thead tr:first-child th.prev:before {
+  font-family: FontAwesome;
+  content: "";
+  font-size: 18px;
+}
+
+.datepicker thead tr:first-child th.prev:before {
+  content: "";
+}
+
+.bootstrap-timepicker {
+  position: relative;
+}
+
+/*----------------page-wrapper----------------*/
+/*----------------toggeled sidebar----------------*/
+/*----------------show sidebar button----------------*/
+/*----------------sidebar-wrapper----------------*/
+/*----------------sidebar-content----------------*/
+/*--------------------sidebar-brand----------------------*/
+/*--------------------sidebar-header----------------------*/
+/*-----------------------sidebar-search------------------------*/
+/*----------------------sidebar-menu-------------------------*/
+/*--------------------------side-footer------------------------------*/
+/*--------------------------page-content-----------------------------*/
+/*------scroll bar---------------------*/
+/*-----------------------------chiller-theme-------------------------------------------------*/
+/*Style  List service */
+.st_content .st-item-list {
+  padding-right: 24px;
+  position: relative;
+}
+.st_content #data_whislist h1 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.st_content .head_control .head_time.bc_single {
+  margin-right: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.st_content .style-list {
+  position: relative;
+}
+.st_content .style-list i.booking-item-wishlist-remove {
+  background: #00a900 !important;
+}
+.st_content .style-list i.fa-edit.booking-item-wishlist-remove {
+  background: #3484f5;
+}
+.st_content .style-list .fa-eye.booking-item-wishlist-remove {
+  background: #4d4d4d;
+}
+.st_content .style-list .booking-item-wishlist-remove {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: #cc0000;
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.st_content .style-list .item-service {
+  border: 1px solid #D7DCE3;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.st_content .style-list .item-service .item-service-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.st_content .style-list .item-service .item-service-wrapper .thumb-wrapper {
+  padding-left: 14px;
+}
+.st_content .style-list .item-service .item-service-wrapper .thumb-wrapper .thumb {
+  position: relative;
+}
+.st_content .style-list .item-service .item-service-wrapper .thumb-wrapper .thumb a {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.st_content .style-list .item-service .item-service-wrapper .thumb-wrapper .thumb a img {
+  min-width: 100%;
+  webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.st_content .style-list .item-service .item-service-wrapper .thumb-wrapper .thumb .service-tag {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 13px;
+  color: #FFFFFF;
+  font-weight: 500;
+  z-index: 8;
+  border-radius: 0 3px 3px 0;
+}
+.st_content .style-list .item-service .item-content {
+  padding: 30px 10px;
+  position: relative;
+}
+.st_content .style-list .item-service .item-content .item-content-w {
+  height: 100%;
+  padding-right: 10px;
+  border-right: 1px solid #dfdfdf;
+}
+.st_content .style-list .item-service .item-content .item-content-w .booking-item-rating-stars {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.st_content .style-list .item-service .item-content .item-content-w .booking-item-rating-stars span {
+  display: none;
+}
+.st_content .style-list .item-service .item-content .item-content-w .booking-item-rating-stars li {
+  float: left;
+  color: #FA5636;
+  margin-right: 3px;
+}
+.st_content .style-list .item-service .item-content .service-title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.st_content .style-list .item-service .item-content .service-title a {
+  color: #1A2B50;
+}
+.st_content .style-list .item-service .item-content .facilities {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  position: relative;
+}
+.st_content .style-list .item-service .item-content .facilities li {
+  float: left;
+  margin-right: 7px;
+  color: #5E6D77;
+}
+.st_content .style-list .item-service .item-content .service-location {
+  position: absolute;
+  bottom: 20px;
+  white-space: pre-wrap;
+  padding-right: 20px;
+}
+.st_content .style-list .item-service .item-content .service-location fa {
+  top: 2px;
+}
+.st_content .style-list .item-service .section-footer .service-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-box-pack: end;
+  justify-content: flex-end;
+  padding-right: 15px;
+  margin-top: 25px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.st_content .style-list .item-service .section-footer .service-review .count-review {
+  margin-right: 24px;
+  position: relative;
+  top: 2px;
+}
+.st_content .style-list .item-service .section-footer .service-review .count-review .text-rating {
+  font-size: 16px;
+  color: #1A2B48;
+  display: block;
+  text-align: right;
+  font-weight: 500;
+}
+.st_content .style-list .item-service .section-footer .service-review .count-review .review {
+  text-align: right;
+  color: #5191FA;
+  display: block;
+  margin-left: 0px;
+  font-weight: 400;
+}
+.st_content .style-list .item-service .section-footer .service-review .review {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #6A7A84;
+}
+.st_content .style-list .item-service .section-footer .service-review .rating {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 500;
+  background: #5191FA;
+  border-radius: 3px 3px 3px 0px;
+  padding: 4px 8px;
+  position: relative;
+  min-width: 70px;
+  text-align: center;
+  margin-right: 10px;
+}
+.st_content .style-list .item-service .section-footer .service-review .rating small {
+  font-weight: 400;
+  font-size: 16px;
+}
+.st_content .style-list .item-service .section-footer .service-review .rating .st-dot {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background: #D0D7DD;
+  display: block;
+}
+.st_content .style-list .item-service .section-footer .service-review .rating:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  border-width: 12px 10px 0px 0;
+  border-color: transparent #5191FA transparent transparent;
+  right: 100%;
+  bottom: 0;
+}
+.st_content .style-list .item-service .section-footer .service-price {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 2px;
+}
+.st_content .style-list .item-service .section-footer .service-price span {
+  font-size: 16px;
+  color: #5E6D77;
+}
+.st_content .style-list .item-service .section-footer .service-price span fa {
+  position: relative;
+  top: 3px;
+  left: 0px;
+}
+.st_content .style-list .item-service .section-footer .service-price span.price {
+  font-size: 20px;
+  color: #1A2B50;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.st_content .style-list .item-service.st-ccv-tour .item-content {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.st_content .style-list .item-service.st-ccv-tour .item-content .service-location {
+  position: relative;
+  bottom: auto;
+  padding-top: 25px;
+  margin-bottom: 0px;
+}
+.st_content .style-list .item-service.st-ccv-tour .item-content .service-title {
+  margin-bottom: 5px;
+  margin-top: 13px;
+}
+.st_content .style-list .item-service.st-ccv-tour .item-content .service-review {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 15px;
+  align-items: center;
+}
+.st_content .style-list .item-service.st-ccv-tour .item-content .service-review .booking-item-rating-stars li .fa {
+  font-size: 15px;
+  color: #FFDC00;
+}
+.st_content .style-list .item-service.st-ccv-tour .item-content .service-review .review {
+  position: relative;
+  top: -1px;
+  font-size: 13px;
+  color: #768092;
+  margin-left: 10px;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer {
+  position: relative;
+  padding-top: 25px;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer .service-duration {
+  font-size: 16px;
+  color: #5E6D77;
+  margin-bottom: 10px;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer .service-duration .field-icon {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer .service-price {
+  position: relative;
+  bottom: auto;
+  right: auto;
+  padding-right: 35px;
+  overflow: hidden;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer .service-price span.price-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 1px;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer .service-price span.price-text .field-icon {
+  margin-right: 10px;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer .service-price span.price {
+  text-align: right;
+  position: relative;
+  margin-right: 0px;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer .service-price span.price .text-lg {
+  font-size: 18px;
+  color: #1A2B48;
+  font-weight: 450;
+  float: left;
+  line-height: 18px;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer .service-price span.price .onsale {
+  font-size: 16px;
+  float: left;
+  color: #A9AEB8;
+  margin-right: 15px;
+  text-decoration: line-through;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer .service-type {
+  font-size: 16px;
+  color: #5E6D77;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer .service-type .field-icon {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+.st_content .style-list .item-service.st-ccv-tour .section-footer .btn-view-more {
+  position: absolute;
+  bottom: 30px;
+  border: 1px solid #5191FA;
+  border-radius: 3px;
+  color: #5191FA;
+  background-color: transparent;
+  padding: 9px 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: -13px;
+}
+.st_content .style-list .icon-list.icon-group.booking-item-rating-stars {
+  display: none;
+}
+.st_content .style-list .booking-item-rating-stars {
+  /* padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 12px;
+  left: 14px; */
+}
+.st_content .style-list .booking-item-rating-stars li {
+  float: left;
+  color: #FA5636;
+  margin-right: 3px;
+}
+.st_content .style-list .service-add-wishlist {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  color: #FFFFFF;
+  font-size: 21px;
+  z-index: 8;
+  cursor: pointer;
+}
+.st_content .style-list .lds-dual-ring {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  display: none;
+}
+.st_content .style-list .service-tag.bestseller {
+  background: #ED0925;
+  border-radius: 0 4px 4px 0;
+}
+.st_content .style-list .service-tag.bestseller .feature_class {
+  padding: 6px 10px;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.form-control {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  line-height: 1.6em;
+}
+
+.sidebar-content .sidebar-header {
+  position: relative;
+}
+.sidebar-content .sidebar-header .icon-ccv {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  right: 10px;
+}
+.sidebar-content .sidebar-header .icon-ccv #close-sidebar {
+  padding: 10px;
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes sonar {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+body {
+  font-family: "Poppins";
+  font-size: 14px;
+}
+body .page-wrapper {
+  height: 100vh;
+  background: #F5F7F9;
+}
+body .page-wrapper .theme {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 2px;
+}
+body .page-wrapper .sidebar-wrapper {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body .page-wrapper .page-content {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body .page-wrapper .page-content .btn.btn_load_his_book {
+  background: #5191FA;
+  border-color: #5191FA;
+  color: #FFFFFF;
+}
+body .page-wrapper .page-content .st-create span.verify-status {
+  border-radius: 5px;
+  font-weight: 500;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 0;
+  position: relative;
+  padding: 5px 10px;
+  background: #309a1e;
+  vertical-align: middle;
+}
+body .page-wrapper .page-content .st-create span.verify-status.none {
+  background: #c00;
+}
+body .page-wrapper .page-content label {
+  display: block;
+}
+body .page-wrapper .page-content .list-inline.user-profile-statictics > li {
+  margin-right: 1%;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 18%;
+}
+body .page-wrapper .page-content .list-inline.user-profile-statictics > li .user-profile-statictics-icon {
+  font-size: 70px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #8c8c8c;
+}
+body .page-wrapper .page-content .list-inline.user-profile-statictics > li h5 {
+  font-size: 30px;
+  line-height: 1em;
+  margin-bottom: 3px;
+  color: #ed8323;
+}
+body .page-wrapper .page-content .list-inline.user-profile-statictics > li p {
+  margin-bottom: 0;
+  line-height: 1em;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+body .page-wrapper .page-content .form-group-icon-left {
+  position: relative;
+}
+body .page-wrapper .page-content .form-group-icon-left .st-form-group-title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 15px;
+}
+body .page-wrapper .page-content .form-group-icon-left .st-form-group-title .check-notifyi:before {
+  color: #309a1e;
+  content: "";
+}
+body .page-wrapper .page-content .form-group-icon-left .st-form-group-title .check-notify.none i:before {
+  color: #ed8323;
+  content: "";
+}
+body .page-wrapper .page-content .form-group-icon-left .input-icon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  display: block;
+  left: 1px;
+  text-align: center;
+  color: #b3b3b3;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 9999;
+}
+body .page-wrapper .page-content .form-group-icon-left .form-control {
+  padding-left: 30px;
+}
+body .page-wrapper .page-content .st-form-group-title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 15px;
+}
+body .page-wrapper .page-content .st-form-group-title .check-notifyi:before {
+  color: #309a1e;
+  content: "";
+}
+body .page-wrapper .page-content .st-form-group-title .check-notify.none i:before {
+  color: #ed8323;
+  content: "";
+}
+body .page-wrapper .page-content .passport-photo .icon-remove {
+  position: absolute;
+  top: -8px;
+  left: -3px;
+  color: #de1e1e;
+  cursor: pointer;
+  font-size: 18px;
+}
+body .page-wrapper .page-content .passport-photo .passport-photo-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+  width: 20%;
+}
+body .page-wrapper .page-content .passport-photo .passport-photo-item img {
+  max-width: 100%;
+}
+body .page-wrapper .page-content .on-loading {
+  display: none;
+}
+body .page-wrapper .page-content .verify_photo_inputs {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+body .page-wrapper .page-content input[type=file] {
+  display: block;
+}
+body .page-wrapper .page-content .btn-connect-facebook:hover {
+  color: #fff;
+}
+body .page-wrapper .page-content .btn-connect-facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+body .page-wrapper .page-content .st-form-group {
+  border: 1px dashed #cac8c8;
+  border-radius: 5px;
+  padding: 10px;
+  background: #ececec;
+  margin-bottom: 30px;
+}
+body .page-wrapper .page-content .inbox-list-message {
+  clear: both;
+}
+body .page-wrapper .page-content .inbox-list-message .message-item {
+  margin: 20px 0;
+  position: relative;
+  padding: 10px 5px 5px;
+  border: 1px solid #ddd;
+  transition: all 0.2s;
+  -webkit-box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 100%;
+}
+body .page-wrapper .page-content .inbox-list-message .message-item .booking-item-wishlist-title {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: #f7f7f7 none repeat scroll 0 0;
+  border-color: #f7f7f7;
+  border-image: none;
+  border-radius: 3px 3px 0 0;
+  border-style: solid solid none;
+  border-width: 1px 1px medium;
+  font-size: 14px;
+  height: 30px;
+  left: 0;
+  line-height: 30px;
+  padding: 0 10px;
+  position: absolute;
+  top: -31px;
+}
+body .page-wrapper .page-content .inbox-list-message .message-item .booking-item-wishlist-title .fa {
+  padding-right: 5px;
+}
+body .page-wrapper .page-content .inbox-list-message .message-item .btn_remove_message {
+  background: #eee none repeat scroll 0 0;
+  padding: 4px 6px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+body .page-wrapper .page-content .inbox-list-message .message-item .btn_remove_message:before {
+  content: "";
+  font-family: "FontAwesome";
+}
+body .page-wrapper .page-content .inbox-list-message .message-item .user-avatar {
+  width: 70px;
+  float: left;
+  display: block;
+  text-align: center;
+  margin-right: 5px;
+}
+body .page-wrapper .page-content .inbox-list-message .message-item .user-avatar span {
+  font-size: 12px;
+  color: #999;
+}
+body .page-wrapper .page-content .inbox-list-message .message-item .inbox-send {
+  background: #00b710;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 11px;
+  padding: 1px 4px;
+  margin-right: 5px;
+}
+body .page-wrapper .page-content .inbox-list-message .message-item .short-content {
+  font-size: 14px;
+  display: block;
+}
+body .page-wrapper .page-content .inbox-list-message .message-item .inbox-in {
+  font-size: 12px;
+  color: #999;
+}
+body .page-wrapper .page-content .inbox-list-message .message-item .inbox-post {
+  font-size: 13px;
+}
+body .page-wrapper .page-content .inbox-list-message .message-item .inbox-time {
+  font-size: 11px;
+  color: #999;
+}
+body .page-wrapper .page-content .st-inbox-body-detail .back-all-list {
+  background: #FA5636;
+  border-color: #FA5636;
+  color: #FFF;
+}
+body .page-wrapper .page-content .st-inbox-body-detail .message-title {
+  margin-top: 30px;
+}
+body .page-wrapper .page-content .st-inbox-body-detail .class-in {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+body .page-wrapper .page-content .st-inbox-body-detail .message-box {
+  margin-top: 30px;
+  max-height: 500px;
+  overflow: hidden;
+  outline: none;
+}
+body .page-wrapper .page-content .st-inbox-body-detail .inbox-form-reply {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+body .page-wrapper .page-content .st-inbox-body-detail .inbox-form-reply .form-reply {
+  display: flex;
+}
+body .page-wrapper .page-content .st-inbox-body-detail .inbox-form-reply .form-reply .form-group {
+  width: 100% !important;
+  position: relative;
+  flex-grow: 1;
+  float: none;
+}
+body .page-wrapper .page-content .st-inbox-body-detail .inbox-form-reply .form-reply .form-group textarea.form-control {
+  height: 50px;
+  border-radius: 0;
+}
+body .page-wrapper .page-content .st-inbox-body-detail .inbox-form-reply .form-reply div.button {
+  float: left;
+  text-align: right;
+  width: 100px;
+}
+body .page-wrapper .page-content .st-inbox-body-detail .inbox-form-reply .form-reply div.button button.btn {
+  height: 50px;
+  width: 90%;
+  line-height: 1;
+  margin-top: 0;
+  font-size: 18px;
+  background: #FA5636;
+  border-color: #FA5636;
+  color: #FFF;
+}
+body .page-wrapper .page-content .booking-meta .meta-item .meta-value input {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  line-height: 1.6em;
+}
+body .page-wrapper .page-content .booking-meta .meta-item .meta-value select {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  line-height: 1.6em;
+}
+body .page-wrapper .page-content .guest_name_input .guest_name_control select {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  line-height: 1.6em;
+  margin-bottom: 15px;
+}
+body .page-wrapper .page-content .guest_name_input .guest_name_control input {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  line-height: 1.6em;
+  margin-bottom: 15px;
+}
+body .page-wrapper .page-content .div_btn_book_tour {
+  padding-top: 20px;
+  text-align: right;
+}
+body .page-wrapper .page-content .div_btn_book_tour input {
+  background: #FA5636;
+  border-color: #FA5636;
+}
+body .sidebar-wrapper .sidebar-brand > a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body .sidebar-wrapper .sidebar-dropdown > a:after {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active .sidebar-submenu {
+  display: block !important;
+}
+body .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body .sidebar-wrapper .sidebar-menu ul li a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body .sidebar-wrapper ul li a i {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body .sidebar-wrapper .sidebar-search input.search-menu {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body .sidebar-wrapper .sidebar-search .input-group-text {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body #show-sidebar {
+  background-color: #211e1e;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body #close-sidebar {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media all and (min-width: 768px) {
+  .logged-in.admin-bar .page-wrapper #show-sidebar {
+    margin-top: 32px;
+  }
+  .logged-in.admin-bar .page-wrapper.chiller-theme {
+    margin-top: 32px;
+  }
+  .logged-in.admin-bar .sidebar-wrapper {
+    margin-top: 32px;
+  }
+}
+@media all and (max-width: 500px) {
+  .with-panel-right-reveal .sidenav-overlay {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 120;
+    display: none;
+  }
+}
+.logged-in.admin-bar .page-wrapper #show-sidebar:hover {
+  color: #FFF;
+}
+
+.page-wrapper a {
+  font-family: "Poppins";
+}
+.page-wrapper a.fa {
+  font-family: "FontAwesome";
+}
+.page-wrapper span {
+  font-family: "Poppins";
+}
+.page-wrapper .static-info-footer .pull-right i {
+  font-size: 24px;
+}
+.page-wrapper .static-info-footer .pull-left {
+  font-size: 18px;
+}
+.page-wrapper .theme {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 2px;
+}
+.page-wrapper .theme.chiller-theme {
+  background: #1e2229;
+}
+.page-wrapper .page-content {
+  background: #F5F7F9;
+  display: inline-block;
+  width: 100%;
+  padding-left: 0px;
+  overflow-x: hidden;
+}
+.page-wrapper .page-content > .st_content {
+  padding: 20px 40px;
+}
+.page-wrapper .page-content > .st_content .btn_load_more_wishlist {
+  background-color: #5191FA;
+  border-color: #5191FA;
+}
+.page-wrapper .page-content > .st_content .item-box-static {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.page-wrapper .page-content > .st_content .item-box-static .title_post_type {
+  font-size: 18px;
+  margin-left: 20px;
+}
+.page-wrapper .page-content > .st_content .average_total .huge {
+  font-size: 22px;
+}
+.page-wrapper .page-content > .st_content .average_total .title {
+  font-size: 20px;
+}
+
+.page-wrapper.toggled .sidebar-wrapper {
+  left: 0px;
+}
+.page-wrapper.toggled #show-sidebar {
+  left: -40px;
+}
+
+#show-sidebar {
+  position: fixed;
+  left: 0;
+  top: 10px;
+  border-radius: 0 4px 4px 0px;
+  width: 35px;
+  transition-delay: 0.3s;
+}
+
+ul.list.list-inline.user-profile-statictics.mb30 li img {
+  width: 55px;
+}
+
+.sidebar-wrapper {
+  width: 270px;
+  height: 100%;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  z-index: 999;
+}
+.sidebar-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+}
+.sidebar-wrapper ul .sidebar-dropdown .st-icon-menu {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+.sidebar-wrapper ul .sidebar-dropdown:active span {
+  color: #5191FA;
+}
+.sidebar-wrapper ul .sidebar-dropdown a > span {
+  line-height: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+.sidebar-wrapper a {
+  text-decoration: none;
+}
+.sidebar-wrapper .sidebar-header {
+  padding: 30px;
+  overflow: hidden;
+}
+.sidebar-wrapper .sidebar-header .freelpand {
+  display: inline-block;
+}
+.sidebar-wrapper .sidebar-header .freelpand a {
+  color: #FFFFFF;
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.sidebar-wrapper .sidebar-header .user-upgrade {
+  display: inline-block;
+  background: #FA5636;
+  border-radius: 3px;
+  border-radius: 3px;
+  margin-left: 15px;
+  padding: 5px 10px;
+}
+.sidebar-wrapper .sidebar-header .user-upgrade a {
+  color: #FFFFFF;
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.sidebar-wrapper .sidebar-header .user-pic {
+  float: left;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  overflow: hidden;
+}
+.sidebar-wrapper .sidebar-header .user-pic img {
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+.sidebar-wrapper .sidebar-header .user-info {
+  float: left;
+  color: #A0A9B2;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+}
+.sidebar-wrapper .sidebar-header .user-info > span {
+  color: #A0A9B2;
+  display: block;
+  font-size: 16px;
+}
+.sidebar-wrapper .sidebar-header .user-info .user-role {
+  font-family: "Poppins";
+  font-size: 12px;
+  color: #A0A9B2;
+  letter-spacing: 0;
+}
+.sidebar-wrapper .sidebar-search > div {
+  padding: 10px 20px;
+}
+.sidebar-wrapper .sidebar-menu {
+  padding-bottom: 10px;
+}
+.sidebar-wrapper .sidebar-menu .header-menu span {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px 20px 5px 20px;
+  display: inline-block;
+}
+.sidebar-wrapper .sidebar-menu ul li a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 30px 8px 30px;
+}
+.sidebar-wrapper .sidebar-menu ul li a i {
+  margin-right: 10px;
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+}
+.sidebar-wrapper .sidebar-menu ul li a:hover > i::before {
+  display: inline-block;
+  animation: swing ease-in-out 0.5s 1 alternate;
+}
+.sidebar-wrapper .sidebar-menu ul li a span.label {
+  float: right;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+.sidebar-wrapper .sidebar-menu ul li a span.badge {
+  float: right;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown {
+  position: relative;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown:after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: 0 0;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #FFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul {
+  padding: 5px 0;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li {
+  padding-left: 25px;
+  font-size: 13px;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li.active a {
+  color: #5191FA;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 10px;
+  font-size: 5px;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .badge {
+  float: right;
+  margin-top: 0px;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .label {
+  float: right;
+  margin-top: 0px;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-submenu {
+  display: none;
+}
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active:after {
+  transform: rotate(180deg);
+  right: 15px;
+}
+
+.sidebar-content {
+  max-height: calc(100% - 30px);
+  height: calc(100% - 30px);
+  overflow-y: auto;
+  position: relative;
+}
+.sidebar-content::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+.sidebar-content::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.sidebar-content::-webkit-scrollbar-thumb {
+  background: #525965;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+.sidebar-content::-webkit-scrollbar-thumb:hover {
+  background: #525965;
+}
+.sidebar-content::-webkit-scrollbar-thumb:active {
+  background: #525965;
+}
+.sidebar-content::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.sidebar-content::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+.sidebar-content::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+.sidebar-content::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.sidebar-content.desktop {
+  overflow-y: hidden;
+}
+
+.badge-sonar {
+  display: inline-block;
+  background: #980303;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  top: 0;
+}
+.badge-sonar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #980303;
+  opacity: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  animation: sonar 1.5s infinite;
+}
+
+.chiller-theme .sidebar-wrapper {
+  background: #1A2B48;
+}
+.chiller-theme .sidebar-wrapper .sidebar-header {
+  border-top: 1px solid #2C3D5B;
+}
+.chiller-theme .sidebar-wrapper .sidebar-header .st-logo-site {
+  width: 130px;
+  object-fit: cover;
+}
+.chiller-theme .sidebar-wrapper .sidebar-header .user-info {
+  color: #b8bfce;
+}
+.chiller-theme .sidebar-wrapper .sidebar-header .user-info .user-role {
+  color: #A0A9B2;
+}
+.chiller-theme .sidebar-wrapper .sidebar-header .user-info .user-status {
+  color: #A0A9B2;
+}
+.chiller-theme .sidebar-wrapper .sidebar-search {
+  border-top: 1px solid #2C3D5B;
+}
+.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu {
+  border-color: transparent;
+  box-shadow: none;
+  color: #A0A9B2;
+  background: #3a3f48;
+}
+.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focusspan {
+  color: #5191fa;
+  text-shadow: 0px 0px 10px rgba(22, 199, 255, 0.5);
+}
+.chiller-theme .sidebar-wrapper .sidebar-search .input-group-text {
+  border-color: transparent;
+  box-shadow: none;
+  color: #A0A9B2;
+  background: #3a3f48;
+}
+.chiller-theme .sidebar-wrapper .sidebar-menu {
+  border-top: 1px solid #2C3D5B;
+}
+.chiller-theme .sidebar-wrapper .sidebar-menu > ul > li .st-icon-menu {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li a {
+  width: 84%;
+  color: #A0A9B2;
+}
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li a span.st-green-homepage {
+  color: #1ABC9C !important;
+}
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li a i {
+  background: #3a3f48;
+}
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover > a {
+  color: #5191FA;
+}
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li.active > a {
+  color: #5191FA;
+}
+.chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a {
+  color: #5191FA;
+}
+.chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
+  color: #5191fa;
+  text-shadow: 0px 0px 10px rgba(22, 199, 255, 0.5);
+}
+.chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown div {
+  background: #243759;
+  margin-top: 10px;
+}
+.chiller-theme .sidebar-wrapper .sidebar-menu .header-menu span {
+  color: #6c7b88;
+}
+.chiller-theme .sidebar-wrapper .sidebar-brand > a {
+  color: #A0A9B2;
+}
+.chiller-theme .sidebar-wrapper .sidebar-brand > a:hover {
+  color: #b8bfce;
+}
+.chiller-theme .sidebar-wrapper ul li:hover a i {
+  color: #5191FA;
+  text-shadow: 0px 0px 10px rgba(26, 188, 156, 0.5);
+}
+.chiller-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before {
+  color: #5191FA;
+  text-shadow: 0px 0px 10px rgba(26, 188, 156, 0.5);
+}
+
+.sidebar-footer {
+  border-top: 1px solid #2C3D5B;
+}
+.sidebar-footer ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.sidebar-footer ul li a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 30px 8px 30px;
+}
+.sidebar-footer ul li a span {
+  color: #A0A9B2;
+}
+.sidebar-footer ul li a span.st-green-homepage {
+  color: #1ABC9C;
+}
+
+.page-wrapper.chiller-theme.toggled #close-sidebar {
+  color: #bdbdbd;
+}
+.page-wrapper.chiller-theme.toggled #close-sidebar:hover {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .page-wrapper.toggled .page-content {
+    padding-left: 265px;
+    margin-bottom: 60px;
+  }
+}
+.st-line-bg {
+  position: absolute;
+  content: "";
+  background: #D7DCE3;
+  width: 100%;
+  height: 1px;
+}
+
+.st_div_canvas.div_custom_month .head_time span {
+  margin-right: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.st_div_canvas.div_custom_month .head_time span.active {
+  color: #3498DB;
+}
+
+.st_div_canvas.div_single_custom .head_time span {
+  margin-right: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.st_div_canvas.div_single_custom .head_time span.active {
+  color: #3498DB;
+}
+
+.box.div_data_month, .div_all_time_day, .div_all_time_month, .div_all_time_year, .div_data_day, .div_single_day, .div_single_month, .div_single_year, .register_form .data_field .col-md-2, .register_form .data_field .col-md-7 {
+  display: none;
+}
+
+.head_time.bc_all_time {
+  margin-right: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+main.page-content {
+  font-family: "Poppins";
+}
+main.page-content .head_time.bc_all_time span {
+  margin-right: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+main.page-content .head_time.bc_all_time span.active {
+  color: #3498DB;
+}
+main.page-content .st-footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+main.page-content .head_time.bc_single span {
+  margin-right: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+main.page-content .head_time.bc_single span.active {
+  color: #3498DB;
+}
+main.page-content .head-st_hotel .head_time span {
+  cursor: pointer;
+}
+main.page-content .alert-user-package.user-alert.open {
+  clear: both;
+  position: relative;
+}
+main.page-content .alert-user-package.user-alert.open .alert-content img {
+  text-align: center;
+  margin: 0 auto;
+}
+main.page-content .alert-user-package.user-alert.open .alert-close {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+}
+main.page-content .user-profile-avatar.user_seting {
+  margin-right: 15px;
+}
+main.page-content .user-profile-avatar.user_seting img {
+  padding: 0px;
+  border-radius: 50%;
+  border: none;
+  height: 50px;
+  object-fit: cover;
+}
+main.page-content .screen-reader-text {
+  display: none;
+}
+main.page-content h2.pull-left {
+  margin-top: 0px;
+}
+main.page-content .loop-pagination.pagination .page-numbers {
+  padding: 5px 13px;
+  float: left;
+  color: #5191FA;
+}
+main.page-content .loop-pagination.pagination span.page-numbers {
+  background: #5191FA;
+  border-color: #5191FA;
+  color: #FFFFFF;
+}
+main.page-content .st-create .btn-default.pull-right {
+  background: #5191FA;
+  border-color: #5191FA;
+  color: #FFFFFF;
+  border-radius: 0px;
+}
+main.page-content .st-create .pull-left.clearfix {
+  float: none !important;
+  display: inline-block;
+}
+main.page-content .pull-right .btn-default.pull-right {
+  background: #5191FA;
+  border-color: #5191FA;
+  color: #FFFFFF;
+  border-radius: 0px;
+}
+main.page-content .st-filter_time_dashboard {
+  position: relative;
+}
+main.page-content input[name=st_avatar] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: 0;
+  background: #fff;
+  cursor: inherit;
+  display: block;
+}
+main.page-content span.input-group-btn span.btn-file {
+  border: 1px solid #5191FA;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #5191FA;
+  letter-spacing: 0;
+  background: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main.page-content .st-title p {
+  color: #5E6D77;
+}
+main.page-content .st-title .title {
+  font-size: 14px;
+  color: #1A2B48;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+main.page-content .st-change-avatar {
+  display: flex;
+  justify-items: center;
+}
+main.page-content .infor-st-setting {
+  padding: 32px 31px;
+  margin-top: 30px;
+  background: #FFF;
+}
+main.page-content .infor-st-setting .no-booking-his {
+  font-size: 14px;
+  color: #5E6D77;
+}
+main.page-content .infor-st-setting .booking-history-type {
+  text-align: center;
+}
+main.page-content .infor-st-setting .booking-history-type i {
+  display: block;
+  font-size: 25px;
+  color: #626262;
+  margin-bottom: 2px;
+}
+main.page-content .infor-st-setting .booking-history-type small {
+  line-height: 1em;
+  display: block;
+}
+main.page-content .infor-st-setting .nav-tabs {
+  border: none;
+  margin-bottom: 37px;
+}
+main.page-content .infor-st-setting .nav-tabs li {
+  margin-right: 30px;
+}
+main.page-content .infor-st-setting .nav-tabs li.active a {
+  color: #5191FA;
+  border-bottom: 3px solid #5191FA;
+}
+main.page-content .infor-st-setting .nav-tabs li a {
+  text-transform: uppercase;
+  border: none;
+  font-size: 14px;
+  color: #1A2B48;
+  font-weight: 600;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+main.page-content .infor-st-setting .nav-tabs li a:hover {
+  background: none;
+}
+main.page-content .infor-st-setting .nav-tabs li a:focus {
+  background: none;
+}
+main.page-content .infor-st-setting .nav-tabs li a:active {
+  background: none;
+}
+main.page-content .infor-st-setting h4 {
+  font-size: 14px;
+  color: #1A2B48;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+main.page-content .infor-st-setting .st_is_check_show_ {
+  font-size: 14px;
+  color: #5E6D77;
+  letter-spacing: 0;
+}
+main.page-content .infor-st-setting .form-group {
+  position: relative;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+main.page-content .infor-st-setting .form-group label {
+  font-size: 14px;
+  color: #1A2B48;
+  letter-spacing: 0;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+main.page-content .infor-st-setting .form-group label.st_is_check_show_ {
+  font-weight: 400;
+}
+main.page-content .infor-st-setting .form-group input {
+  border: 1px solid #DAE1E7;
+  border-radius: 3px;
+  border-radius: 3px;
+  background-color: #FFF;
+  height: 40px;
+}
+main.page-content .infor-st-setting .form-group input[name=st_btn_update] {
+  background-color: #5191FA;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: 1px solid #5191FA;
+}
+main.page-content .infor-st-setting .form-group input[name=btn_update_pass] {
+  background-color: #5191FA;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: 1px solid #5191FA;
+}
+main.page-content .infor-st-setting .i-check {
+  vertical-align: middle;
+  margin: 0 0 0 -13px;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  top: 1px;
+  left: -7px;
+  float: left;
+  line-height: 20px;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: white;
+  text-align: center;
+}
+main.page-content .infor-st-setting .i-radio {
+  vertical-align: middle;
+  margin: 0 0 0 -13px;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  top: 1px;
+  left: -7px;
+  float: left;
+  line-height: 20px;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: white;
+  text-align: center;
+}
+main.page-content .infor-st-setting .i-check.checked:before {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+main.page-content .infor-st-setting .i-radio.checked:before {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+main.page-content .infor-st-setting .i-check:before {
+  content: "";
+  font-family: FontAwesome;
+  transition: 0.3s;
+  -webkit-transform: translate3d(0, -25px, 0);
+  -moz-transform: translate3d(0, -25px, 0);
+  -o-transform: translate3d(0, -25px, 0);
+  -ms-transform: translate3d(0, -25px, 0);
+  transform: translate3d(0, -25px, 0);
+  display: block;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: alpha(opacity=0);
+  color: #fff;
+  font-size: 14px;
+}
+main.page-content .infor-st-setting .i-radio:before {
+  content: "";
+  font-family: FontAwesome;
+  transition: 0.3s;
+  -webkit-transform: translate3d(0, -25px, 0);
+  -moz-transform: translate3d(0, -25px, 0);
+  -o-transform: translate3d(0, -25px, 0);
+  -ms-transform: translate3d(0, -25px, 0);
+  transform: translate3d(0, -25px, 0);
+  display: block;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: alpha(opacity=0);
+  color: #fff;
+  font-size: 14px;
+}
+main.page-content .infor-st-setting .i-check.checked {
+  border-color: #3484f5;
+  background: #3484f5;
+  border: 1px solid #3484f5;
+}
+main.page-content .infor-st-setting .i-radio.checked {
+  border-color: #3484f5;
+  background: #3484f5;
+  border: 1px solid #3484f5;
+}
+main.page-content .header-dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main.page-content .header-dashboard .st-choose-date {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #D7DCE3;
+  border-radius: 3px;
+  padding: 12px 90px 12px 12px;
+  position: relative;
+  cursor: pointer;
+}
+main.page-content .header-dashboard .st-choose-date:after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "";
+  font-style: normal;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: 0 0;
+  position: absolute;
+  right: 30px;
+  right: 12px;
+  font-size: 14px;
+}
+main.page-content .header-dashboard .st-choose-date .date {
+  margin-left: 10px;
+}
+
+.div-custom-date.st-calendar {
+  background: #fff;
+  position: absolute;
+  right: 14px;
+  top: 37px;
+  min-width: 350px;
+  z-index: 9999;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 7px 7px 5px -3px #bdbdbd;
+  -moz-box-shadow: 7px 7px 5px -3px #bdbdbd;
+  box-shadow: 7px 7px 5px -3px #bdbdbd;
+  padding: 20px;
+}
+.div-custom-date.st-calendar:before {
+  background: #fff;
+  border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  top: -10px;
+}
+
+.st_div_canvas .head_control {
+  margin-bottom: 30px;
+}
+
+.item-st-month.padding-15 {
+  /* .st-dashboard-stat{
+      margin:0px;
+  } */
+}
+.item-st-month .st-dashboard-stat {
+  padding: 21px 32px;
+  background-color: #FFFFFF;
+  min-height: 154px;
+  position: relative;
+}
+.item-st-month .st-dashboard-stat .st-wrap-box {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.item-st-month .st-dashboard-stat.head_reports {
+  width: 100%;
+  min-height: auto;
+  display: inline-block;
+}
+.item-st-month .st-dashboard-stat.head_reports .head_time span {
+  font-size: 18px;
+  color: #1A2B48;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: Poppins;
+}
+.item-st-month .st-dashboard-stat.list-st {
+  padding: 0px 17px 21px 17px;
+}
+.item-st-month .st-dashboard-stat .title {
+  font-family: "Poppins";
+  color: #1A2B48;
+  letter-spacing: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+}
+.item-st-month .st-dashboard-stat .details .number {
+  font-family: "Poppins";
+  color: #1A2B48;
+  letter-spacing: 0;
+  font-size: 36px;
+  text-align: left;
+}
+
+.infor-st-setting #data_history_book td a {
+  color: #5191FA;
+}
+.infor-st-setting #data_history_book td a.btn-success {
+  color: #FFF;
+}
+.infor-st-setting #data_history_book td a.btn-primary {
+  background: #5191FA;
+  color: #FFF;
+  border-color: #5191FA;
+  width: 100%;
+}
+.infor-st-setting #data_history_book td a.btn-primary.btn-info-booking {
+  margin-top: 5px;
+}
+
+#data_whislist {
+  display: inline-block;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+}
+#data_whislist > li {
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  transition: 0.1s;
+  position: relative;
+  padding-right: 25px;
+  margin-bottom: 15px;
+}
+#data_whislist > li .st_sale_class.box_sale.sale_small {
+  background-color: #cc0033;
+  position: absolute;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bolder;
+  right: -8px;
+  bottom: auto;
+  height: 49px;
+  line-height: 50px;
+  text-align: center;
+  top: 0px;
+  width: 50px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 -1px 0 rgba(0, 0, 0, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  border-radius: 100%;
+}
+#data_whislist > li .st-flight-ccv img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+#data_whislist > li .booking-item .booking-item-price {
+  color: #1A2B48;
+}
+#data_whislist > li .booking-item .booking-item-price > span {
+  color: #1A2B48;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+#data_whislist > li .color-inherit a:hover {
+  text-decoration: none;
+}
+#data_whislist > li .booking-item-img-wrap {
+  position: relative;
+}
+#data_whislist > li .booking-item-img-wrap .booking-item-img-num {
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: alpha(opacity=50);
+  transition: 0.2s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.01);
+  padding: 5px 7px;
+  font-size: 13px;
+  line-height: 1em;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+#data_whislist > li:hover .booking-item-img-wrap .booking-item-img-num {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+#data_whislist > li:hover .booking-item {
+  border-color: #5191FA;
+}
+#data_whislist > li:hover .booking-item-img-wrap.st-popup-gallery .booking-item-img-num {
+  opacity: 1;
+}
+#data_whislist > li .text-lg.lh1em.item {
+  font-size: 30px;
+}
+#data_whislist > li .text-small.lh1em.item.onsale {
+  font-size: 20px;
+  text-decoration: line-through;
+}
+#data_whislist > li a.color-inherit:hover {
+  text-decoration: none;
+}
+#data_whislist > li .booking-item-title {
+  color: #5191FA;
+}
+#data_whislist > li .booking-item-title > a {
+  color: #5191FA;
+}
+#data_whislist > li .booking-item-features > li {
+  padding-bottom: 15px;
+  float: left;
+  position: relative;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+#data_whislist > li .booking-item-features > li i {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 23px;
+  display: block;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #686868;
+}
+#data_whislist > li .booking-item-features > li span {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1em;
+  width: 100%;
+}
+#data_whislist > li .booking-item-img-wrap.st-popup-gallery {
+  position: relative;
+}
+#data_whislist > li .booking-item-img-wrap.st-popup-gallery .booking-item-img-num {
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  filter: alpha(opacity=50);
+  transition: 0.2s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.01);
+  padding: 5px 7px;
+  font-size: 13px;
+  line-height: 1em;
+}
+#data_whislist > li .booking-item-wishlist-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  border: 1px solid #f2f2f2;
+  background: #f7f7f7;
+  border-bottom: none;
+  font-size: 12px;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+#data_whislist > li .booking-item-wishlist-title > span {
+  font-size: 9px;
+  color: #8f8f8f;
+  margin-left: 5px;
+}
+#data_whislist > li i.booking-item-wishlist-remove {
+  background: #00a900 !important;
+}
+#data_whislist > li i.fa-edit.booking-item-wishlist-remove {
+  background: #3484f5;
+}
+#data_whislist > li .fa-eye.booking-item-wishlist-remove {
+  background: #4d4d4d;
+}
+#data_whislist > li .booking-item-wishlist-remove {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: #cc0000;
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  transition: 0.1s;
+  cursor: pointer;
+}
+#data_whislist > li .user_img_loading {
+  position: absolute;
+  right: 6px;
+  top: 8px;
+  display: none;
+}
+#data_whislist > li .spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#data_whislist > li .booking-item {
+  background: #FFFFFF;
+  display: block;
+  padding: 17px;
+  border: 1px solid #e6e6e6;
+  color: #737373;
+  transition: 0.2s;
+}
+#data_whislist > li img {
+  max-width: 100%;
+  height: auto;
+}
+#data_whislist > li .booking-item-rating {
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #f7f7f7;
+  display: inline-block;
+}
+#data_whislist > li .booking-item-rating small {
+  color: #5191FA;
+}
+#data_whislist > li .info {
+  color: #1A2B48;
+}
+#data_whislist > li .info span {
+  color: #1A2B48;
+}
+#data_whislist > li .booking-item-description {
+  color: #1A2B48;
+}
+#data_whislist > li .icon-group > li {
+  float: left;
+  margin-right: 5px;
+}
+#data_whislist > li .icon-group > li i {
+  color: #5191FA;
+}
+#data_whislist > li .btn-primary {
+  background-color: #5191FA;
+  border-color: #5191FA;
+}
+#data_whislist > li .icon-group.booking-item-rating-stars {
+  display: inline-block;
+  margin-right: 17px;
+  margin-bottom: -5px;
+}
+#data_whislist > li .booking-item-rating-stars .fa {
+  margin-right: 0;
+}
+#data_whislist > li .booking-item-rating-number {
+  color: #5191FA;
+  margin-right: 7px;
+}
+#data_whislist > li .booking-item-rating-number > b {
+  font-size: 25px;
+}
+#data_whislist > li .booking-item-features.booking-item-features-dark li i {
+  border: 1px solid #5191FA;
+  background-color: #5191FA;
+  color: #FFF;
+}
+#data_whislist > li h5.booking-item-car-title {
+  color: #5191FA;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+#data_whislist > li .booking-item-title {
+  margin-bottom: 7px;
+  font-size: 18.2px;
+  font-weight: 300;
+}
+#data_whislist > li .booking-item-address {
+  font-size: 13px;
+  color: #1A2B48;
+}
+#data_whislist > li .booking-item-price-from {
+  display: block;
+  font-size: 12px;
+  color: #1A2B48;
+}
+#data_whislist > li .booking-item .booking-item-price {
+  font-size: 30px;
+  color: #1A2B48;
+}
+#data_whislist > li .package-info {
+  color: #1A2B48;
+}
+#data_whislist > li .package-info span {
+  color: #1A2B48;
+}
+
+.st-bg-dashboard {
+  margin-bottom: 30px;
+}
+.st-bg-dashboard .panel-single {
+  margin-bottom: 0px;
+  border: none;
+  background: #3498DB;
+  border-radius: 3px;
+}
+.st-bg-dashboard .panel-single .panel-heading {
+  min-height: 98px;
+  color: #fff;
+  padding: 17px 32px;
+  background-color: #3498DB;
+  border-color: #3498DB;
+}
+.st-bg-dashboard .panel-single .panel-heading.red-st {
+  background-color: #FF7675;
+  border-color: #FF7675;
+}
+.st-bg-dashboard .panel-single .panel-heading.green-st {
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+}
+.st-bg-dashboard .panel-single .panel-heading.st-yellow {
+  background: #F1C40F;
+  border-color: #F1C40F;
+}
+.st-bg-dashboard .panel-single .panel-heading.turquoise-st {
+  background: #1ABC9C;
+  border-color: #1ABC9C;
+}
+.st-bg-dashboard .panel-single .panel-heading.st-violet {
+  background: #9B59B6;
+  border-color: #9B59B6;
+}
+.st-bg-dashboard .panel-single .panel-heading.st-black {
+  background: #e6a6a6;
+  border-color: #e6a6a6;
+}
+.st-bg-dashboard .panel-single .panel-heading .title {
+  margin-top: 10px;
+  font-family: "Poppins";
+  color: #FFFFFF;
+  letter-spacing: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+.st-bg-dashboard .panel-single .panel-heading .huge {
+  font-family: "Poppins";
+  color: #FFFFFF;
+  letter-spacing: 0;
+  font-size: 24px;
+  text-align: left;
+}
+.st-bg-dashboard .panel-single .panel-heading .st_view {
+  position: absolute;
+  display: inline-block;
+  right: 15px;
+  font-size: 24px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+.st-bg-dashboard .panel-single .panel-heading .st_view a {
+  color: #FFFFFF;
+}
+
+.st_google_map_user {
+  margin-top: 30px;
+  height: 500px;
+}
+
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-rental .thumb .icon-group.text-color.booking-item-rating-stars {
+  display: none;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-rental .item-service-wrapper .item-content {
+  padding: 30px 10px;
+  position: relative;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-rental .item-service-wrapper .item-content .icon-group.text-color.booking-item-rating-stars {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-rental .item-service-wrapper .item-content .amenities {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #E4E8ED;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-rental .item-service-wrapper .item-content .amenities .amenity {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  float: left;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-rental .item-service-wrapper .item-content .amenities .amenity .input-icon {
+  margin-right: 5px;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-rental .item-service-wrapper .item-content .service-location {
+  position: absolute;
+  bottom: 20px;
+  white-space: pre-wrap;
+  padding-right: 20px;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-rental .item-service-wrapper .service-price {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 2px;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity {
+  position: relative;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .st-center-y {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .item-content-w {
+  border-right: none;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .service-price {
+  position: relative;
+  bottom: auto;
+  right: auto;
+  padding-right: 35px;
+  overflow: hidden;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 18px;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .service-price span.price-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 1px;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .section-footer .btn-view-more {
+  position: relative;
+  bottom: 0;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .service-content-footer {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  font-size: 14px;
+  color: #5E6D77;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .service-content-footer .service-location {
+  float: left;
+  padding-top: 0 !important;
+  padding-right: 0;
+  margin-right: 20px;
+  font-size: 14px;
+  top: 1px;
+  position: relative;
+  bottom: auto;
+  margin-bottom: 0px;
+  white-space: pre-wrap;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .service-content-footer .service-duration {
+  float: left;
+  margin-right: 20px;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .service-content-footer .service-duration i {
+  position: relative;
+  top: 2px;
+  margin-right: 3px;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .service-content-footer .service-cancel {
+  float: left;
+}
+.st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .service-content-footer .service-cancel i {
+  position: relative;
+  top: 2px;
+  margin-right: 3px;
+}
+
+.item-service.st-ccv-tour.st-ccv-rental.st-ccv-rental-room .booking-item-features {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #E4E8ED;
+}
+.item-service.st-ccv-tour.st-ccv-rental.st-ccv-rental-room .booking-item-features li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  float: left;
+  font-size: 18px;
+  margin-right: 30px;
+}
+.item-service.st-ccv-tour.st-ccv-rental.st-ccv-rental-room .booking-item-features li i {
+  font-size: 20px;
+}
+
+.st-dashboard-stat.st-month-madison.st-dashboard-new .st-wrap-box .title {
+  text-align: center;
+}
+.st-dashboard-stat.st-month-madison.st-dashboard-new .st-wrap-box .details .number {
+  text-align: center;
+}
+
+.style-list .item-service.item-service-car .thumb .st_sale_class {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: #FFFFFF;
+  font-weight: 500;
+  z-index: 8;
+  border-radius: 0 3px 3px 0;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+.style-list .item-service.item-service-car .thumb a img {
+  min-width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.style-list .item-service.item-service-car .thumb a:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.style-list .item-service.item-service-car .item-content {
+  padding: 0;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #5E6D77;
+  margin-bottom: 8px;
+}
+.style-list .item-service.item-service-car h4.service-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top: 13px;
+}
+.style-list .item-service.item-service-car h4.service-title a {
+  color: #1A2B50;
+}
+.style-list .item-service.item-service-car .service-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 15px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.style-list .item-service.item-service-car .booking-item-rating-stars {
+  padding: 0;
+  margin: 0;
+}
+.style-list .item-service.item-service-car .booking-item-rating-stars li {
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+.style-list .item-service.item-service-car .booking-item-rating-stars li .fa {
+  font-size: 15px;
+  color: #FFDC00;
+}
+.style-list .item-service.item-service-car .service-review .review {
+  position: relative;
+  top: -1px;
+  font-size: 13px;
+  color: #768092;
+}
+.style-list .item-service.item-service-car .car-equipments {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  padding-left: 0;
+}
+.style-list .item-service.item-service-car .car-equipments .item {
+  text-align: center;
+  display: inline-block;
+  float: left;
+}
+.style-list .item-service.item-service-car .car-equipments .item .ico {
+  display: block;
+}
+.style-list .item-service.item-service-car .car-equipments .item:not(:first-child) {
+  margin-left: 30px;
+}
+.style-list .item-service.item-service-car .service-price {
+  position: relative;
+  bottom: auto;
+  right: auto;
+  padding-right: 35px;
+  overflow: hidden;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 18px;
+}
+.style-list .item-service.item-service-car .service-price span {
+  font-size: 14px;
+  color: #5E6D77;
+}
+.style-list .item-service.item-service-car .section-footer {
+  position: relative;
+}
+.style-list .item-service.item-service-car .section-footer .service-price {
+  transform: translateX(-50%);
+  position: absolute !important;
+  left: 50%;
+}
+.style-list .item-service.item-service-car .section-footer .st_sale_class {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .infor-st-setting .st-filter_time_dashboard {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .infor-st-setting .st-filter_time_dashboard .btn_show_custom_date {
+    float: none !important;
+  }
+
+  main.page-content .st-footer-wrap {
+    display: inline-block;
+  }
+
+  main.page-content .st-footer-wrap .pull-left {
+    width: 100%;
+  }
+
+  main.page-content .st-footer-wrap .pull-right {
+    float: left !important;
+  }
+
+  .st-bg-dashboard .panel-single .panel-heading {
+    min-height: 84px;
+  }
+
+  .st_bortlet-body .st_table_partner tr th {
+    font-size: 12px;
+  }
+
+  .st_bortlet-body .st_table_partner tr td {
+    font-size: 12px;
+  }
+
+  #data_whislist > li .booking-item-rating-number {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .item-st-month {
+    margin-bottom: 15px;
+  }
+
+  .st-bg-dashboard .panel-single .panel-heading .title {
+    font-size: 16px;
+  }
+
+  .item-st-month .st-dashboard-stat .details .number {
+    font-size: 20px;
+  }
+
+  .st_div_canvas.div_custom_month .head_time span {
+    font-size: 13px;
+    margin-right: 20px;
+  }
+
+  .st-bg-dashboard .panel-single .panel-heading .huge {
+    font-size: 14px;
+  }
+
+  .st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .st-center-y {
+    top: auto;
+    -webkit-transform: none;
+    transform: none;
+    margin-top: 0px;
+  }
+
+  .st_google_map_user {
+    margin-top: 30px;
+    height: 200px;
+  }
+
+  body .page-wrapper .page-content .list-inline.user-profile-statictics > li {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+
+  .chiller-theme .sidebar-wrapper .sidebar-header .st-logo-site {
+    max-height: none;
+  }
+
+  #wpadminbar {
+    display: none;
+  }
+
+  .sidebar-brand {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  .sidebar-brand > a {
+    text-transform: uppercase;
+    font-weight: bold;
+    flex-grow: 1;
+  }
+  .sidebar-brand #close-sidebar {
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  body main.page-content .header-dashboard {
+    display: block;
+  }
+
+  main.page-content .header-dashboard .st-choose-date {
+    padding: 10px;
+  }
+
+  .st_content .style-list .item-service .item-service-wrapper {
+    display: block;
+  }
+
+  .st_content .style-list .item-service {
+    padding: 10px;
+  }
+
+  .st_content .style-list .item-service .item-content .item-content-w {
+    padding-right: 0px;
+    border: none;
+    padding: 10px;
+  }
+
+  .st_content .style-list .item-service.st-ccv-tour .section-footer .btn-view-more {
+    position: relative;
+    clear: both;
+    text-align: center;
+    margin-left: 0px;
+    bottom: auto;
+  }
+
+  .st_content .style-list .item-service.st-ccv-tour .section-footer .service-type {
+    margin-bottom: 15px;
+  }
+
+  .st_content .style-list .item-service .item-content .service-location {
+    position: relative;
+    bottom: auto;
+    margin-top: 15px;
+  }
+
+  .st_content .style-list .item-service .section-footer .service-review {
+    display: inline-block;
+    margin-top: 0px;
+  }
+
+  .st_content .style-list .item-service .section-footer .service-review {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  .st_content .style-list .item-service .section-footer .service-price {
+    position: relative;
+    display: inline-block;
+    bottom: auto;
+    right: auto;
+  }
+
+  .st_content .style-list .item-service .section-footer .service-review .rating {
+    font-size: 14px;
+  }
+
+  .st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .section-footer .btn-view-more {
+    bottom: 0;
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
+
+  .st_content .st-item-list {
+    padding-right: 0px;
+  }
+
+  .st_content .style-list .booking-item-wishlist-remove {
+    right: -24px;
+  }
+
+  .st_content .style-list .item-service.st-ccv-tour .section-footer .service-price {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .st_content .style-list .item-service.st-ccv-tour.st-ccv-activity .section-footer .service-price {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
+  .st_content .style-list .item-service.st-ccv-tour .section-footer .service-price span.price {
+    margin-right: 5px;
+  }
+
+  .st_content .style-list .item-service.st-ccv-tour.st-ccv-rental .item-service-wrapper .item-content .service-location {
+    position: relative;
+  }
+
+  .st_content .style-list .item-service.st-ccv-tour.st-ccv-rental .item-service-wrapper .service-price {
+    position: relative;
+    display: inline-block;
+    bottom: auto;
+    right: auto;
+  }
+
+  .st_content .style-list .item-service.st-ccv-tour .section-footer {
+    padding-top: 0px;
+  }
+
+  body .page-wrapper .page-content .st-create span.verify-status.none {
+    display: inline-block;
+  }
+
+  .infor-st-setting .tabbable .tab-pane {
+    position: relative;
+    overflow: scroll;
+  }
+
+  main.page-content .infor-st-setting .nav-tabs li {
+    margin-right: 18px;
+  }
+
+  main.page-content .infor-st-setting .nav-tabs li a {
+    font-size: 12px;
+  }
+
+  .style-list .item-service.item-service-car .thumb .st_sale_class {
+    display: block;
+  }
+  .style-list .item-service.item-service-car .section-footer {
+    position: relative;
+  }
+  .style-list .item-service.item-service-car .section-footer .service-price {
+    transform: translateX(-50%);
+    position: relative !important;
+    left: 50%;
+  }
+  .style-list .item-service.item-service-car .section-footer .st_sale_class {
+    display: none;
+  }
+
+  /* List service */
+  /*  .style-list{
+       .item-service{
+           border: none !important;
+           width: 50%;
+           float: left;
+           padding: 0 15px;
+           &:nth-child(2n){
+               padding-left: 7.5px;
+           }
+            .item-service-wrapper {
+               display: table !important;
+               position: relative;
+               .thumb {
+                   overflow: hidden;
+                   padding-bottom: 15px;
+                   border-radius: 4px;
+                    a {
+                       border-radius: 3px;
+                       img{
+                           border-radius: 3px;
+                       }
+                   }
+               }
+                .item-content {
+                   padding: 15px !important;
+               }
+           }
+       }
+   } */
+}
+/* @media (max-width: 767px){
+    .style-list  {
+        .item-service.st-ccv-tour{
+            .item-service-wrapper{
+                .item-content
+                {
+                    .item-content-w{
+                        border-right: 0;
+                        .service-location {
+                            margin-top: -10px !important;
+                            padding-top: 0px;
+                        }
+                        .service-title {
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                        }
+                        .service-review {
+                            float: left;
+                            width: 100%;
+                            text-align: left;
+                            margin-top: 5px;
+                            -webkit-box-pack: start;
+                            -ms-flex-pack: start;
+                            justify-content: flex-start;
+                        }
+                        .service-excerpt {
+                            display: none;
+                        }
+                    }
+                }
+                .section-footer{
+                    padding-left: 15px;
+                    display: table-footer-group;
+                    height: 1px;
+                    .service-duration {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        font-size: 14px;
+                    }
+                    .service-price {
+                        width: 100%;
+                        padding-right: 15px;
+                        -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        overflow: visible;
+                        float: left;
+                        left: 0;
+                    }
+                    .service-duration {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        font-size: 14px;
+                    }
+                    .service-type {
+                        display: none;
+                    }
+                    .btn-view-more {
+                        display: none;
+                    }
+                }
+
+            }
+        }
+
+    }
+} */
+
+/*# sourceMappingURL=partner.css.map */

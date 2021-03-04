@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>instagram</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="9.1540625%" y1="90.8465625%" x2="90.8459375%" y2="9.1534375%" id="linearGradient-1">
+            <stop stop-color="#FFC107" offset="0%"></stop>
+            <stop stop-color="#F44336" offset="50.7%"></stop>
+            <stop stop-color="#9C27B0" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="14.645625%" y1="85.354375%" x2="85.354375%" y2="14.645625%" id="linearGradient-2">
+            <stop stop-color="#FFC107" offset="0%"></stop>
+            <stop stop-color="#F44336" offset="50.7%"></stop>
+            <stop stop-color="#9C27B0" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="14.6482176%" y1="85.3611632%" x2="85.3517824%" y2="14.6482176%" id="linearGradient-3">
+            <stop stop-color="#FFC107" offset="0%"></stop>
+            <stop stop-color="#F44336" offset="50.7%"></stop>
+            <stop stop-color="#9C27B0" offset="99%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Home" transform="translate(-135.000000, -4036.000000)" fill-rule="nonzero">
+            <g id="instagram" transform="translate(0.000000, 3994.000000)">
+                <g transform="translate(135.000000, 42.000000)">
+                    <path d="M22,0 L10,0 C4.478,0 0,4.478 0,10 L0,22 C0,27.522 4.478,32 10,32 L22,32 C27.522,32 32,27.522 32,22 L32,10 C32,4.478 27.522,0 22,0 Z M29,22 C29,25.86 25.86,29 22,29 L10,29 C6.14,29 3,25.86 3,22 L3,10 C3,6.14 6.14,3 10,3 L22,3 C25.86,3 29,6.14 29,10 L29,22 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                    <path d="M16,7.95767196 C11.5586243,7.95767196 7.95767196,11.5586243 7.95767196,16 C7.95767196,20.4413757 11.5586243,24.042328 16,24.042328 C20.4413757,24.042328 24.042328,20.4413757 24.042328,16 C24.042328,11.5586243 20.4413757,7.95767196 16,7.95767196 Z M16,21.026455 C13.229418,21.026455 10.973545,18.770582 10.973545,16 C10.973545,13.2274074 13.229418,10.973545 16,10.973545 C18.770582,10.973545 21.026455,13.2274074 21.026455,16 C21.026455,18.770582 18.770582,21.026455 16,21.026455 Z" id="Shape" fill="url(#linearGradient-2)"></path>
+                    <circle id="Oval" fill="url(#linearGradient-3)" cx="24.6349206" cy="7.36507937" r="1.1005291"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

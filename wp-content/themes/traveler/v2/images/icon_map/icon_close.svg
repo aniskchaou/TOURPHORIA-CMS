@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="map_control" transform="translate(-10.000000, -10.000000)" stroke="#1A2B48">
+            <g id="full">
+                <g>
+                    <g id="Group" transform="translate(10.000000, 10.000000)">
+                        <g id="shrink-2">
+                            <path d="M15.5,0.498666667 L9.5,6.49866667" id="Shape"></path>
+                            <polyline id="Shape" points="6.5 13.9986667 6.5 9.49866667 2 9.49866667"></polyline>
+                            <polyline id="Shape" points="9.5 1.99866667 9.5 6.49866667 14 6.49866667"></polyline>
+                            <path d="M6.5,9.49866667 L0.5,15.4986667" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

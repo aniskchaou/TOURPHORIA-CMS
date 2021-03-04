@@ -1,0 +1,43 @@
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    @media {
+        .search-result-page .tour-search-form-home .search-form .form-extra-field {
+            padding: 19px 0 16px 0;
+        }
+        .search-result-page .search-form-wrapper .search-form.hotel-search-form.in_tab .form-extra-field {
+            padding: 19px 0 16px 0;
+        }
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @media {
+        .search-result-page .tour-search-form-home .search-form .form-extra-field {
+            padding: 19px 0 16px 0;
+        }
+        .search-result-page .search-form-wrapper .search-form.hotel-search-form.in_tab .form-extra-field {
+            padding: 19px 0 16px 0;
+        }
+        .sts-room-wrapper .item .content .action select{
+            top: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 0px;
+            background-color: transparent;
+            padding: 14px 15px 14px 15px;
+            color: #555;
+            border: 1px solid #ccc;
+            min-width: 180px;
+            background: url(../images/arr_down.png) center right 5px no-repeat;
+            background-size: 11px 11px;
+        }
+
+        body header .header-content .control-right .option-item .option-mid.book-your-tay a{
+            padding: 10px 16px 6px 16px;
+        }
+    }
+}
+
+.modal-backdrop{
+    z-index: 9;
+}

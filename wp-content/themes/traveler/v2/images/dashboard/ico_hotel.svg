@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="add-hotel-step-1" transform="translate(-32.000000, -414.000000)" stroke="#A0A9B2">
+            <g id="left">
+                <g id="menu" transform="translate(30.000000, 86.631579)">
+                    <g id="3" transform="translate(3.000000, 325.521531)">
+                        <g id="Group" transform="translate(0.000000, 3.000000)">
+                            <g id="hotel-double-bed-add">
+                                <polyline id="Shape" points="0.333333333 11 3 3 4.77733333 3"></polyline>
+                                <polyline id="Shape" points="11.236 3 13 3 14.1626667 6.48733333"></polyline>
+                                <path d="M6,15 L1.33333333,15 C0.781048584,15 0.333333333,14.5522847 0.333333333,14 L0.333333333,11 L6,11" id="Shape"></path>
+                                <path d="M2.11133333,5.66666667 L13.8886667,5.66666667" id="Shape"></path>
+                                <path d="M11.5206667,3.89466667 C11.5545441,3.99637999 11.5374326,4.1081796 11.4746834,4.19510378 C11.4119342,4.28202797 11.3112066,4.33346638 11.204,4.33333333 L4.796,4.33333333 C4.68879337,4.33346638 4.58806581,4.28202797 4.52531658,4.19510378 C4.46256736,4.1081796 4.44545593,3.99637999 4.47933333,3.89466667 L4.924,2.56133333 C4.96931851,2.42526878 5.0965869,2.33344222 5.24,2.33333333 L10.76,2.33333333 C10.9034131,2.33344222 11.0306815,2.42526878 11.076,2.56133333 L11.5206667,3.89466667 Z" id="Shape"></path>
+                                <path d="M3,3 L3,1.33333333 C3,0.781048584 3.44771525,0.333333333 4,0.333333333 L12,0.333333333 C12.5522847,0.333333333 13,0.781048584 13,1.33333333 L13,3" id="Shape"></path>
+                                <path d="M2.33333333,15 L2.33333333,15.6666667" id="Shape"></path>
+                                <circle id="Oval" cx="11.6666667" cy="11.6666667" r="4"></circle>
+                                <path d="M11.6666667,9.66666667 L11.6666667,13.6666667" id="Shape"></path>
+                                <path d="M13.6666667,11.6666667 L9.66666667,11.6666667" id="Shape"></path>
+                                <circle id="Oval" cx="11.6666667" cy="11.6666667" r="4"></circle>
+                                <path d="M11.6666667,9.66666667 L11.6666667,13.6666667" id="Shape"></path>
+                                <path d="M13.6666667,11.6666667 L9.66666667,11.6666667" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

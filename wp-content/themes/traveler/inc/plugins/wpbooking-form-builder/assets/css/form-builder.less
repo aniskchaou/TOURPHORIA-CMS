@@ -1,0 +1,73 @@
+.wpbooking-bootstrap{
+  .wb-fb-radio{
+    display: block;
+  }
+}
+.wb-upload-fields{
+  label{
+    display: block;
+  }
+  .wb-load-image{
+    width: 130px;
+    margin-top: 12px;
+    position: relative;
+    z-index: 1;
+    img{
+      width: 130px;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+    a{
+      right: 5px;
+      top: 0;
+      line-height: 1;
+      position: absolute;
+      color: #aa0000;
+      text-decoration: none;
+      border-bottom: none;
+      font-size: 22px;
+      z-index: 2;
+    }
+    &:hover{
+      img{
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.billing_information{
+  .wb_row{
+    margin-left: -15px;
+    margin-right: -15px;
+    >div{
+      width: 100%;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .col-6{
+      width: 50%;
+    }
+    textarea.input-error, input[type=email].input-error,input[type=number].input-error{
+      border: 1px solid red;
+    }
+  }
+  textarea.form-control{
+    min-height: 90px;
+  }
+}
+
+.admin-upload-fields .download-file{
+  position: absolute;
+  bottom: 6px;
+  left: 5px;
+  height: 26px;
+  width: 31px;
+  color: #fff;
+}
+
+.admin-upload-fields .wb-load-image img{
+  height: auto !important;
+}
+

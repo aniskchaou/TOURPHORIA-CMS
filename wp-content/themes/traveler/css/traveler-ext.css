@@ -1,0 +1,9 @@
+body.menu_style1 #st_header_wrap .is-sticky>* {
+    width: 100% !important;
+}
+@media (max-width: 767px) {
+    .add-service-progress .sticky-box {
+        position: relative !important;
+        top: 0 !important;
+    }
+}

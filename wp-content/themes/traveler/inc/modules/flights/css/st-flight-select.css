@@ -1,0 +1,72 @@
+.st-select-wrapper {
+    position: relative
+}
+
+.st-select-wrapper .st-select-list {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    max-height: 250px;
+    overflow-y: scroll;
+    padding: 5px 0;
+    background: #FFF;
+    list-style: none;
+    border: 1px solid #CCC;
+    z-index: 9999;
+    display: none
+}
+
+.st-select-wrapper .st-select-list li {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    color: #4F4E4E;
+    font-size: 13px
+}
+
+.st-select-wrapper .st-select-list li:hover {
+    background: #EEE;
+    cursor: pointer;
+    color: #000
+}
+
+.st-select-wrapper .st-loading {
+    position: absolute;
+    font-size: 20px;
+    color: #CCC;
+    top: 50%;
+    margin-top: -10px;
+    right: 15px;
+    -webkit-animation: st-loading 1s ease-in-out infinite normal;
+    -o-animation: st-loading 1s ease-in-out infinite normal;
+    animation: st-loading 1s ease-in-out infinite normal;
+    display: none
+}
+
+@keyframes st-loading {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes st-loading {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-o-keyframes st-loading {
+    from {
+        -o-transform: rotate(0)
+    }
+    to {
+        -o-transform: rotate(360deg)
+    }
+}

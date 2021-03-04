@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="73px" viewBox="0 0 9 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_scroll</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Home" transform="translate(-1345.000000, -578.000000)" fill="#FFFFFF">
+            <g id="slide">
+                <g id="scroll" transform="translate(1309.000000, 578.000000)">
+                    <g id="ico_scroll" transform="translate(36.000000, 0.000000)">
+                        <rect id="Rectangle-21" x="4" y="0" width="1" height="73"></rect>
+                        <polygon id="Rectangle-22" points="0 67.5641176 0.809016994 67 4.92351376 72.4350889 4.11449677 72.9992065"></polygon>
+                        <polygon id="Rectangle-22" points="8.92351376 67.5641176 4.80901699 72.9992065 4 72.4350889 8.11449677 67"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

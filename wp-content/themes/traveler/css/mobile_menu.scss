@@ -1,0 +1,881 @@
+$main-color: #ed8323;
+$info-tablet: "screen and (max-width : 991px)";
+$info-phone: "screen and (max-width : 767px)";
+$info-sphone: "screen and (max-width : 520px)";
+.menu-style-1{
+  ul.slimmenu{
+    display: none;
+    li{
+      display: block !important;
+      width: 100%;
+      a{
+        border-bottom: 1px solid rgba(0,0,0,.075);
+        position: relative;
+        .sub-toggle{
+          background: $main-color;
+          color: #fff;
+          position: absolute;
+          width: 40px !important;
+          height: 40px !important;
+          top: 0;
+          right: 0px !important;
+          text-align: center;
+          line-height: 40px;
+          font-size: 19px;
+          i{
+            color: #fff;
+          }
+        }
+      }
+      .sub-menu{
+        position: relative;
+        /* background: #fff; */
+        padding-left: 20px;
+        right: auto !important;
+        left: auto !important;
+        li{
+          a{
+            background: 0 0;
+            color: #737373;
+            .sub-toggle{
+              right: 0 !important;
+            }
+            &:hover{
+              color: #fff;
+              background: $main-color;
+            }
+          }
+        }
+      }
+      &.top-user-area-avatar{
+        .sub-toggle{
+          display: none;
+        }
+      }
+      &.st_menu_mobile_new.top-user-area-avatar + .st_menu_mobile_new{
+        .sub-toggle{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.menu-style-2{
+  .st_menu{
+    .nav{
+      padding-right: 0px;
+      background: 0 0;
+      .menu-collapser{
+        background: 0 0;
+      }
+    }
+  }
+  ul.slimmenu{
+    display: none;
+    li{
+      display: block !important;
+      margin-right: 0px;
+      a{
+        border-bottom: 1px solid rgba(0,0,0,.075);
+        position: relative;
+        .sub-toggle{
+          background: $main-color;
+          color: #fff;
+          position: absolute;
+          width: 40px !important;
+          height: 40px !important;
+          top: 0;
+          right: 0px !important;
+          text-align: center;
+          line-height: 40px;
+          font-size: 19px;
+          i{
+            color: #fff;
+          }
+        }
+      }
+      .sub-menu{
+        position: relative;
+        /* background: #fff; */
+        padding-left: 20px;
+        right: auto !important;
+        left: auto !important;
+        li{
+          a{
+            background: 0 0;
+            .sub-toggle{
+              right: 0 !important;
+            }
+            &:hover{
+              color: #fff;
+              background: $main-color;
+            }
+          }
+        }
+      }
+      &.top-user-area-avatar{
+        .sub-toggle{
+          display: none;
+        }
+      }
+      &.st_menu_mobile_new.top-user-area-avatar + .st_menu_mobile_new{
+        .sub-toggle{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* OPT Mobile*/
+@media #{$info-sphone}{
+  /* Home page */
+  .st-about-info{
+    text-align: center;
+  }
+
+  /* Footer */
+  #main-footer{
+    text-align: center;
+    .list-space{
+      display: inline-block;
+    }
+  }
+
+  /* Tour */
+  .breadcrumb{
+    display: none;
+  }
+  header{
+    &.booking-item-header{
+      padding-top: 0px !important;
+      border-top: none !important;
+      .booking-item-header-price {
+        .text-lg {
+          font-size: 25px !important;
+        }
+      }
+    }
+  }
+
+  .wpb-js-composer{
+    .vc_tta.vc_general{
+      .vc_tta-panel-title{
+        &>a{
+          padding: 10px !important;
+        }
+      }
+    }
+    .vc_tta.vc_tta-shape-rounded{
+      .vc_tta-panel-heading{
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+      }
+    }
+    .vc_tta-panel.vc_active{
+      .vc_tta-panel-body{
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+      }
+    }
+    .vc_tta.vc_general{
+      .vc_tta-panel-body {
+        padding: 10px !important;
+      }
+    }
+  }
+
+  .calendar-bottom{
+    .color{
+      margin-right: 5px !important;
+    }
+    .item{
+      margin-right: 10px !important;
+    }
+  }
+
+  .stour-accor{
+    .accordion-toggle{
+      padding: 5px 7px;
+      &:after{
+        font-size: 11px;
+      }
+    }
+  }
+  .st-tour-package{
+    .tour-package-hotel-check {
+      .i-check {
+
+        margin: 0 0 0 5px;
+        top: 0;
+        margin-top: 9px;
+        margin-right: 8px;
+        left: 0;
+
+      }
+    }
+    .icon-list {
+      .fa {
+        margin-right: 0px;
+      }
+    }
+    table{
+      margin-bottom: 0px;
+      tr{
+        td{
+          padding: 5px;
+        }
+      }
+    }
+  }
+  .package-info-wrapper{
+    .package-info{
+      .booking-item-rating-stars{
+        display: inline-flex;
+        li{
+          margin-right: 0px;
+        }
+      }
+    }
+    .package-book-now-button{
+      .st_tour_adult{
+        margin-bottom: 10px;
+      }
+      .st_tour_children{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .div_item_map{
+    .item_map{
+      .thumb-title{
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+    }
+  }
+  .package-info{
+    &.tour_share.style-1{
+      text-align: left !important;
+    }
+  }
+  .calendar-wrapper{
+    .calendar-content{
+      .fc-toolbar{
+        .fc-center{
+          h2{
+            font-size: 20px;
+            margin-top: 1px;
+          }
+        }
+      }
+      .calendar_change_month{
+        height: 40px;
+      }
+      &.fc-unthemed{
+        .fc-state-default{
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .st-tour-tabs-content{
+    .div_btn_book_tour{
+      margin-bottom: 20px;
+    }
+    #review{
+      .inner-content{
+        .col-md-4{
+          margin-top: 20px;
+        }
+      }
+    }
+    #payment{
+      .st-tab-payment{
+        .unit-tour{
+          font-size: 14px;
+        }
+      }
+    }
+    .inner-content{
+      margin-top: 20px;
+    }
+    .nav-tabs{
+      &>li{
+        &>a{
+          &:after{
+            width: 20px;
+            height: 20px;
+            bottom: -10px;
+          }
+        }
+      }
+    }
+  }
+
+  .rq-list-contact{
+    li{
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  .data_list_hafl_map{
+    .content{
+      &>.col-sm-6{
+        padding-left:5px;
+        padding-right: 5px;
+        .st_featured{
+          left: -5px;
+        }
+      }
+      .thumb{
+        .thumb-caption{
+          text-align: left;
+          .col-xs-5{
+            text-align: left;
+          }
+          .col-xs-6{
+            .text-darken{
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .try-search-dialog{
+    text-align: left;
+  }
+  .ajax-filter-loading{
+    opacity: 1 !important;
+  }
+
+  .ajax-filter-cover{
+    .booking-list.loop-tours{
+      .booking-item{
+        .booking-item-price-from{
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  /* End tour */
+
+  /* Activity */
+  .single-st_activity{
+    .vc_tta-tabs{
+      .popup-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        .col-xs-4{
+          display: flex;
+        }
+      }
+    }
+    .activity-review-sum{
+      margin-top: 20px;
+    }
+    .info-activity{
+      margin-bottom: 20px;
+    }
+  }
+
+  .data_list_hafl_map{
+    .content{
+      .thumb-caption{
+
+      }
+    }
+  }
+  /* End activity */
+
+  /* Rental */
+  .single-st_rental{
+    .booking-item-details{
+      padding-top: 10px !important;
+      border-top: none;
+      .booking-item-header-price{
+        .text-lg{
+          font-size: 25px !important;
+        }
+      }
+      header{
+        h1.featured_single{
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .vc_tta-tabs{
+      .popup-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        .col-xs-4{
+          display: flex;
+        }
+      }
+      .booking-item.booking-item-small{
+        .booking-item-price{
+          font-size: 15px;
+        }
+      }
+      .vc_tta-panel-body{
+        .col-md-4{
+          h4.lhem{
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    .calendar-bottom{
+      .item{
+        #clear-gdate-rental{
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .page-template,.page-template-default{
+    h1.page-title{
+      font-size: 27px;
+      margin: 15px 0px 10px 0px;
+    }
+  }
+  .page-template-template-rental-search{
+    .ajax-filter-cover{
+      .booking-item-rating{
+        width: 100%;
+        margin-bottom: 5px;
+        .booking-item-rating-number
+        b{
+          font-size: 20px;
+        }
+      }
+      .booking-item{
+        .booking-item-price-from{
+          display: inline-block;
+          margin-right: 5px;
+          font-size: 15px;
+        }
+        .booking-item-price{
+          display: inline-block;
+          font-size: 20px;
+          & + span{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .search-tabs{
+      margin-top: 0px !important;
+    }
+    h3.booking-title{
+      margin-top: 25px !important;
+      margin-bottom: 20px !important;
+    }
+  }
+  /* End Rental */
+
+  /* Hotel */
+  .single-st_hotel{
+    .st-hotel-map-gallery{
+      .review-price{
+        .price{
+          strong{
+            font-size: 20px;
+          }
+        }
+      }
+      .on_the_map{
+        left: 50%;
+        margin-left: -50px;
+        bottom: 20px;
+      }
+    }
+    .st-hotel-tabs-content{
+      .nav-tabs{
+        &>li{
+          &>a{
+            &:after{
+              width: 20px;
+              height: 20px;
+              bottom: -10px;
+            }
+          }
+        }
+      }
+      #check_availability{
+        .contact{
+          margin-bottom: 0px;
+          margin-top: 5px;
+          .icon{
+            font-size: 25px;
+            margin-top: 12px;
+          }
+          .caption{
+            .title{
+              margin-bottom: 2px;
+            }
+            .content{
+              font-size: 16px;
+            }
+          }
+        }
+        .list-room-new{
+          .col-md-3{
+            width: 100% !important;
+          }
+          .col-md-6{
+            width: 100% !important;
+          }
+          .booking-item{
+            .sroom-extra-service{
+              margin: 10px 0;
+            }
+            .onsale{
+              display: inline-block;
+              font-size: 15px;
+              margin-right: 10px !important;
+              &+br{
+                display: none;
+              }
+            }
+            .booking-item-price {
+              font-size: 23px;
+              display: inline-block;
+            }
+            .booking-item-price-unit{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .st-review-score-list{
+      .list_review{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+      }
+    }
+    .st_hotel_contact_info{
+      .contact{
+        margin-bottom: 0px;
+        margin-top: 5px;
+        .icon{
+          font-size: 25px;
+          margin-top: 12px;
+        }
+        .caption{
+          .title{
+            margin-bottom: 2px;
+          }
+          .content{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .booking-item-details{
+      border-top: 0px;
+      margin-top: 0px;
+      .booking-item-header-price{
+        .text-lg{
+          font-size: 25px !important;
+        }
+      }
+      .booking-item-features{
+        li{
+          padding-left:0px;
+          padding-right:0px;
+        }
+      }
+    }
+    .booking-list{
+      .item-nearby{
+        .booking-item{
+          .col-xs-5{
+            padding-left:0px;
+          }
+          .col-xs-3{
+            padding-left:0px;
+            .booking-item-price-from{
+              padding-top: 0px;
+            }
+            .booking-item-price{
+              font-size:18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* End Hotel */
+
+  /* Hotel Room */
+  #single-room{
+    .title{
+      font-size: 22px;
+      margin-top: 15px;
+    }
+  }
+  /* End Hotel Room */
+
+  /* Car Transfer */
+  .page-template-template-transfer-search{
+    .form-booking-car-transfer{
+      .booking-item-title{
+        margin-top: 10px;
+      }
+      .booking-item-price-from{
+        font-size: 14px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+      .booking-item-price{
+        font-size: 22px;
+      }
+    }
+  }
+  /* End car transfer */
+
+  /* Car */
+  .single-st_cars{
+    .booking-item-details{
+      .booking-item-header{
+        margin-top: 20px;
+      }
+      .vc_tta-panel-body{
+        .col-md-4{
+          .lhem{
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+  .page-template-template-cars-search{
+      .booking-item-features{
+        display: none;
+      }
+      .booking-item-price{
+        font-size: 20px;
+        .onsale{
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .booking-item-price-unit{
+        font-size: 12px;
+      }
+    .ajax-filter-cover{
+        .gap {
+          margin: 5px 0;
+        }
+    }
+    .search-tabs{
+      margin-top: 0px !important;
+    }
+  }
+  .search_list_map{
+    .bg_white{
+      border: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+  .div_data_list_map.reset_map_{
+    margin-top: 20px !important;
+    .data_list_map{
+      .gap{
+        margin: 15px 0;
+      }
+    }
+  }
+  .data_list_map,.data_list_hafl_map{
+    .booking-item-features-sign{
+      display: none;
+    }
+  }
+  /* End car */
+  .ajax-filter-cover{
+    .st-booking-list{
+      p.text-right{
+        text-align: left;
+      }
+    }
+  }
+  .hide_on_mobile{
+    display: none;
+  }
+  .booking-list{
+    .st_rental.type-st_rental{
+      .booking-item{
+        .col-xs-5{
+          padding-left: 0px;
+        }
+        .col-xs-3{
+          padding-left:0px;
+        }
+      }
+    }
+  }
+  #hotel_search_half_map.filter_search_map{
+    &>h2{
+      margin-top: 25px !important;
+    }
+  }
+  .page-template-template-activity-search{
+    .ajax-filter-cover{
+      .booking-list{
+        .booking-item{
+          .booking-item-description{
+            display: none;
+          }
+          .booking-item-address{
+            margin-bottom: 5px;
+          }
+        }
+        .booking-item-price-from{
+          display: inline-block;
+          font-size: 12px;
+        }
+      }
+    }
+    .col-md-6.text-right{
+      text-align: left;
+    }
+  }
+  .map_single{
+    .div_item_map{
+      top: auto;
+      margin-top: -27px;
+      margin-left: -119px;
+      .item_map{
+        &:after{
+          display: block;
+          border-color: #fff transparent transparent transparent;
+          left: 50%;
+          margin-left: -20px;
+          top: auto;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+  .list_tours{
+    .booking-list{
+      .booking-item{
+        .row{
+          display: flex;
+        }
+      }
+    }
+  }
+
+  @keyframes placeHolderShimmer{
+    0%{
+      background-position: -468px 0
+    }
+    100%{
+      background-position: 468px 0
+    }
+  }
+
+  .timeline-wrapper {
+    height:100px;
+    width: 100%;
+    position: relative;
+    .timeline-item {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      .animated-background {
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: placeHolderShimmer;
+        animation-timing-function: linear;
+        background: #f6f7f8;
+        background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+        background-size: 800px 104px;
+        height: 100%;
+        position: relative;
+      }
+    }
+  }
+  .label_calendar_change_month{
+    position: absolute;
+    z-index: -99;
+    color: transparent;
+  }
+  .single-st_tours{
+    .wpb_wrapper{
+      h3{
+        font-weight: 450 !important;
+      }
+    }
+  }
+  .st-cancel-data, .tour_discount_info{
+    h1,h2,h3,h4,h5,h6{
+      font-weight: 450 !important;
+    }
+  }
+  .booking-item-review-person{
+    .booking-item-review-person-name{
+      margin-bottom: 0px !important;
+    }
+    small{
+      a{
+        font-size: 9px;
+      }
+    }
+  }
+  .featured_single{
+    padding-right: 0px;
+  }
+  .loop-normal{
+    .thumb{
+      .hover-inner{
+        .img-left{
+          display: inline-block;
+          float: none;
+          margin-right: 10px;
+        }
+        .text-small.img-left{
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .tour-item-1{
+    .caption-content{
+      padding: 30px 15px 0px 15px;
+      .review{
+        ul{
+          margin-right: 0px;
+          li{
+            &:last-child{
+              margin-right: 0px;
+            }
+          }
+        }
+        display: inline-block;
+        top: -2px;
+        position: relative;
+      }
+      .price{
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+}

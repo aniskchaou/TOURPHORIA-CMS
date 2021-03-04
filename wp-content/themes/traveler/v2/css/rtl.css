@@ -1,0 +1,281 @@
+.rtl .ml5 {
+  margin-right: 5px; }
+
+.rtl .mr5 {
+  margin-left: 5px; }
+
+.rtl .mr15 {
+  margin-left: 15px !important; }
+
+.rtl .mr30 {
+  padding-left: 30px; }
+
+.rtl .ml3 {
+  margin-right: 3px; }
+
+.rtl .pr30 {
+  padding-left: 30px; }
+
+.rtl #header #topbar .socials {
+  padding-right: 0;
+  border-left: 1px solid #374969;
+  border-right: none; }
+
+.rtl #header #topbar .socials li:first-child a {
+  padding-left: 18px; }
+
+.rtl #header #topbar .topbar-items li:not(:last-child) {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: none; }
+
+.rtl #header #topbar .topbar-right .topbar-items li:last-child {
+  padding-right: 18px; }
+
+.rtl #header .header .header-right .dropdown-menu {
+  left: 0;
+  right: auto; }
+
+.rtl #header .header .header-right .dropdown-minicart .dropdown-menu .cart-item .cart-delete-item {
+  left: 20px;
+  right: auto; }
+
+.rtl #header .header .header-left #st-main-menu .main-menu li.menu-item-has-children .menu-dropdown {
+  right: 0;
+  left: auto; }
+
+.rtl #header .header .header-left #st-main-menu .main-menu li.menu-item-has-children .fa {
+  right: auto !important;
+  left: 5px !important;
+  text-align: left !important; }
+
+.rtl #header .header .header-left #st-main-menu .main-menu li.menu-item-has-children .menu-dropdown {
+  padding-right: 0; }
+
+.rtl #header .header .header-left #st-main-menu .main-menu li.menu-item-has-children .menu-dropdown li.menu-item-has-children .fa {
+  right: auto;
+  left: 20px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  text-align: right !important; }
+
+.rtl #header .header .header-left #st-main-menu .main-menu li.menu-item-has-children .menu-dropdown .menu-dropdown {
+  left: auto;
+  right: 100%; }
+
+.rtl #st-main-menu .back-menu {
+  padding-left: 0;
+  padding-right: 22px; }
+
+.rtl #st-main-menu .back-menu .fa {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.rtl #st-content-wrapper .st-breadcrumb ul {
+  padding-right: 0; }
+
+.rtl #st-content-wrapper .st-breadcrumb ul li:first-child {
+  padding-left: 20px;
+  padding-right: 0; }
+
+.rtl #st-content-wrapper .st-breadcrumb ul li:not(:last-child)::after {
+  right: auto;
+  left: -2px; }
+
+.rtl .tour-featured-image .st-gallery .shares {
+  right: auto !important;
+  left: 0 !important; }
+
+.rtl #st-content-wrapper .st-gallery .shares .share-item:not(:last-child) {
+  margin-right: auto;
+  margin-left: 10px; }
+
+.rtl #st-content-wrapper .st-gallery .shares .share-wrapper {
+  padding-right: 0;
+  left: auto;
+  right: 0; }
+
+.rtl .tour-featured-image .st-gallery .btn-group {
+  left: 0;
+  right: auto; }
+
+.rtl .tour-featured-image .st-gallery .btn-group .btn {
+  margin-right: 10px;
+  margin-left: auto; }
+  .rtl .tour-featured-image .st-gallery .btn-group .btn i {
+    margin-left: 10px;
+    margin-right: auto; }
+
+.rtl .st-number-wrapper span {
+  float: left; }
+
+.rtl .st-number-wrapper input {
+  float: left; }
+
+.rtl #st-content-wrapper.st-single-tour .st-tour-feature .item .icon {
+  margin-left: 20px;
+  margin-right: auto; }
+
+.rtl #st-content-wrapper.st-single-tour .review-box .review-box-score {
+  border-left: 1px solid #D7DCE3;
+  border-right: none; }
+
+.rtl #st-content-wrapper.st-single-tour .grid-item .thumb {
+  position: relative; }
+
+.rtl #st-content-wrapper.st-single-tour .grid-item .thumb .service-avatar img {
+  border-radius: 50%; }
+
+.rtl #st-content-wrapper.st-single-tour .grid-item .section-footer .footer-inner .service-price {
+  float: right; }
+
+.rtl #st-content-wrapper .owl-carousel-wrapper .owl-tour-program .owl-item .item .header {
+  right: 0;
+  left: auto; }
+
+.rtl #st-content-wrapper.st-single-tour .st-include .exclude li i {
+  padding-left: 15px;
+  padding-right: 0; }
+
+.rtl #st-content-wrapper.st-single-tour .st-highlight ul li::before {
+  margin-left: 20px;
+  margin-right: auto; }
+
+.rtl #st-content-wrapper .st-hotel-header .review-score .head .left {
+  text-align: left; }
+
+.rtl #st-content-wrapper .st-hotel-header .review-score .head .score {
+  float: left;
+  margin-right: 20px;
+  margin-left: auto; }
+
+.rtl #st-content-wrapper .st-hotel-header .review-score .head .score::after {
+  left: auto;
+  right: -8px;
+  border: 15px solid transparent;
+  border-bottom: 25px solid #5191FA; }
+
+.rtl .media-left, .rtl .media > .pull-left {
+  padding-left: 10px;
+  padding-right: 0 !important; }
+
+.rtl #st-content-wrapper .st-heading-section .toggle-section {
+  float: left !important; }
+
+.rtl #st-content-wrapper .sub-heading .st-link {
+  float: left;
+  margin-right: 10px; }
+
+.rtl #st-content-wrapper .st-hotel-room-content .room-featured-items .item img, .rtl #st-content-wrapper .st-hotel-room-content .room-featured-items .item .fa {
+  margin-left: 25px;
+  margin-right: 0; }
+
+.rtl #st-content-wrapper .facilities .item .fa {
+  margin-right: 0;
+  margin-left: 15px; }
+
+.rtl #st-content-wrapper .form-book-wrapper .form-extra-field .arrow {
+  right: auto;
+  left: 20px; }
+
+.rtl #st-content-wrapper #reviews #write-review .review-form .review-items .rates .fa:not(:last-child) {
+  margin-left: 20px;
+  margin-right: 0; }
+
+.rtl #st-content-wrapper.st-single-tour .grid-item .service-tag .feature_class {
+  padding: 6px 10px !important; }
+
+.rtl #st-content-wrapper #reviews .review-list .comment-item .comment-item-head .like {
+  float: left; }
+
+.rtl #st-content-wrapper #reviews .review-list .comment-item .comment-item-head .media {
+  margin-left: 100px;
+  margin-right: 0; }
+
+.rtl #st-content-wrapper.st-single-tour .review-list .comment-item .comment-item-body .review-star li {
+  float: right; }
+
+.rtl #st-content-wrapper.st-single-tour .st-faq .item .header .field-icon {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0; }
+
+.rtl #st-content-wrapper.st-single-tour .st-faq .item .header h5 {
+  float: right; }
+
+.rtl #st-content-wrapper.st-single-tour .st-faq .item .header .arrow {
+  float: left; }
+
+.rtl #st-content-wrapper.st-single-tour .st-include .include li i {
+  margin-left: 15px;
+  margin-right: 0; }
+
+.rtl #st-content-wrapper.st-single-tour .st-list-tour-related .item .body .price {
+  margin-right: 5px;
+  margin-left: 0; }
+
+.rtl #st-content-wrapper .form-book-wrapper .form-more-extra .extras {
+  padding-right: 0; }
+
+.rtl .st-checkout-page .cart-info .info-section ul li span.label {
+  text-align: right; }
+
+.rtl .st-checkout-page .cart-info .info-section ul li span.value {
+  float: left; }
+
+.rtl .st-checkout-page .payment-form .payment-item .st-icheck .st-icheck-item label .check-payment {
+  margin-left: 15px;
+  margin-right: 0; }
+
+.rtl .st-checkout-page .payment-form .payment-item .st-icheck .st-icheck-item {
+  padding-left: 26px;
+  padding-right: 0; }
+
+.rtl .st-checkout-page .booking-success-notice .col-left .notice-success {
+  margin-right: 20px;
+  margin-left: 0; }
+
+.rtl .st-checkout-page .booking-success-notice .booking-info-detail {
+  padding: 0;
+  margin: 0;
+  border-right: 3px solid #5191FA;
+  border-left: 0;
+  padding-right: 30px;
+  padding-left: 0; }
+
+.rtl .st-checkout-page .info-form ul li span.label {
+  text-align: right; }
+
+.rtl #header .header .header-left #st-main-menu .main-menu {
+  padding-right: 30px; }
+
+.rtl .subcribe-form input[type="submit"] {
+  left: 0;
+  right: auto;
+  border-radius: 5px 0 0 5px; }
+
+.rtl .modal .modal-content .modal-body .form-group .input-icon {
+  right: auto !important;
+  left: 15px; }
+
+.rtl svg {
+  direction: ltr !important; }
+
+@media (max-width: 991px) {
+  .rtl #st-main-menu .main-menu {
+    left: auto;
+    right: -110%;
+    -webkit-transition: right .3s ease, opacity .3s ease;
+    transition: right .3s ease, opacity .3s ease; }
+  .rtl #st-main-menu.open .main-menu {
+    left: auto;
+    right: 0; }
+  .rtl #st-main-menu .back-menu {
+    left: auto;
+    right: -110%;
+    -webkit-transition: right .3s ease, opacity .3s ease;
+    transition: right .3s ease, opacity .3s ease; }
+  .rtl #st-main-menu.open .back-menu {
+    left: auto;
+    right: 0; }
+  .rtl #header .header .header-left #st-main-menu .main-menu li.menu-item-has-children .fa {
+    left: 15px !important; } }

@@ -1,0 +1,109 @@
+/* Responsive */
+@media screen and (max-width: 992px) {
+    ul.slimmenu li>ul.mega-menu {
+        display: none;
+    }
+    ul.slimmenu li ul.mega-menu li {
+        /*padding: 5px 0 10px 0 !important;*/
+    }
+    ul.slimmenu li ul.mega-menu li a {
+        /*padding: 0px 0 13px 0 !important;*/
+        color: #737373 !important;
+    }
+    ul.slimmenu li ul.mega-menu .widget_nav_menu li a{
+        display: block;
+    }
+    ul.slimmenu li>ul.mega-menu{
+        background-color: #ffffff !important;
+    }
+    ul.slimmenu li>ul.mega-menu li a,
+    ul.slimmenu li>ul.mega-menu li,
+    ul.slimmenu li>ul.mega-menu h1,
+    ul.slimmenu li>ul.mega-menu h2,
+    ul.slimmenu li>ul.mega-menu h3,
+    ul.slimmenu li>ul.mega-menu h4,
+    ul.slimmenu li>ul.mega-menu h5,
+    ul.slimmenu li>ul.mega-menu h6,
+    ul.slimmenu li>ul.mega-menu p,
+    ul.slimmenu li>ul.mega-menu div{
+        color: #737373 !important;
+    }
+    ul.slimmenu li>ul.mega-menu{
+        padding-right: 20px;
+    }
+    ul.slimmenu li>ul.mega-menu .wpb_column.column_container{
+        margin-bottom: 25px;
+    }
+    ul.slimmenu.collapsed li ul.mega-menu li:hover a{
+        color: #fff !important;
+    }
+}
+
+/* Mega menu */
+/*ul.slimmenu li.item-mega-menu>a{
+    padding-top: 9px !important;
+    padding-bottom: 8px !important;
+}*/
+ul.slimmenu>li.has-mega-menu{
+    position: static;
+}
+ul.slimmenu>li.has-mega-menu a{
+    position: relative;
+}
+ul.slimmenu li>ul.mega-menu {
+    border-radius: 0;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+ul.slimmenu li>ul.mega-menu .dropdown-menu-inner{
+    padding: 10px;
+}
+
+ul.slimmenu li ul.mega-menu li {
+    /*padding: 10px 0;*/
+}
+
+ul.slimmenu li ul.mega-menu .widget_nav_menu{
+    overflow: hidden;
+}
+
+ul.slimmenu li ul.mega-menu .widget_nav_menu li a{
+    padding: 10px 5px;
+    line-height: 15px;
+}
+
+ul.slimmenu li ul.mega-menu li a {
+    padding: 0;
+    background: transparent;
+    color: #000;
+    text-transform: none;
+}
+ul.slimmenu li ul.mega-menu .widget_nav_menu li:before{
+    float: left;
+    padding: 10px 10px 10px 5px;
+    position: relative;
+    z-index: 999;
+}
+ul.slimmenu li ul.mega-menu .widget_nav_menu li.current-menu-item:before{
+    color: #fff;
+}
+ul.slimmenu li a span.sub-toggle{
+    color: #fff;
+}
+
+
+ul.slimmenu li ul.mega-menu li:hover:before{
+    color: #fff;
+}
+
+ul.slimmenu li>ul.mega-menu ul.menu li.menu-item-has-children ul.sub-menu,
+ul.slimmenu li>ul.mega-menu ul.menu li.menu-item-has-children span.sub-toggle{
+    display: none !important;
+}

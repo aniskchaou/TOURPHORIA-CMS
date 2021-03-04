@@ -1,0 +1,444 @@
+@import (less) "../css/slimmenu.min.css";
+@import (less) "../css/bootstrap.css";
+@import (less) "../css/bootstrap-select.css";
+@import (less) "../css/st-select.css";
+@import (less) "../css/animate.css";
+@import (less) "../css/icomoon.css";
+@import (less) "../css/font-awesome.css";
+@import (less) "../css/styles.css";
+@import (less) "../css/tooltip-classic.css";
+@import (less) "../style.css";
+@import (less) "../css/custom.css";
+@import (less) "../css/custom2.css";
+@import (less) "../css/custom3.css";
+@import (less) "../css/custom5.css";
+@import (less) "../css/ajax-filter.css";
+@import (less) "../css/filter-ajax-styles.css";
+@import (less) "../css/st_tour_ver.css";
+@import (less) "../css/user.css";
+@import (less) "../css/custom-responsive.css";
+@import (less) "../css/hover_effect/demo.css";
+@import (less) "../css/hover_effect/normalize.css";
+@import (less) "../css/hover_effect/set1.css";
+@import (less) "../css/hover_effect/set2.css";
+@import (less) "../css/box-icon-color.css";
+@import (less) "../css/menu_style1.css";
+@import (less) "../css/menu_style2.css";
+// Now only 2 style, 3 and 4 were removed
+//@import (less) "../css/menu_style3.css";
+//@import (less) "../css/menu_style4.css";
+@import (less) "../js/iconpicker/css/fontawesome-iconpicker.css";
+@import (less) "../inc/modules/flights/css/flight-style.less";
+@import (less) "../js/select2/select2.css";
+@import (less) "../css/megamenu.css";
+@import (less) "../css/weather-icons.min.css";
+@import "../inc/plugins/wpbooking-form-builder/assets/css/form-builder.less";
+@import (less) "../css/custom-lazyload.css";
+
+.clearfix {
+    &:before {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}
+
+body {
+    .wpb_button, .wpb_content_element, .wpb_row, ul.wpb_thumbnails-fluid > li {
+        margin-bottom: 0px;
+
+    }
+    .qtip .calendar-wrapper {
+        padding: 15px 15px 5px 15px !important;
+    }
+    .overlay-form {
+        left: 0;
+        width: 100%;
+    }
+    .ajax-filter-cover .row.row-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &.single {
+        .map_single {
+            .div_item_map {
+                .thumb-caption {
+                    .clearfix;
+                }
+                .btn_book {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
+
+.div_paged_room {
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    #tpcwl_wrapper {
+        height: auto !important;
+
+    }
+
+    #tpcwl_wrapper > iframe {
+        top: 0px !important;
+        position: relative !important;
+    }
+}
+
+.aff-paid-item {
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 5px -1px #9a9a9a;
+    background: #f7f7f7;
+    border-radius: 4px;
+    &.unpaid {
+        border-color: #1684f8 !important;
+    }
+    &.total-ref {
+        border-color: #0a9096;
+    }
+    &.total-visit {
+        border-color: #960a58;
+    }
+    .title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .value {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        border-bottom: 2px solid #1684f8;
+    }
+}
+
+.verify-status {
+    border-radius: 5px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 0px;
+    position: relative;
+    padding: 5px 10px;
+    background: #309a1e;
+    vertical-align: middle;
+    &.none {
+        background: #cc0000;
+    }
+}
+
+.check-notify {
+    i {
+        &:before {
+            color: #309a1e;
+            content: "\f058";
+        }
+    }
+    &.none {
+        i {
+            &:before {
+                color: #ed8323;
+                content: "\f06a";
+            }
+        }
+    }
+}
+
+.st-form-group {
+    border: 1px dashed #cac8c8;
+    border-radius: 5px;
+    padding: 10px;
+    background: #ececec;
+    margin-bottom: 30px;
+}
+
+.st-form-group-title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.representative-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.verify_photo_btn {
+    position: relative;
+    .verify_photo_inputs {
+        position: absolute;
+        opacity: 0;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+    }
+}
+
+.on-loading {
+    display: none;
+}
+
+.loading {
+    .on-loading {
+        display: inline-block;
+    }
+    .non-loading {
+        display: none;
+    }
+}
+
+.upload-notes {
+    color: red;
+}
+
+.passport-photo {
+    display: flex;
+    .passport-photo-item {
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        position: relative;
+        background: white;
+        border-radius: 4px;
+        width: 20%;
+        img {
+            max-width: 100%;
+        }
+        .icon-remove {
+            position: absolute;
+            top: -8px;
+            left: -3px;
+            color: #de1e1e;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    }
+}
+
+.note-on-error {
+    display: none;
+    color: red;
+}
+
+.error {
+    .note-on-error {
+        display: block;
+    }
+}
+
+.has-datepicker[readonly] {
+    background: white;
+}
+
+.author-verify-status {
+    padding: 15px 0px;
+    .verify-title {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0px;
+        li {
+            padding: 5px 0;
+            display: block;
+            .left-icon {
+
+                color: #cccccc;
+                font-size: 14px;
+                margin-right: 15px;
+                display: inline-block;
+            }
+            span {
+                display: inline-block;
+                color: #7e7e7e;
+            }
+            .right-icon {
+                color: #3bc323;
+                position: relative;
+                float: right;
+                &.fa-times {
+                    color: #cc0000;
+                }
+            }
+        }
+    }
+}
+
+.author-info-wrapper {
+    .author-verify-status {
+        padding: 0px;
+    }
+}
+
+.btn-connect-facebook {
+    background-color: #3B5998;
+    color: white;
+    &:hover {
+        color: white;
+    }
+}
+
+.verified {
+    .passport-photo-item {
+        .icon-remove {
+            display: none;
+        }
+    }
+}
+
+.inbox-form-reply {
+    .form-reply {
+        display: flex;
+        .form-group {
+            flex-grow: 1;
+            float: none;
+            .form-control {
+                height: 150px;
+            }
+        }
+    }
+}
+
+.add-service-progress {
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        li {
+            display: flex;
+            cursor: pointer;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: 1px solid #d5e8fc;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 600;
+            color: #8a8989;
+            overflow: hidden;
+
+            i {
+                font-size: 20px;
+                border: none;
+                background: #f5f7fd;
+                color: #AEAEAE;
+                display: inline-block;
+                min-width: 60px;
+                text-align: center;
+                padding: 12px 18px;
+                margin-right: 15px;
+                border-right: 1px solid #d5e8fc;
+            }
+            &.selected{
+                background: #F6F7FC;
+                i{
+                    background: #157ff1;
+                    color:white;
+                }
+            }
+            &.error,&.success {
+                position: relative;
+                &:after{
+
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    transform: translate(0, 0);
+
+                    position: absolute;
+                    top:10px;
+                    right: 10px;
+                    content: "\f06a";
+                    color:#FFBB00;
+
+                }
+            }
+            &.success{
+                &:after{
+                    color:green;
+                    content:"\f058";
+                }
+            }
+        }
+    }
+}
+.add_service_step{
+    display: none;
+    &.active{
+        display: block;
+    }
+}
+.form-group{
+    .validate-msg{
+        display: none;
+    }
+    &.error{
+        .validate-msg{
+
+        }
+        &.rule-required{
+            .validate-msg.rule-required{
+                display: block;
+            }
+        }
+        &.rule-valid_email{
+            .validate-msg.rule-valid_email{
+                display: block;
+            }
+        }
+    }
+}
+.btn-icon{
+    border: 1px solid #d5e8fc;
+    padding: 0px;
+    padding-right: 15px;
+    border-radius: 3px!important;
+    i{
+        border: none;
+        background: #f5f7fd;
+        color: #AEAEAE;
+        display: inline-block;
+        min-width: 60px;
+        text-align: center;
+        padding: 12px 18px;
+        border-right: 1px solid #d5e8fc;
+        margin: 0px!important;
+        font-size: 20px;
+        margin-right: 10px!important;
+
+    }
+    &:hover{
+        background: #F6F7FC;
+        border-radius: 3px!important;
+        i{
+            background: #157ff1;
+            color:white;
+        }
+    }
+}
+span.required{
+    color:red;
+}
+.guest_name_control{
+    .control-item{
+        display: flex;
+        select{
+            width: auto!important;
+            border-right: 0px;
+        }
+    }
+}

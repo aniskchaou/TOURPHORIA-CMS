@@ -1,0 +1,122 @@
+.mb-400 {
+    margin-bottom: 70px;
+}
+.top-last-300 {
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+.top-last-90 {
+    margin-top: 40px;
+    position: relative;
+    z-index: 2 ;
+}
+@media (min-width: 992px) {
+    .mb-400 {
+        margin-bottom: 400px;
+    }
+}
+@media (min-width: 768px) {
+    .bottom-last-50 {
+        margin-bottom: -50px;
+    }
+    .bottom-last-90 {
+        margin-bottom: -90px;
+    }
+    .top-last-300 {
+        margin-top: -300px;
+    }
+    .top-last-90 {
+        margin-top: -90px;
+    }
+    .pb-400 {
+        padding-bottom: 400px;
+    }
+}
+.btn.btn-primary:hover{
+    color: #fff;
+}
+
+.helios-reservation-content .content .loop-room-style-1 .room-book table thead .id-check,
+.helios-reservation-content .content .loop-room-style-2 .room-book table thead .id-check,
+.st-form-booking-room.style-1 .list-extra table thead .id-check,
+.st-form-booking-room.style-2 .list-extra table thead .id-check {
+    width: 10%;
+}
+.helios-reservation-content .content .loop-room-style-1 .room-book table thead .name,
+.helios-reservation-content .content .loop-room-style-2 .room-book table thead .name,
+.st-form-booking-room.style-1 .list-extra table thead .name,
+.st-form-booking-room.style-2 .list-extra table thead .name {
+    width: 48%;
+}
+.hotel-alone .room-facility .sub-item i {
+    font-size: 30px;
+}
+.st-list-related-room .content{
+    max-width: none;
+}
+.helios-submit-button.btn-st-add-cart.loading,
+.helios-submit-button.btn-st-add-cart.loading:hover{
+    background: #1cbfb9 !important;
+    border: 1px solid #1cbfb9 !important;
+}
+.btn-hotel-alone-st-add-cart i{
+    visibility: hidden;
+}
+.btn-hotel-alone-st-add-cart.loading i{
+    visibility: visible;
+}
+.st-form-booking-room.style-2 .message_box{
+    clear: both;
+}
+.header-mobile .style-light .control-right .option-item .option-mid .my-account {
+    color: #363636;
+    display: inline-block;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 0px;
+}
+.my-account  .dropdown-toggle i{
+    font-size: 35px;
+    color: #1cbfb9;
+    cursor: pointer;
+}
+.my-account .dropdown-menu{
+    border: none;
+    border-radius: 0px;
+    margin-top: 12px;
+}
+.my-account .dropdown-menu li {
+    padding: 4px 0;
+}
+.my-account .dropdown-menu a {
+
+}
+.my-account .dropdown-menu a:hover {
+    color: #1cbfb9;
+}
+
+.my-account .dropdown-menu a i{
+    margin-right: 5px;
+}
+
+.my-account .dropdown-menu>li>a:hover {
+    background-color: transparent;
+}
+.my-account .register-user{
+    min-width: 140px !important;
+}
+.my-account .register-user li a img{
+    height: 37px;
+}
+
+.topbar .top-bar-style-1 .control-right .option-item .option-mid .my-account .dropdown .dropdown-menu li a,
+.topbar .top-bar-style-3 .control-right .option-item .option-mid .my-account .dropdown .dropdown-menu li a,
+.topbar .top-bar-style-4 .control-right .option-item .option-mid .my-account .dropdown .dropdown-menu li a{
+    text-transform: uppercase;
+}
+.topbar .top-bar-style-1 .control-right .option-item .option-mid .my-account .register-user,
+.topbar .top-bar-style-3 .control-right .option-item .option-mid .my-account .register-user,
+.topbar .top-bar-style-4 .control-right .option-item .option-mid .my-account .register-user{
+    min-width: 130px !important;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_search_header</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ico_search_header" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" stroke="#1A2B48" stroke-width="1.5">
+            <g id="search-remove">
+                <path d="M18.875,9.812 C18.8754045,13.4778233 16.6674237,16.7828921 13.2807219,18.1859288 C9.89402017,19.5889655 5.99561982,18.8136372 3.4034913,16.2215087 C0.81136277,13.6293802 0.0360345119,9.73097983 1.4390712,6.34427809 C2.84210788,2.95757635 6.1471767,0.74959554 9.813,0.75 C12.2163918,0.75 14.521347,1.70474369 16.2208017,3.40419835 C17.9202563,5.10365301 18.875,7.40860817 18.875,9.812 Z" id="Shape"></path>
+                <path d="M16.221,16.22 L23.25,23.25" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

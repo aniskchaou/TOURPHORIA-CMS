@@ -1,0 +1,1 @@
+<div id="contact-map-new" data-lat="<?php echo $lat ?>" data-lng="<?php echo $lng ?>" style="width: 100%; height: 500px;"></div>

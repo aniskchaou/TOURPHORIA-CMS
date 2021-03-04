@@ -1,0 +1,25 @@
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    @media {
+        .search-result-page .tour-search-form-home .search-form .form-extra-field {
+            padding: 19px 0 16px 0;
+        }
+        .search-result-page .search-form-wrapper .search-form.hotel-search-form.in_tab .form-extra-field {
+            padding: 19px 0 16px 0;
+        }
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @media {
+        .search-result-page .tour-search-form-home .search-form .form-extra-field {
+            padding: 19px 0 16px 0;
+        }
+        .search-result-page .search-form-wrapper .search-form.hotel-search-form.in_tab .form-extra-field {
+            padding: 19px 0 16px 0;
+        }
+    }
+}
+
+.modal-backdrop{
+    z-index: 9;
+}

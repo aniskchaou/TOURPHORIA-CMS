@@ -1,0 +1,340 @@
+.st_landing_page {
+    margin: 25px 40px 0 20px;
+    overflow: hidden
+}
+.st_landing_page_admin_grid .theme:hover img{
+    opacity: 0.9 !important;
+}
+.st_landing_page_admin_grid .theme:hover .theme-actions{
+    background: rgba(0,0,0,0.5);
+}
+
+.st_landing_page p {
+    color: #777
+}
+
+.st_landing_page * {
+    font-size: 18px;
+    line-height: 2em
+}
+
+.st_landing_page h1 {
+    font-size: 2em;
+    color: #000
+}
+
+.st_landing_page .about_text {
+    width: 60%;
+    float: left;
+    margin-bottom: 50px
+}
+
+.st_landing_page .logo {
+    margin-top: -70px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    padding: 40px 0 60px;
+    position: relative;
+    width: 200px;
+    float: right;
+    text-align: center;
+    background-color: #fff
+}
+
+.st_landing_page .logo .version {
+    font-size: .8em;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    background-color: #ed8323;
+    color: #fff;
+    width: 100%
+}
+
+.st_landing_page .nav-tab-wrapper {
+    clear: both;
+    margin-top: 40px
+}
+
+.traveler-loader {
+    display: none
+}
+
+.st_landing_page .loader-icon {
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    line-height: 1;
+    font-family: dashicons;
+    text-decoration: inherit;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: top
+}
+
+.traveler-important-notice {
+    padding: 5px 30px 20px;
+    background: #fff;
+    margin: 0 0 30px
+}
+
+.traveler-registration-form input {
+    padding: 3px 15px;
+    width: 30%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 16px
+}
+
+.traveler-register {
+    font-size: 15px !important
+}
+
+.st-nav-tab {
+    padding: 4px 15px 6px;
+    margin: 0 3px -1px 0 !important;
+    font-size: 18px !important;
+    vertical-align: top !important;
+    border-width: 1px !important
+}
+
+.landing_page_content * {
+    font-size: 14px
+}
+
+@media screen and (max-width: 667px) {
+    .st_landing_page .about_text {
+        width: 100%
+    }
+
+    .st_landing_page .logo {
+        float: none;
+        clear: both;
+        margin: auto
+    }
+
+    .st_landing_page h2 .nav-tab {
+        width: 100%;
+        padding: 10px 0 !important;
+        text-align: center;
+        border-bottom: 1px solid #ccc
+    }
+
+    .st_landing_page .nav-tab-wrapper {
+        padding: 0
+    }
+}
+
+.st_landing_page .traveler-thanks {
+    clear: both
+}
+
+.st_landing_page .plugin-required {
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: #E04B4B;
+    text-transform: uppercase;
+    padding: 5px 7px
+}
+
+.st_landing_page .traveler-system-status table td:first-child {
+    width: 33%
+}
+
+.st_landing_page .traveler-system-status table {
+    margin-bottom: 20px
+}
+
+.st_landing_page mark {
+    background-color: #fff;
+    color: #a00;
+    font-size: 1em
+}
+
+.st_landing_page mark.yes {
+    color: #7ad03a
+}
+
+.st_landing_page .traveler-system-status table tr:nth-child(2n) td, .traveler-system-status table tr:nth-child(2n) th {
+    background-color: #fcfcfc
+}
+
+.st_landing_page .st_widefat {
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04)
+}
+
+.st_landing_page .st_widefat .button-primary {
+    float: right;
+    margin-left: 5px
+}
+
+.st_landing_page .screenshot-hover a {
+    line-height: 0
+}
+
+.st_landing_page .screenshot-hover {
+    line-height: 0 !important;
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    top: -200px;
+    left: 175px;
+    z-index: 999;
+    border: 10px solid #fff;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: -2px 1px 54px rgba(23, 24, 25, .14);
+    -moz-box-shadow: -2px 1px 54px rgba(23, 24, 25, .14);
+    -webkit-box-shadow: -2px 1px 54px rgba(23, 24, 25, .14);
+    visibility: hidden
+}
+
+.st_landing_page .demo-import-loader {
+    background: rgba(255, 255, 255, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    display: none
+}
+
+.st_landing_page .traveler-demo-themes .theme-browser .theme .theme-actions, .st_landing_page .traveler-install-plugins .theme-browser .theme .theme-actions {
+    opacity: 1
+}
+
+.st_landing_page_admin_grid .theme .screenshot-hover {
+    transition: opacity 1s, top .5s;
+    -webkit-transition: opacity 1s, top .5s
+}
+
+.st_landing_page .demo-import-loader i {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    height: 32px;
+    width: 32px;
+    top: 110px;
+    position: relative;
+    font-size: 32px;
+    line-height: 32px;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear
+}
+
+@media screen and (min-width: 1121px) {
+    .st_landing_page .theme:nth-child(3n) .screenshot-hover {
+        left: -380px
+    }
+
+    .st-install .theme, .st-install .theme:nth-child(4n) {
+        width: 30%;
+        margin-right: 5%
+    }
+
+    .st-install .theme:nth-child(3n) {
+        margin-right: 0
+    }
+
+    .st_col_4 {
+        width: 30%;
+        margin-right: 5%;
+        float: left
+    }
+
+    .st_col_4:nth-child(3n) {
+        margin-right: 0
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .st_landing_page .theme {
+        width: 31% !important
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .screenshot-hover {
+        display: none
+    }
+
+    .st_landing_page .theme {
+        clear: both;
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1120px) {
+    .st_landing_page .theme:nth-child(2n+1) {
+        clear: both
+    }
+
+    .st_landing_page .theme:nth-child(2n) .screenshot-hover {
+        right: 175px;
+        left: auto
+    }
+
+    .st_col_4 {
+        width: 45%;
+        margin-right: 5%;
+        float: left
+    }
+
+    .st_col_4:nth-child(4n) {
+        margin-right: 0
+    }
+}
+
+@media screen and (min-width: 668px) {
+    .st_landing_page_admin_grid .theme:hover .screenshot-hover {
+        opacity: 1;
+        top: -240px;
+        visibility: visible
+    }
+}
+
+.st_tooltip {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, .34);
+    -moz-box-shadow: 0 0 9px 1px rgba(0, 0, 0, .34);
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, .34);
+    color: #fff;
+    background-color: #5F5F5F;
+    padding: 0 5px;
+    display: none
+}
+
+.help_tip {
+    position: relative
+}
+
+.help_tip:hover .st_tooltip {
+    display: block
+}
+
+.traveler-system-status table td {
+    padding: 9px;
+    font-size: 1.1em
+}
+
+.traveler-system-status table td.help a {
+    line-height: initial;
+    cursor: help
+}

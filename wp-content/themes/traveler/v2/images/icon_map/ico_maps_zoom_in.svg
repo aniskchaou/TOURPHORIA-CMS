@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_maps_zoom_in</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="maps-zoom" transform="translate(-9.000000, -9.000000)" stroke="#1A2B48">
+            <g id="+">
+                <g id="ico_maps_zoom_in" transform="translate(10.000000, 10.000000)">
+                    <path d="M0.142857143,6.99847619 L13.8571429,6.99847619" id="Shape"></path>
+                    <path d="M7,13.855619 L7,0.141333333" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

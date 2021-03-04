@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="membership" transform="translate(-164.000000, -1252.000000)" stroke="#FA5636" stroke-width="1.5">
+            <g id="1" transform="translate(135.000000, 619.000000)">
+                <g transform="translate(30.000000, 627.000000)" id="close">
+                    <g transform="translate(0.000000, 7.000000)">
+                        <path d="M0.3125,9.68708333 L9.6875,0.312083333" id="Shape"></path>
+                        <path d="M9.6875,9.68708333 L0.3125,0.312083333" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

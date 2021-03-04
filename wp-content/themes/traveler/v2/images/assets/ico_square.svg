@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_square</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="03_Rooms_List" transform="translate(-886.000000, -1040.000000)" stroke="#1A2B48">
+            <g id="list-rooms" transform="translate(134.000000, 640.000000)">
+                <g id="room" transform="translate(0.000000, 120.000000)">
+                    <g id="Amenities" transform="translate(601.000000, 280.000000)">
+                        <g id="Group" transform="translate(151.000000, 0.000000)">
+                            <g id="ico_square">
+                                <path d="M3.75,35.25 L3.75,8.25" id="Shape"></path>
+                                <polyline id="Shape" points="0.75 32.25 3.75 35.25 6.75 32.25"></polyline>
+                                <polyline id="Shape" points="6.75 11.25 3.75 8.25 0.75 11.25"></polyline>
+                                <path d="M8.25,3.75 L35.25,3.75" id="Shape"></path>
+                                <polyline id="Shape" points="11.25 0.75 8.25 3.75 11.25 6.75"></polyline>
+                                <polyline id="Shape" points="32.25 6.75 35.25 3.75 32.25 0.75"></polyline>
+                                <rect id="Rectangle-path" x="11.25" y="11.25" width="24" height="24" rx="1"></rect>
+                                <path d="M29.25,35.25 L29.25,28.5 C29.25,28.0857864 29.5857864,27.75 30,27.75 L31.5,27.75" id="Shape"></path>
+                                <path d="M35.25,23.25 L29.25,23.25" id="Shape"></path>
+                                <path d="M35.25,18.75 L29.25,18.75" id="Shape"></path>
+                                <path d="M17.25,11.25 L17.25,18 C17.25,18.4142136 17.5857864,18.75 18,18.75 L24,18.75 C24.4142136,18.75 24.75,18.4142136 24.75,18 L24.75,11.25" id="Shape"></path>
+                                <path d="M15.75,29.25 L15.75,24 C15.75,23.5857864 15.4142136,23.25 15,23.25 L11.25,23.25" id="Shape"></path>
+                                <path d="M20.25,35.25 L20.25,29.25" id="Shape"></path>
+                                <path d="M24.75,35.25 L24.75,25.5 C24.75,25.0857864 24.4142136,24.75 24,24.75 L20.25,24.75" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

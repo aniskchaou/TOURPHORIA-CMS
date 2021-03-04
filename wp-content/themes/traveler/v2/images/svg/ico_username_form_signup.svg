@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_username_form_signup</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Blog" transform="translate(-1243.000000, -1902.000000)" stroke="#FFFFFF">
+            <g id="left" transform="translate(1035.000000, 472.000000)">
+                <g id="subcribe" transform="translate(0.000000, 1288.000000)">
+                    <g id="input" transform="translate(30.000000, 131.000000)">
+                        <g id="ico_username_form_signup" transform="translate(179.000000, 12.000000)">
+                            <g id="Light">
+                                <circle id="Oval" cx="8" cy="8" r="7.66666667"></circle>
+                                <path d="M5.55866667,4.39466667 C6.91848764,5.80377113 9.00855913,6.2240154 10.8073333,5.45" id="Shape"></path>
+                                <circle id="Oval" cx="8" cy="5.83333333" r="2.83333333"></circle>
+                                <path d="M12.2113333,12.3333333 C11.4411473,10.7050206 9.80127424,9.66661211 8,9.66661211 C6.19872576,9.66661211 4.55885271,10.7050206 3.78866667,12.3333333" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

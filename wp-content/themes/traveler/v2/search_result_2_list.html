@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search_result.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/fotorama/fotorama.css">
+    <link rel="stylesheet" href="js/ion.rangeSlider/css/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="js/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.css" />
+    <link rel="stylesheet" href="js/daterangepicker/daterangepicker.css">
+</head>
+<body>
+<div id="st-content-wrapper" class="search-result-page">
+    <div class="banner">
+        <div class="container">
+            <h1 class="hidden-xs">Search Result Demo 1</h1>
+        </div>
+    </div>
+    <div class="full-map">
+        <div class="search-form-wrapper">
+            <div class="container">
+                <div class="search-form">
+                    <div class="search-title hidden-lg hidden-md">
+                        Search Hotels
+                    </div>
+                    <!--Address-->
+                    <div class="row">
+                        <div class="col-md-3 border-right">
+                            <div class="form-group form-extra-field dropdown clearfix field-detination">
+
+                                <div class="dropdown-toggle" data-toggle="dropdown" id="dropdown-destination" aria-haspopup="true" aria-expanded="false">
+                                    <label>Destination</label>
+                                    <div class="render">
+                                        <span class="destination">Where are you going?</span>
+                                    </div>
+                                    <input type="hidden" name="location_name" />
+                                    <input type="hidden" name="location_id" />
+                                </div>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-destination">
+                                    <li class="item" data-value="1"><i class="fa fa-map-marker" aria-hidden="true"></i> <span>Gemany</span></li>
+                                    <li class="item" data-value="2"><i class="fa fa-map-marker" aria-hidden="true"></i> <span>Vietnam</span></li>
+                                    <li class="item" data-value="3"><i class="fa fa-map-marker" aria-hidden="true"></i> <span>France</span></li>
+                                    <li class="item" data-value="4"><i class="fa fa-map-marker" aria-hidden="true"></i> <span>Canada</span></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 border-right">
+                            <div class="form-group form-date-field clearfix">
+                                <div class="date-wrapper check-in-wrapper">
+                                    <label>Check In</label>
+                                    <div class="render check-in-render">Fri, 26/10</div>
+                                </div>
+                                <div class="date-wrapper check-out-wrapper">
+                                    <label>Check Out</label>
+                                    <div class="render check-out-render">Fri, 27/10</div>
+                                </div>
+                                <input type="hidden" class="check-in-input" value="" name="check_in">
+                                <input type="hidden" class="check-out-input" value="" name="check_out">
+                                <input type="text" class="check-in-out" value="" name="date">
+                            </div>
+                        </div>
+                        <div class="col-md-3 border-right">
+                            <div class="form-group form-extra-field dropdown clearfix field-guest">
+                                <div class="dropdown" data-toggle="dropdown" id="dropdown-1">
+                                    <label>Guests</label>
+                                    <div class="render">
+                                        <span class="adult" data-text="Adult" data-text-multi="Adults">2 Adults</span> -
+                                        <span class="children" data-text="Child"
+                                              data-text-multi="Children">0 Children</span>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-1">
+                                    <li class="item">
+                                        <label>Rooms</label>
+                                        <div class="select-wrapper">
+                                            <select name="room" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <label>Adults</label>
+                                        <div class="select-wrapper">
+                                            <select name="adult" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <label>Children</label>
+                                        <div class="select-wrapper">
+                                            <select name="children" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <i class="fa fa-angle-down arrow"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-button">
+                                <div class="advance">
+                                    <div class="form-group form-extra-field dropdown clearfix field-advance">
+                                        <div class="dropdown" data-toggle="dropdown" id="dropdown-advance">
+                                            <label class="hidden-xs">Advance</label>
+                                            <div class="render">
+                                                <span class="hidden-xs">More <i class="fa fa-caret-down"></i></span>
+                                                <span class="hidden-lg hidden-md hidden-sm">More option <i class="fa fa-caret-down"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-advance">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="advance-item range-slider">
+                                                        <div class="item-title">
+                                                            <h4>Filter Price</h4>
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <input type="text" class="price_range" name="price_range" value="" data-min="0" data-max="100"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="advance-item range-slider">
+                                                        <div class="item-title">
+                                                            <h4>Range Kilometers</h4>
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <input type="text" class="price_range" name="distance_range" value="" data-min="0" data-max="100"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="advance-item facilities st-icheck">
+                                                        <div class="item-title">
+                                                            <h4>Hotel Facilities</h4>
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <div class="row">
+                                                                <div class="ovscroll">
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                    <div class="col-lg-4">
+                                                                        <div class="st-icheck-item">
+                                                                            <label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                                                            </label></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="st-hotel-result">
+            <div class="top-filter">
+                <ul>
+                    <li><h3 class="title">FILTER BY</h3> <span class="hidden-lg hidden-md hidden-sm close-filter"><i class="fa fa-times" aria-hidden="true"></i></span></li>
+                    <li class="filter-price">
+                        <div class="form-extra-field dropdown">
+                            <button class="btn btn-link dropdown" type="button" id="dropdownMenuFilterPrice" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Filter Price <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu range-slider" aria-labelledby="dropdownMenuFilterPrice">
+                                <input type="text" class="price_range" name="price_range" value="" data-min="0" data-max="100"/>
+                                <button class="btn btn-link">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filter-review-score">
+                        <div class="form-extra-field dropdown">
+                            <button class="btn btn-link dropdown" type="button" id="dropdownMenuReviewScore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Review Score <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu st-icheck" aria-labelledby="dropdownMenuReviewScore">
+                                <ul>
+                                    <li class="st-icheck-item"><label>Wonderful 4+<input type="radio" name="review_score" /><span class="checkmark fradio"></span></label></li>
+                                    <li class="st-icheck-item"><label>Very Good 3+<input type="radio" name="review_score" /><span class="checkmark fradio"></span></label></li>
+                                    <li class="st-icheck-item"><label>Good 2+<input type="radio" name="review_score" /><span class="checkmark fradio"></span></label></li>
+                                    <li class="st-icheck-item"><label>Pleasant 1+<input type="radio" name="review_score" /><span class="checkmark fradio"></span></label></li>
+                                    <li class="st-icheck-item">
+                                        <label>No Rating<input type="radio" name="review_score" /><span class="checkmark fradio"></span></label>
+                                        <button class="btn btn-link btn-clear-review-score">Clear</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filter-review-score">
+                        <div class="form-extra-field dropdown">
+                            <button class="btn btn-link dropdown" type="button" id="dropdownMenuHotelStar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hotel Star <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu st-icheck" aria-labelledby="dropdownMenuHotelStar">
+                                <ul>
+                                    <li class="st-icheck-item"><label><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i><input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i><input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span></label></li>
+                                    <li class="st-icheck-item"><label><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i><input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span></label></li>
+                                    <li class="st-icheck-item"><label><i class="fa fa-star"></i> <i class="fa fa-star"></i><input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span></label></li>
+                                    <li class="st-icheck-item"><label><i class="fa fa-star"></i></i><input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span></label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filter-review-score">
+                        <div class="form-extra-field dropdown">
+                            <button class="btn btn-link dropdown" type="button" id="dropdownMenuFacilities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Facilities <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu st-icheck" aria-labelledby="dropdownMenuFacilities">
+                                <ul>
+                                    <li class="st-icheck-item"><label>Airport Transport<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Bathroom<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Breakfast in the room<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Cable Channels<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Fitness Center<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Hidden 1<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Hidden 2<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Hidden 3<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Hidden 4<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Hidden 5<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Hidden 11<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Hidden 22<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Hidden 33<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filter-review-score">
+                        <div class="form-extra-field dropdown">
+                            <button class="btn btn-link dropdown" type="button" id="dropdownMenuThemes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Themes <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu st-icheck" aria-labelledby="dropdownMenuThemes">
+                                <ul>
+                                    <li class="st-icheck-item"><label>Best Value<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Boutique<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Budget<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Business<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Family-Friendly<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Hidden 1<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                    <li class="st-icheck-item"><label>Hidden 2<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span>
+                                    </label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="show-map">
+                    <span>Maps</span>
+                    <label class="switch">
+                        <input type="checkbox" id="btn-show-map" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="show-map show-map-on-mobile hidden-lg hidden-md hidden-xs">
+                    <span>Maps</span>
+                    <label class="switch">
+                        <input type="checkbox" id="btn-show-map-mobile" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row page-half-map">
+                <div class="col-lg-6 col-md-6 col-left static">
+                    <div class="toolbar">
+                        <h3 class="search-string"><span>London:</span> 21 properties found</h3>
+                        <ul class="toolbar-action hidden-xs">
+                            <li>
+                                <div class="form-extra-field dropdown">
+                                    <button class="btn btn-link dropdown" type="button" id="dropdownMenuSort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Sort <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu sort-menu" aria-labelledby="dropdownMenuSort">
+                                        <div class="sort-title">
+                                            <h3>SORT BY <span class="hidden-lg hidden-md hidden-sm close-filter"><i class="fa fa-times" aria-hidden="true"></i></span></h3>
+                                        </div>
+                                        <div class="sort-item st-icheck">
+                                            <div class="st-icheck-item"><label> New hotel<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span></label></div>
+                                        </div>
+                                        <div class="sort-item st-icheck">
+                                            <span class="title">Price</span>
+                                            <div class="st-icheck-item"><label> Low to Hight<input type="radio" name="review_score" /><span class="checkmark"></span></label></div>
+                                            <div class="st-icheck-item"><label> Hight to Low<input type="radio" name="review_score" /><span class="checkmark"></span></label></div>
+                                        </div>
+                                        <div class="sort-item st-icheck">
+                                            <span class="title">Name</span>
+                                            <div class="st-icheck-item"><label> a - z<input type="radio" name="review_score" /><span class="checkmark"></span></label></div>
+                                            <div class="st-icheck-item"><label> z - a<input type="radio" name="review_score" /><span class="checkmark"></span></label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="layout">
+                                <span class="active"><i class="fa fa-list" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-th" aria-hidden="true"></i></span>
+                            </li>
+                        </ul>
+                        <div class="dropdown-menu sort-menu sort-menu-mobile">
+                            <div class="sort-title">
+                                <h3>SORT BY <span class="hidden-lg hidden-md hidden-sm close-filter"><i class="fa fa-times" aria-hidden="true"></i></span></h3>
+                            </div>
+                            <div class="sort-item st-icheck">
+                                <div class="st-icheck-item"><label> New hotel<input type="checkbox" name="review_score" /><span class="checkmark fcheckbox"></span></label></div>
+                            </div>
+                            <div class="sort-item st-icheck">
+                                <span class="title">Price</span>
+                                <div class="st-icheck-item"><label> Low to Hight<input type="radio" name="review_score" /><span class="checkmark"></span></label></div>
+                                <div class="st-icheck-item"><label> Hight to Low<input type="radio" name="review_score" /><span class="checkmark"></span></label></div>
+                            </div>
+                            <div class="sort-item st-icheck">
+                                <span class="title">Name</span>
+                                <div class="st-icheck-item"><label> a - z<input type="radio" name="review_score" /><span class="checkmark"></span></label></div>
+                                <div class="st-icheck-item"><label> z - a<input type="radio" name="review_score" /><span class="checkmark"></span></label></div>
+                            </div>
+                        </div>
+                        <ul class="toolbar-action-mobile hidden-lg hidden-md hidden-sm">
+                            <li><a href="#" class="btn btn-primary btn-map">Map</a></li>
+                            <li><a href="#" class="btn btn-primary btn-sort">Sort</a></li>
+                            <li><a href="#" class="btn btn-primary btn-filter">Filter</a></li>
+                        </ul>
+                    </div>
+                    <div class="row list-style">
+                        <div class="col-lg-12 item-service">
+                            <div class="item-service-inner">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="thumb">
+                                            <div class="service-tag save">
+                                                Bestseller
+                                            </div>
+                                            <a href="#">
+                                                <img src="images/thumbnail_grid.png" alt="Thumbnail" class="img-responsive"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6 item-content">
+                                        <div class="service-star">
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        </div>
+                                        <h4 class="service-title"><a href="#">Holiday Inn London Oxford Circus</a></h4>
+                                        <p class="service-location">Islington, London</p>
+                                        <div class="service-review">
+                                            <span class="rating">4.5/5 Excellent</span>
+                                            <span class="st-dot"></span>
+                                            <span class="review">32 Reviews</span>
+                                        </div>
+                                        <div class="service-price">
+                                            <span>from</span>
+                                            <span class="price">$65</span>
+                                            <span>/night</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 item-service">
+                            <div class="item-service-inner">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="thumb">
+                                            <div class="service-tag save">
+                                                Bestseller
+                                            </div>
+                                            <a href="#">
+                                                <img src="images/thumbnail_grid.png" alt="Thumbnail" class="img-responsive"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6 item-content">
+                                        <div class="service-star">
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        </div>
+                                        <h4 class="service-title"><a href="#">Holiday Inn London Oxford Circus</a></h4>
+                                        <p class="service-location">Islington, London</p>
+                                        <div class="service-review">
+                                            <span class="rating">4.5/5 Excellent</span>
+                                            <span class="st-dot"></span>
+                                            <span class="review">32 Reviews</span>
+                                        </div>
+                                        <div class="service-price">
+                                            <span>from</span>
+                                            <span class="price">$65</span>
+                                            <span>/night</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 item-service">
+                            <div class="item-service-inner">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="thumb">
+                                            <div class="service-tag save">
+                                                Bestseller
+                                            </div>
+                                            <a href="#">
+                                                <img src="images/thumbnail_grid.png" alt="Thumbnail" class="img-responsive"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6 item-content">
+                                        <div class="service-star">
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        </div>
+                                        <h4 class="service-title"><a href="#">Holiday Inn London Oxford Circus</a></h4>
+                                        <p class="service-location">Islington, London</p>
+                                        <div class="service-review">
+                                            <span class="rating">4.5/5 Excellent</span>
+                                            <span class="st-dot"></span>
+                                            <span class="review">32 Reviews</span>
+                                        </div>
+                                        <div class="service-price">
+                                            <span>from</span>
+                                            <span class="price">$65</span>
+                                            <span>/night</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 item-service">
+                            <div class="item-service-inner">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="thumb">
+                                            <div class="service-tag save">
+                                                Bestseller
+                                            </div>
+                                            <a href="#">
+                                                <img src="images/thumbnail_grid.png" alt="Thumbnail" class="img-responsive"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6 item-content">
+                                        <div class="service-star">
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        </div>
+                                        <h4 class="service-title"><a href="#">Holiday Inn London Oxford Circus</a></h4>
+                                        <p class="service-location">Islington, London</p>
+                                        <div class="service-review">
+                                            <span class="rating">4.5/5 Excellent</span>
+                                            <span class="st-dot"></span>
+                                            <span class="review">32 Reviews</span>
+                                        </div>
+                                        <div class="service-price">
+                                            <span>from</span>
+                                            <span class="price">$65</span>
+                                            <span>/night</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 item-service">
+                            <div class="item-service-inner">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="thumb">
+                                            <div class="service-tag save">
+                                                Bestseller
+                                            </div>
+                                            <a href="#">
+                                                <img src="images/thumbnail_grid.png" alt="Thumbnail" class="img-responsive"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6 item-content">
+                                        <div class="service-star">
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        </div>
+                                        <h4 class="service-title"><a href="#">Holiday Inn London Oxford Circus</a></h4>
+                                        <p class="service-location">Islington, London</p>
+                                        <div class="service-review">
+                                            <span class="rating">4.5/5 Excellent</span>
+                                            <span class="st-dot"></span>
+                                            <span class="review">32 Reviews</span>
+                                        </div>
+                                        <div class="service-price">
+                                            <span>from</span>
+                                            <span class="price">$65</span>
+                                            <span>/night</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 item-service">
+                            <div class="item-service-inner">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="thumb">
+                                            <div class="service-tag save">
+                                                Bestseller
+                                            </div>
+                                            <a href="#">
+                                                <img src="images/thumbnail_grid.png" alt="Thumbnail" class="img-responsive"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6 item-content">
+                                        <div class="service-star">
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        </div>
+                                        <h4 class="service-title"><a href="#">Holiday Inn London Oxford Circus</a></h4>
+                                        <p class="service-location">Islington, London</p>
+                                        <div class="service-review">
+                                            <span class="rating">4.5/5 Excellent</span>
+                                            <span class="st-dot"></span>
+                                            <span class="review">32 Reviews</span>
+                                        </div>
+                                        <div class="service-price">
+                                            <span>from</span>
+                                            <span class="price">$65</span>
+                                            <span>/night</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 item-service">
+                            <div class="item-service-inner">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="thumb">
+                                            <div class="service-tag save">
+                                                Bestseller
+                                            </div>
+                                            <a href="#">
+                                                <img src="images/thumbnail_grid.png" alt="Thumbnail" class="img-responsive"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6 item-content">
+                                        <div class="service-star">
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        </div>
+                                        <h4 class="service-title"><a href="#">Holiday Inn London Oxford Circus</a></h4>
+                                        <p class="service-location">Islington, London</p>
+                                        <div class="service-review">
+                                            <span class="rating">4.5/5 Excellent</span>
+                                            <span class="st-dot"></span>
+                                            <span class="review">32 Reviews</span>
+                                        </div>
+                                        <div class="service-price">
+                                            <span>from</span>
+                                            <span class="price">$65</span>
+                                            <span>/night</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 item-service">
+                            <div class="item-service-inner">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="thumb">
+                                            <div class="service-tag save">
+                                                Bestseller
+                                            </div>
+                                            <a href="#">
+                                                <img src="images/thumbnail_grid.png" alt="Thumbnail" class="img-responsive"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6 item-content">
+                                        <div class="service-star">
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        </div>
+                                        <h4 class="service-title"><a href="#">Holiday Inn London Oxford Circus</a></h4>
+                                        <p class="service-location">Islington, London</p>
+                                        <div class="service-review">
+                                            <span class="rating">4.5/5 Excellent</span>
+                                            <span class="st-dot"></span>
+                                            <span class="review">32 Reviews</span>
+                                        </div>
+                                        <div class="service-price">
+                                            <span>from</span>
+                                            <span class="price">$65</span>
+                                            <span>/night</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <ul>
+                            <li><a href="#" class="current-page">1</a></li>
+                            <li><a href="#" class="page-item">2</a></li>
+                            <li><a href="#" class="page-item">3</a></li>
+                            <li><a href="#" class="page-item"><i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                        <span class="count-string">1 – 12 of 21 Hotels</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-right">
+                    <div class="map-title hidden-lg hidden-md">Map <span class="close-half-map"><i class="fa fa-times" aria-hidden="true"></i></span></div>
+                    <div id="map-search-form" class="map-full-height" data-disablecontrol="true" data-showcustomcontrol="true" data-data_show="{&quot;0&quot;:{&quot;id&quot;:6556,&quot;name&quot;:&quot;Sheraton Hotel&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;27.273004632826012&quot;,&quot;lng&quot;:&quot;-82.56692581577227&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_6556\&quot;><div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7.gif\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; srcset=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif 360w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-600x450.gif 600w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-768x576.gif 768w\&quot; sizes=\&quot;(max-width: 360px) 100vw, 360px\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>4<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/05\/img70-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/05\/img69-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/05\/img68-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/huanv0207\/\&quot; target=\&quot;_blank\&quot; title=\&quot;Nguyen Van Huan\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/5f0914cba2eb62187f51e15cfecfc715?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/5f0914cba2eb62187f51e15cfecfc715?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/sheraton-hotel\/\&quot;>Sheraton Hotel<\/a><\/h5><p class=\&quot;mb0\&quot;><small>  6782 Sarasea Circle, Siesta Key, FL 34242<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac350,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/sheraton-hotel\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_6556\&quot;><div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/sheraton-hotel\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; srcset=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif 360w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-600x450.gif 600w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-768x576.gif 768w\&quot; sizes=\&quot;(max-width: 360px) 100vw, 360px\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/huanv0207\/\&quot; target=\&quot;_blank\&quot; title=\&quot;Nguyen Van Huan\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/5f0914cba2eb62187f51e15cfecfc715?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/5f0914cba2eb62187f51e15cfecfc715?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/sheraton-hotel\/\&quot;>Sheraton Hotel<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i>  6782 Sarasea Circle, Siesta Key, FL 34242<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac350,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;},&quot;1&quot;:{&quot;id&quot;:6548,&quot;name&quot;:&quot;Kerama Islands&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;27.273004632826012&quot;,&quot;lng&quot;:&quot;-82.56692581577227&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_6548\&quot;><div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7.gif\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; srcset=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif 360w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-600x450.gif 600w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-768x576.gif 768w\&quot; sizes=\&quot;(max-width: 360px) 100vw, 360px\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>4<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/05\/img70-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/05\/img69-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/05\/img68-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/kerama-islands\/\&quot;>Kerama Islands<\/a><\/h5><p class=\&quot;mb0\&quot;><small>  6782 Sarasea Circle, Siesta Key, FL 34242<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac315,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/kerama-islands\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_6548\&quot;><div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/kerama-islands\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; srcset=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif 360w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-600x450.gif 600w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-768x576.gif 768w\&quot; sizes=\&quot;(max-width: 360px) 100vw, 360px\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/kerama-islands\/\&quot;>Kerama Islands<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i>  6782 Sarasea Circle, Siesta Key, FL 34242<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac315,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;},&quot;2&quot;:{&quot;id&quot;:4601,&quot;name&quot;:&quot;Superior Hotel Paris&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;27.273004632826012&quot;,&quot;lng&quot;:&quot;-82.56692581577227&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_4601\&quot;><div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7.gif\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; srcset=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif 360w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-600x450.gif 600w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-768x576.gif 768w\&quot; sizes=\&quot;(max-width: 360px) 100vw, 360px\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>10<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/img40-1-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/40BAC88-1-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/superior-hotel-paris\/\&quot;>Superior Hotel Paris<\/a><\/h5><p class=\&quot;mb0\&quot;><small>  6782 Sarasea Circle, Siesta Key, FL 34242<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac45,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/superior-hotel-paris\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_4601\&quot;><div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/superior-hotel-paris\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; srcset=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-360x270.gif 360w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-600x450.gif 600w, http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-768x576.gif 768w\&quot; sizes=\&quot;(max-width: 360px) 100vw, 360px\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/superior-hotel-paris\/\&quot;>Superior Hotel Paris<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i>  6782 Sarasea Circle, Siesta Key, FL 34242<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac45,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;},&quot;3&quot;:{&quot;id&quot;:991,&quot;name&quot;:&quot;Shangri-La Hotel Paris&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;48.863919&quot;,&quot;lng&quot;:&quot;2.293356&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_991\&quot;><div class=\&quot;feature_class st_featured\&quot;>Featured<\/div>    <div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img41-260x130-1-7.gif\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img41-260x130-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>9<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/shangri-la-hotel-paris\/\&quot;>Shangri-La Hotel Paris<\/a><\/h5><p class=\&quot;mb0\&quot;><small>  10 avenue d'I\u00e9na Paris , 75116 France<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac10,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/shangri-la-hotel-paris\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_991\&quot;><div class=\&quot;feature_class st_featured\&quot;>Featured<\/div>    <div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/shangri-la-hotel-paris\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img41-260x130-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/shangri-la-hotel-paris\/\&quot;>Shangri-La Hotel Paris<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i>  10 avenue d'I\u00e9na Paris , 75116 France<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac10,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;},&quot;4&quot;:{&quot;id&quot;:990,&quot;name&quot;:&quot;Hotel Lancaster&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;48.872344&quot;,&quot;lng&quot;:&quot;2.303338&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_990\&quot;><div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img42-260x130-1-7.gif\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img42-260x130-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>13<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img11-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img10-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img9-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img8-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img7-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img6-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img5-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img4-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img3-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img2-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/fff3-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img1-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/hotel-lancaster\/\&quot;>Hotel Lancaster<\/a><\/h5><p class=\&quot;mb0\&quot;><small>  7 Rue De Berri Champs Elysees Paris , 75008 France<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac128,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/hotel-lancaster\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_990\&quot;><div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/hotel-lancaster\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img42-260x130-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/hotel-lancaster\/\&quot;>Hotel Lancaster<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i>  7 Rue De Berri Champs Elysees Paris , 75008 France<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac128,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;},&quot;5&quot;:{&quot;id&quot;:989,&quot;name&quot;:&quot;Hotel California Champs-Elysees&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;48.872730&quot;,&quot;lng&quot;:&quot;2.304741&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_989\&quot;><div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/img40-1-7.gif\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/img40-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>8<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img11-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img10-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img9-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img8-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img7-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img6-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img5-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/hotel-california-champs-elysees\/\&quot;>Hotel California Champs-Elysees<\/a><\/h5><p class=\&quot;mb0\&quot;><small> 16 rue de Berri, 75008 PARIS<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac315,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/hotel-california-champs-elysees\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_989\&quot;><div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/hotel-california-champs-elysees\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/img40-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/hotel-california-champs-elysees\/\&quot;>Hotel California Champs-Elysees<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i> 16 rue de Berri, 75008 PARIS<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac315,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;},&quot;6&quot;:{&quot;id&quot;:988,&quot;name&quot;:&quot;Sofitel Paris&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;40.64132027882508&quot;,&quot;lng&quot;:&quot;-73.77815578132868&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_988\&quot;><div class=\&quot;feature_class st_featured\&quot;>Featured<\/div>    <div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img41-260x130-1-7.gif\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img41-260x130-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>9<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/800x600-1-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/sofitel-paris\/\&quot;>Sofitel Paris<\/a><\/h5><p class=\&quot;mb0\&quot;><small>  15, rue Boissy d'Anglas Paris , 75008 France<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac244,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/sofitel-paris\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_988\&quot;><div class=\&quot;feature_class st_featured\&quot;>Featured<\/div>    <div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/sofitel-paris\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img41-260x130-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/sofitel-paris\/\&quot;>Sofitel Paris<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i>  15, rue Boissy d'Anglas Paris , 75008 France<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac244,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;},&quot;7&quot;:{&quot;id&quot;:987,&quot;name&quot;:&quot;Grand Hotel du Palais Royal&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;42.365610463813404&quot;,&quot;lng&quot;:&quot;-71.00951559841633&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_987\&quot;><div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img-1-min-1-7.jpg\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img-1-min-1-7-360x270.jpg\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>12<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img11-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img10-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img7-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img5-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img3-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img4-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img9-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img8-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/fff3-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img1-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img2-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/grand-hotel-du-palais-royal\/\&quot;>Grand Hotel du Palais Royal<\/a><\/h5><p class=\&quot;mb0\&quot;><small>  Grand Hotel du Palais Royal 4 Rue De Valois Paris , 75001 France<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac267,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/grand-hotel-du-palais-royal\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_987\&quot;><div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/grand-hotel-du-palais-royal\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img-1-min-1-7-360x270.jpg\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/grand-hotel-du-palais-royal\/\&quot;>Grand Hotel du Palais Royal<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i>  Grand Hotel du Palais Royal 4 Rue De Valois Paris , 75001 France<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac267,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;},&quot;8&quot;:{&quot;id&quot;:986,&quot;name&quot;:&quot;Wyndham Hotels and Resorts&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;48.856708270673096&quot;,&quot;lng&quot;:&quot;2.338062094640918&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_986\&quot;><div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img42-260x130-1-7.gif\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img42-260x130-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>13<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img11-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img10-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img9-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img8-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img7-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img6-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img5-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img4-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img3-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img2-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img1-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/fff3-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/wyndham-hotels-and-resorts\/\&quot;>Wyndham Hotels and Resorts<\/a><\/h5><p class=\&quot;mb0\&quot;><small> Saint-Germain-Des-Pr\u00e9s, 6\u00e8me 13 rue des Beaux Arts 75006 Paris France <\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac56,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/wyndham-hotels-and-resorts\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_986\&quot;><div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/wyndham-hotels-and-resorts\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img42-260x130-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/wyndham-hotels-and-resorts\/\&quot;>Wyndham Hotels and Resorts<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i> Saint-Germain-Des-Pr\u00e9s, 6\u00e8me 13 rue des Beaux Arts 75006 Paris France <\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac56,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;},&quot;9&quot;:{&quot;id&quot;:982,&quot;name&quot;:&quot;Warwick H\u00f4tel&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;48.871903&quot;,&quot;lng&quot;:&quot;2.303156&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_982\&quot;><div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/img40-1-7.gif\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/img40-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>13<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img11-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img10-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img9-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img8-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img7-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img6-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img5-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img4-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img3-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img2-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img1-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/fff3-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/warwick-hotel\/\&quot;>Warwick H\u00f4tel<\/a><\/h5><p class=\&quot;mb0\&quot;><small> Champs-Elys\u00e9es, 8\u00e8me 5 rue de Berri 75008 Paris France <\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac234,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/warwick-hotel\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_982\&quot;><div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/warwick-hotel\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/01\/img40-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star-o\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/warwick-hotel\/\&quot;>Warwick H\u00f4tel<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i> Champs-Elys\u00e9es, 8\u00e8me 5 rue de Berri 75008 Paris France <\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac234,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;},&quot;10&quot;:{&quot;id&quot;:981,&quot;name&quot;:&quot;L\u2019Intercontinental Paris – Le Grand H\u00f4tel&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;48.870637&quot;,&quot;lng&quot;:&quot;2.298209&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_981\&quot;><div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img-1-min-1-7.jpg\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img-1-min-1-7-360x270.jpg\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>10<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img11-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img10-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img9-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img7-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img2-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img3-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img4-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img5-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img6-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/intercontinental-new-york-barclay-2\/\&quot;>L\u2019Intercontinental Paris – Le Grand H\u00f4tel<\/a><\/h5><p class=\&quot;mb0\&quot;><small> Intercontinental Paris Avenue Marceau - 64 Av. Marceau 75008 Paris<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac252,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/intercontinental-new-york-barclay-2\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_981\&quot;><div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/intercontinental-new-york-barclay-2\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/img-1-min-1-7-360x270.jpg\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/intercontinental-new-york-barclay-2\/\&quot;>L\u2019Intercontinental Paris – Le Grand H\u00f4tel<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i> Intercontinental Paris Avenue Marceau - 64 Av. Marceau 75008 Paris<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac252,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;},&quot;11&quot;:{&quot;id&quot;:953,&quot;name&quot;:&quot;Metropole&quot;,&quot;post_type&quot;:&quot;st_hotel&quot;,&quot;lat&quot;:&quot;48.88853638758651&quot;,&quot;lng&quot;:&quot;2.3493576049804688&quot;,&quot;icon_mk&quot;:&quot;http:\/\/travelerdemo.wpengine.com\/wp-content\/uploads\/st_uploadfont\/hotel.png&quot;,&quot;content_html&quot;:&quot;<div class=\&quot;div_item_map div_map_item_953\&quot;><div class=\&quot;thumb item_map\&quot;><header class=\&quot;thumb-header\&quot;><div class=\&quot;booking-item-img-wrap st-popup-gallery\&quot;><a href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/40BAC88-1-7.gif\&quot; class=\&quot;st-gp-item\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/40BAC88-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x1 size-360x270x1 wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <\/a><div class=\&quot;booking-item-img-num\&quot;><i class=\&quot;fa fa-picture-o\&quot;><\/i>13<\/div>                <div class=\&quot;hidden\&quot;><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img11-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img10-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img9-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img8-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img6-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img7-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img5-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img4-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img3-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/fff3-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img1-7-800x600.gif\&quot;><\/a><a class=\&quot;st-gp-item\&quot; href=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2015\/08\/img2-7-800x600.gif\&quot;><\/a>                <\/div><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>            <\/div><\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/metropole-new-york\/\&quot;>Metropole<\/a><\/h5><p class=\&quot;mb0\&quot;><small> 111 East 48th Street, Paris, France<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac128,00<\/span>\/night<\/small><\/p><a class=\&quot;btn btn-primary btn_book\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/metropole-new-york\/\&quot;>Book Now<\/a><button class=\&quot;btn btn-default pull-right close_map\&quot; onclick=\&quot;closeGmapThumbItem(this)\&quot; >Close<\/button><\/div><\/div><\/div>&quot;,&quot;content_adv_html&quot;:&quot;<div class=\&quot; div_map_item_953\&quot;><div class=\&quot;thumb\&quot;><header class=\&quot;thumb-header\&quot;><a href=\&quot;http:\/\/traveler.local\/st_hotel\/metropole-new-york\/\&quot; class=\&quot;hover-img\&quot;><img width=\&quot;360\&quot; height=\&quot;270\&quot; src=\&quot;http:\/\/traveler.local\/wp-content\/uploads\/2014\/12\/40BAC88-1-7-360x270.gif\&quot; class=\&quot;attachment-360x270x size-360x270x wp-post-image\&quot; alt=\&quot;Just another WordPress site\&quot; \/>                <h5 class=\&quot;hover-title-center\&quot;>Book Now <\/h5><\/a><a href=\&quot;http:\/\/traveler.local\/author\/linhdd\/\&quot; target=\&quot;_blank\&quot; title=\&quot;admin\&quot;><img alt=\&quot;Just another WordPress site\&quot; src=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=35&amp;d=mm&amp;r=g\&quot; srcset=\&quot;http:\/\/2.gravatar.com\/avatar\/ecb9fe204bd7eb16079b74f744d86eca?s=70&amp;d=mm&amp;r=g 2x\&quot; class=\&quot;avatar avatar-35 photo\&quot; height=\&quot;35\&quot; width=\&quot;35\&quot; \/><\/a>        <\/header><div class=\&quot;thumb-caption\&quot;><ul class=\&quot;icon-list icon-group booking-item-rating-stars text-color\&quot;><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li><li><i class=\&quot;fa  fa-star\&quot;><\/i><\/li>                <\/ul><h5 class=\&quot;thumb-title\&quot;><a class=\&quot;text-darken\&quot; href=\&quot;http:\/\/traveler.local\/st_hotel\/metropole-new-york\/\&quot;>Metropole<\/a><\/h5><p class=\&quot;mb0\&quot;><small> <i class=\&quot;fa fa-map-marker\&quot;>&nbsp;<\/i> 111 East 48th Street, Paris, France<\/small><\/p><p class=\&quot;mb0 text-darken item_price_map\&quot;><small>from <span class=\&quot;text-lg lh1em\&quot;>\u20ac128,00<\/span>\/night<\/small><\/p><\/div><\/div><div class=\&quot;gap\&quot;><\/div><\/div>&quot;}}" data-map_height="500" data-style_map="[{featureType: &quot;road.highway&quot;,elementType: &quot;geometry&quot;,stylers: [{ hue: &quot;#ff0022&quot; },{ saturation: 60 },{ lightness: -20 }]}]" data-lat="48.85661400000001" data-lng="2.3522219000000177" data-icon="http://traveler.local/wp-content/themes/traveler/v2/images/markers/hotel_marker.png" data-zoom="13"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h1 align="center">Footer 1</h1>
+        <h1 align="center">Footer 2</h1>
+        <h1 align="center">Footer 3</h1>
+        <h1 align="center">Footer 4</h1>
+        <h1 align="center">Footer 5</h1>
+        <h1 align="center">Footer 6</h1>
+        <h1 align="center">Footer 7</h1>
+    </footer>
+</div>
+<script src="../../../../wp-includes/js/jquery/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.matchHeight.js"></script>
+<script src="js/fotorama/fotorama.js"></script>
+<script src="js/ion.rangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker/daterangepicker.js"></script>
+<script src="js/daterangepicker/languages/en_US.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/markerclusterer.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-xWz96w2TRMCZ7E86t_XKAtu0vTDncOY&"></script>
+<script src="js/infobox.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

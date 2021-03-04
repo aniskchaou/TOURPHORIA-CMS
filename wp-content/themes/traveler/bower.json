@@ -1,0 +1,22 @@
+{
+  "name": "traveler",
+  "description": "top 1 booking theme on themeforest",
+  "main": "src/app.js",
+  "authors": [
+    "Shinetheme"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "select2": "^4.0.5"
+  }
+}

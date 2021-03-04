@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="16px" viewBox="0 0 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_facebook_footer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="06_Blog_detail" transform="translate(-571.000000, -2349.000000)" fill="#3F4FAE" fill-rule="nonzero">
+            <g id="post" transform="translate(135.000000, 638.000000)">
+                <g id="author" transform="translate(150.000000, 1663.000000)">
+                    <g id="ico_facebook_footer" transform="translate(286.000000, 48.000000)">
+                        <path d="M5,5.5 L5,3.5 C5,2.948 5.448,2.5 6,2.5 L7,2.5 L7,0 L5,0 C3.343,0 2,1.343 2,3 L2,5.5 L0,5.5 L0,8 L2,8 L2,16 L5,16 L5,8 L7,8 L8,5.5 L5,5.5 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

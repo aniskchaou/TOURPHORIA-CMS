@@ -1,0 +1,101 @@
+.bt_ot_gmap{
+    width: 450px;
+    height: 355px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.bt_ot_gmap_input_lat,
+.bt_ot_gmap_input_zoom,
+.bt_ot_gmap_input_lng
+{
+    width: 32%;
+}
+input.bt_ot_searchbox{
+    margin-top: 11px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    padding: 0 11px 0 13px;
+    width: 250px;
+    font-size: 15px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+}
+.bt_ot_searchbox:focus{
+    border-color: #4d90fe;
+    margin-left: -1px;
+    padding-left: 14px;
+}
+.bt_ot_gmap_wrap{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bt_ot_map_field{
+    display: block;
+    width: 25%;
+    float: left;
+}
+@media(max-width: 1400px){
+    .bt_ot_map_field{
+        width: 50%;
+    }
+}
+.bt_ot_map_field label{
+    display: block;
+    margin-bottom: 0;
+    width: 230px;
+    font-weight: bold;
+}
+.bt_ot_map_field label:after{
+    content: '';
+    display: block;
+    clear:both;
+}
+
+.bt_ot_map_field label input{
+
+    width: 150px;
+    float: right;
+}
+.bt_ot_map_field input{
+    margin-bottom: 15px;
+}
+.bt_ot_gmap{
+    float: left;
+    width: 75%;
+}
+@media(max-width: 1400px){
+    .bt_ot_gmap{
+        width: 100%;
+    }
+    .bt_ot_map_field{
+        width: 100%;
+    }
+}
+.bt_ot_gmap_wrap{
+    position: relative;
+}
+.bt_ot_gmap_wrap .bt_ot_searchbox{
+    position: absolute;
+    left: 100px;
+    top: 5px;
+    z-index: 20;
+}
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.bt_ot_gmap_wrap #add-property{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 1;
+}

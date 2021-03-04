@@ -1,0 +1,200 @@
+.stour-package{
+	overflow: hidden;
+}
+.stour-package .form-message{
+	margin-bottom: 15px;
+}
+.stour-package .btn-load-hotel{
+	margin-bottom: 20px;
+}
+#stour-list-hotel{
+	position: relative;
+	clear: both;
+	overflow: hidden;
+}
+#stour-list-hotel .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	display: none;
+	background: rgba(255,255,255,0.5);
+}
+#stour-list-hotel .overlay .spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+#stour-list-hotel .list-content table{
+	margin-bottom: 10px;
+}
+#stour-list-hotel .list-content .check-column{
+	width: 9.2em;
+}
+#stour-list-hotel .list-content .check-column span{
+	position: relative;
+	top: -1px;
+}
+/*#stour-list-hotel .list-content table tr:hover{
+	background: gold;
+}*/
+
+/* Star list */
+.list-content .booking-item-rating-stars{
+	margin: 0;
+}
+.list-content .booking-item-rating-stars li{
+	float: left;
+	margin-right: 5px;
+}
+.list-content .booking-item-rating-stars li i{
+	color: #ed8323;
+}
+.list-custom-hotel{
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+.btn-add-custom-package{
+	height: 25px !important;
+	line-height: 25px !important;
+	min-width: 30px;
+}
+.custom-hotel-data-item .stour-list-custom-hotel{
+	margin-bottom: 10px;
+}
+.custom-hotel-data-item .hotel-del{
+	margin-top: 2px;
+	position: relative;
+	top: 6px;
+	color: #cc0000;
+	font-size: 18px;
+}
+.custom-hotel-data-item .parent-row{
+	display: none;
+}
+.stour-package-tab-content{
+	border: 1px solid #ccc;
+	margin-left: 177px;
+	padding: 20px;
+	overflow: hidden;
+	position: relative;
+}
+.stour-package-tab-content .list-content{
+	float: left;
+	clear: both;
+}
+.stour-package-button{
+	float: right !important;
+	margin-top: 15px !important;
+}
+
+@media(max-width: 1020px){
+	.ot-metabox-tabs .stour-package-tab-content{
+		margin-left: 0px;
+	}
+	.ot-metabox-tabs .stour-package-tab-content .list-content,
+	.ot-metabox-tabs .stour-package-tab-content .list-custom-hotel{
+		width: 100%;
+	}
+	.ot-metabox-tabs .stour-package-tab-content .list-custom-hotel{
+		overflow: visible !important;
+	}
+	.ot-metabox-tabs .stour-package-tab-content .list-custom-hotel:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.ot-metabox-tabs .stour-package-tab-content .list-content .stour-list-hotel .the-list tr,
+	.ot-metabox-tabs .stour-package-tab-content .stour-list-custom-hotel tbody tr
+	{
+		margin-bottom: 0px;
+	}
+	.ot-metabox-tabs .stour-package-tab-content .list-content .stour-list-hotel .the-list tr td{
+		overflow: hidden;
+	}
+	.ot-metabox-tabs .stour-package-tab-content .list-content .stour-list-hotel .the-list tr td input,
+	.ot-metabox-tabs .stour-package-tab-content  .stour-list-custom-hotel tbody tr td input{
+		width: 100%;
+	}
+}
+
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+@media
+only screen
+and (max-width: 760px), (min-device-width: 768px)
+and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	.stour-package-tab-content table,
+	.stour-package-tab-content table thead,
+	.stour-package-tab-content table tbody,
+	.stour-package-tab-content table th,
+	.stour-package-tab-content table td,
+	.stour-package-tab-content table tr {
+		display: block !important;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.stour-package-tab-content thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.stour-package-tab-content tr {
+		margin: 0 0 1rem 0;
+	}
+
+	.stour-package-tab-content td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 35% !important;
+	}
+
+	.stour-package-tab-content td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 10px;
+		left: 6px;
+		width: 30% !important;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	/*
+    Label the data
+You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+    */
+	/*Hotel*/
+	.stour-list-hotel td:nth-of-type(1):before,
+	.stour-list-custom-hotel td:nth-of-type(1):before{ content: attr(data-name) "" !important; }
+	.stour-list-hotel td:nth-of-type(2):before,
+	.stour-list-custom-hotel td:nth-of-type(2):before{ content: attr(data-name) "" !important; }
+	.stour-list-hotel td:nth-of-type(3):before,
+	.stour-list-custom-hotel td:nth-of-type(3):before{ content: attr(data-name) "" !important; }
+	.stour-list-hotel td:nth-of-type(4):before,
+	.stour-list-custom-hotel td:nth-of-type(4):before{ content: attr(data-name) "" !important; }
+	.stour-list-hotel td:nth-of-type(5):before,
+	.stour-list-custom-hotel td:nth-of-type(5):before{ content: attr(data-name) "" !important; }
+
+	.stour-list-custom-hotel td:nth-child(1){
+		padding-left: 10px !important;
+	}
+	.stour-list-custom-hotel td:nth-child(1):before{
+		display: none !important;
+	}
+	/*Activity*/
+
+}

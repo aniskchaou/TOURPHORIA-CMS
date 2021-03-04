@@ -1,0 +1,10 @@
+.content_run_sync_roomorama{
+    background: #eee none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    font-style: normal;
+    height: 200px;
+    margin-top: 30px;
+    overflow: scroll;
+    padding: 20px;
+    display: none;
+}

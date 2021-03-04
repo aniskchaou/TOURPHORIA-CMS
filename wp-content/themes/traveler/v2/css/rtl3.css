@@ -1,0 +1,131 @@
+.rtl .sts-toolbar {
+  padding: 18px 40px 17px 20px; }
+
+.rtl .sts-toolbar .list-category li {
+  margin-right: 0;
+  margin-left: 40px;
+  float: right; }
+
+.rtl .sts-toolbar .layout li {
+  float: left;
+  margin-left: 0;
+  margin-right: 20px; }
+  .rtl .sts-toolbar .layout li:last-child {
+    margin-right: 0; }
+
+.rtl .sts-room-wrapper .item .content .facility li {
+  float: right;
+  margin-right: 0;
+  margin-left: 40px; }
+
+.rtl .sts-room-wrapper .item .content .facility li .fa {
+  margin-right: 0;
+  margin-left: 10px; }
+
+.rtl .sts-room-wrapper.list .item .thumb {
+  float: right; }
+
+.rtl .sts-room-wrapper.list .item .content {
+  float: left; }
+
+.rtl .sts-check-available-form .st-room-check-available .sts-form-wrapper .item {
+  border-right: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  float: right; }
+
+.rtl .sts-check-available-form .st-room-check-available .sts-form-wrapper .item:last-child {
+  border-left: none; }
+
+.rtl .sts-toolbar.search_page .st-modify-room-search {
+  margin-right: auto;
+  margin-left: 0; }
+
+.rtl .sts-toolbar.search_page {
+  padding: 30px 40px 28px 20px; }
+
+.rtl .sts-toolbar.search_page .item-param {
+  margin-left: 0;
+  margin-right: 50px; }
+
+.rtl .sts-room-wrapper .item .content .action select {
+  margin-left: 10px;
+  margin-right: 0;
+  top: 1px; }
+
+.rtl .sts-room-wrapper .item .content .action select {
+  background-position-x: 10px; }
+
+.rtl .sts-popup-search-form {
+  direction: rtl; }
+
+.rtl .sts-popup-search-form .mfp-close {
+  left: 17px;
+  right: auto; }
+
+.rtl.single-hotel_room .sts-single-room-alone .sts-booking-form .item.people:after {
+  left: 30px;
+  right: auto; }
+
+.rtl.single-hotel_room .sts-single-room-alone .facility ul li {
+  float: right;
+  margin-right: 0;
+  margin-left: 40px; }
+
+.rtl.single-hotel_room .sts-single-room-alone .facility ul li .field-icon {
+  margin-right: 0;
+  margin-left: 15px; }
+
+.rtl.single-hotel_room .sts-single-room-alone .service-attribute ul li .field-icon {
+  margin-right: 0;
+  margin-left: 20px; }
+
+.rtl .st-checkout-page .check-out-form .form-group .form-control {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.rtl .st-checkout-page .payment-form .payment-item .st-icheck .st-icheck-item label .check-payment {
+  margin-right: 0;
+  margin-left: 15px; }
+
+.rtl .st-icheck-item label .checkmark {
+  right: 0;
+  left: auto; }
+
+.rtl .st-checkout-page .cond-form .st-icheck .st-icheck-item {
+  padding-right: 35px;
+  padding-left: 0; }
+
+.rtl .st-checkout-page .cart-info .info-section ul li span.label {
+  text-align: right; }
+
+.rtl .st-checkout-page .cart-info .info-section ul li.ad-info ul li span.value {
+  text-align: left; }
+
+.rtl .st-checkout-page .payment-form .payment-item .dropdown-menu:before {
+  left: auto;
+  right: 30px; }
+
+@media (max-width: 991px) {
+  .rtl .sts-toolbar {
+    padding: 18px 20px 17px 20px; }
+  .rtl .sts-room-wrapper.grid .item .content .facility ul li {
+    margin-right: 0;
+    margin-left: 20px; }
+  .rtl .sts-room-wrapper.list .item .content .facility ul li {
+    margin-left: 20px;
+    margin-right: 0; }
+  .rtl .sts-toolbar.search_page .st-modify-room-search {
+    left: 20px;
+    right: auto; }
+  .rtl .sts-toolbar.search_page .item-param {
+    margin-right: 0; } }
+
+@media (max-width: 575px) {
+  .rtl .sts-check-available-form .st-room-check-available .sts-form-wrapper .item.sts-time:nth-child(2) {
+    border-left: none; }
+  .rtl .sts-toolbar.search_page .item-param .label {
+    padding-right: 0; }
+  .rtl .sts-toolbar.search_page {
+    padding: 30px 20px 28px 20px; }
+  .rtl .sts-toolbar.search_page .st-modify-room-search {
+    left: auto; } }

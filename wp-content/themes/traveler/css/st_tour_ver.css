@@ -1,0 +1,852 @@
+.call_arrow_, .end1 {
+    border-style: solid
+}
+
+@media (min-width: 768px) {
+    .st_tour_grid > div > .row > .col-sm-6:nth-child(2n+1) {
+        clear: both
+    }
+}
+
+#gotop.go_top_tour_box {
+    opacity: .5;
+    padding: 0 11px;
+    border-radius: 0;
+    text-align: center
+}
+
+#gotop.go_top_tour_box:hover {
+    opacity: 1
+}
+
+#gotop.go_top_tour_box p {
+    font-size: 13px;
+    line-height: .5em;
+    font-weight: 700
+}
+
+#gotop.go_top_tour_box i.fa {
+    font-size: 46px
+}
+
+.st_tour_box_style {
+    position: relative;
+    margin-top: 60px
+}
+
+.call_arrow_, .end1, .end2 {
+    position: absolute
+}
+
+.st_tour_box_style h4 {
+    background: #fff;
+    font-size: 16px;
+    line-height: 45px;
+    padding-left: 18px;
+    font-weight: 700
+}
+
+.end2 {
+    right: 0;
+    top: 0;
+    height: 46px;
+    width: 20px
+}
+
+.end1 {
+    right: 20px;
+    top: 0;
+    height: 0;
+    border-width: 23.5px;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+    background-color: transparent !important
+}
+
+.st_accordion.st_tour_ver .panel-title > a, .st_tab.st_tour_ver .nav-tabs > li a {
+    background-color: rgba(204, 204, 204, .2)
+}
+
+.st_tour_box_style ul li a.text-darken {
+    color: #333
+}
+
+.st_tour_box_style ul li {
+    list-style: none
+}
+
+.st_tour_box_style a:hover:not(.no-line), .st_tour_box_style ul .text-darken:hover {
+    text-decoration: underline
+}
+
+.st_tour_box_style ul {
+    padding-left: 18px;
+    line-height: 30px
+}
+
+.st_tour_box_style .sidebar-widget, .st_tour_box_style h4 {
+    margin-bottom: 20px
+}
+
+.call_arrow_ {
+    width: 0;
+    height: 0;
+    top: 100%;
+    border-color: #c33 transparent transparent #c33;
+    border-width: 10px;
+    left: 10px
+}
+
+.st_tab.st_tour_ver .nav-tabs > li.active, .st_tour_ver {
+    position: relative
+}
+
+.st_tour_box_style i {
+    font-size: 30px;
+    color: #737373
+}
+
+.bc_tour_box_light.breadcrumb {
+    margin-top: 0
+}
+
+.bc_tour_box_dark.breadcrumb *, .bc_tour_box_dark.breadcrumb li::before {
+    color: #fff;
+    margin-top: 0
+}
+
+.borderbot {
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important
+}
+
+.st_tour_ver a, .st_tour_ver p, .st_tour_ver span {
+    line-height: 21pt;
+    text-align: justify;
+    font-weight: 300
+}
+
+.bc_tour_box_dark, .bc_tour_box_light {
+    padding-top: 25px;
+    padding-bottom: 25px
+}
+
+.st_tour_quote {
+    border-left-width: 5px;
+    border-style: solid;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    margin-left: 15px
+}
+
+.st_tour_ver_first_letter::first-letter {
+    float: left;
+    font-size: 4.2em;
+    line-height: .7em;
+    margin-top: 7px;
+    margin-left: -7px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    font-weight: 700
+}
+
+.st_team_item_st_tour_ver, .st_tour_footer_page {
+    font-weight: 300
+}
+
+#main-footer .st_tour_footer_page {
+    font-size: 14px;
+    line-height: 21pt;
+    color: #999
+}
+
+footer#main-footer .st_tour_footer_page a, footer#main-footer .st_tour_footer_page h1, footer#main-footer .st_tour_footer_page h2, footer#main-footer .st_tour_footer_page h3, footer#main-footer .st_tour_footer_page h4, footer#main-footer .st_tour_footer_page h5 {
+    color: #999
+}
+
+footer#main-footer .st_tour_footer_page a:hover {
+    color: #fff;
+    text-decoration: underline
+}
+
+.st_tour_footer_page .st_tour_card_accepted img, .st_tour_footer_page .st_tour_rewards a img {
+    float: left;
+    max-height: 30px;
+    margin-right: 10px
+}
+
+.st_tour_footer_page .st_tour_card_accepted {
+    text-align: right
+}
+
+@media screen and (max-width: 992px) {
+    .st_tour_footer_page .st_tour_card_accepted {
+        text-align: left
+    }
+}
+
+.st_tour_footer_page .st_tour_card_accepted img {
+    float: none;
+    max-height: 27px;
+    border: 1px solid #999;
+    padding: 3px
+}
+
+.st_tour_footer_page .st_social i {
+    min-width: 18px
+}
+
+.st_social {
+    clear: both
+}
+
+.st_social.style1 i.fa {
+    font-size: 17px;
+    line-height: 30px
+}
+
+.st_social.style1, .st_social.style2 {
+    margin-top: 15px
+}
+
+.st_social.style2 {
+    display: flex;
+    display: -webkit-flex;
+    margin: auto -15px
+}
+
+.st_social.style1 > a:hover {
+    color: #fff
+}
+
+.st_social.style1 > a, .st_social.style2 a {
+    text-align: center;
+    color: #ccc;
+    display: inline-block
+}
+
+.st_social.style1 > a {
+    width: 30px;
+    margin-right: 8px;
+    margin-bottom: 8px
+}
+
+.st_social.style2 a {
+    margin: 15px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 60px
+}
+
+.st_tab.st_tour_ver .nav-tabs > li.active > a, .st_tour_ver_cf7 input[type=submit] {
+    color: #fff
+}
+
+.st_social.style2 i.fa {
+    font-size: 32px;
+    line-height: 48px
+}
+
+.st_tab.st_tour_ver {
+    padding: 15px
+}
+
+.st_tab.st_tour_ver .nav-tabs > li.active::before {
+    content: "";
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    z-index: 1;
+    left: calc(50% - 6px);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    bottom: -6px
+}
+
+.st_accordion.st_tour_ver .panel-default, .st_tab.st_tour_ver .nav-tabs {
+    border: none
+}
+
+.st_tab.st_tour_ver.vertical .nav-tabs > li.active::before {
+    top: calc(50% - 6px);
+    right: -3px;
+    left: auto;
+    width: 0;
+    z-index: 0;
+    height: 0
+}
+
+@media (max-width: 992px) {
+    .st_tab.st_tour_ver.vertical .nav-tabs > li.active::before {
+        left: calc(50% - 6px);
+        bottom: -6px;
+        right: auto;
+        top: auto
+    }
+
+    .st_tab.st_tour_ver.vertical .myTab {
+        padding-bottom: 30px
+    }
+}
+
+.st_tab.st_tour_ver.vertical li {
+    margin-bottom: 5px
+}
+
+.st_accordion.st_tour_ver .panel-title > a:before {
+    content: '\f0d7';
+    font-size: 20px
+}
+
+.st_tab.st_tour_ver > ul {
+    margin-bottom: 30px
+}
+
+.st_tab.st_tour_ver .nav-tabs > li > a {
+    margin-right: 3px;
+    overflow: hidden
+}
+
+.st_accordion.st_tour_ver .panel-title a, .st_tab.st_tour_ver .nav-tabs > li > a {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300
+}
+
+.st_tab.st_tour_ver .tab-pane:first-child {
+    margin-top: 10px
+}
+
+.st_tab.st_tour_ver .nav-tabs > li, .st_tab.st_tour_ver .nav-tabs > li > a {
+    max-width: 100%;
+    white-space: nowrap
+}
+
+.st_tab.st_tour_ver.vertical .nav-tabs > li, .st_tab.st_tour_ver.vertical .nav-tabs > li > a {
+    width: 100%
+}
+
+.st_accordion.st_tour_ver {
+    padding: 15px
+}
+
+.st_accordion.st_tour_ver .panel-title > a[aria-expanded=true] {
+    color: #fff;
+    text-decoration: none
+}
+
+.st_tour_box * {
+    border-radius: 0
+}
+
+.st_progress_bar .st_tour_ver .value {
+    text-align: right;
+    position: relative;
+    z-index: 3;
+    line-height: 20px;
+    padding-right: 15px
+}
+
+.st_progress_bar .st_tour_ver .bgr-main {
+    width: 89%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2
+}
+
+.st_progress_bar_item {
+    margin-bottom: 25px
+}
+
+.st_list_partner_nav {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 15px
+}
+
+.st_list_partner_nav .fa {
+    top: 0;
+    right: 15px;
+    display: inline-block;
+    cursor: pointer
+}
+
+.st_list_partner_nav .fa::before {
+    width: 100%
+}
+
+.st_list_partner.owl-carousel {
+    padding: 0 15px
+}
+
+.st_list_partner.owl-carousel .owl-item, .st_list_partner.owl-carousel .owl-item .item {
+ /*min-height: 120 px*/
+}
+
+.st_list_partner .item {
+    border: 1px solid #CCC;
+    padding: 15px
+}
+
+.st_list_partner .st_tour_ver {
+    position: relative
+}
+
+.st_list_partner.owl-carousel .dummy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, .5);
+    color: #FFF
+}
+
+.st_list_partner.owl-carousel .dummy .title {
+    color: #FFF;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+
+.st_team_item_st_tour_ver .st_name {
+    margin-top: 30px
+}
+
+.st_team_item_st_tour_ver .st_name h5 {
+    margin-bottom: 0
+}
+
+.st_team_item_st_tour_ver .st_description {
+    margin: 25px 0
+}
+
+.st_team_item_st_tour_ver .st_social.style1 {
+    margin-top: 0
+}
+
+.st_tour_ver_cf7 .st_tour_ver {
+    line-height: 46px;
+    padding-left: 15px;
+    width: 100%
+}
+
+.st_tour_ver_cf7 b {
+    font-size: 16px
+}
+
+.st_tour_ver_cf7 .required {
+    color: #933
+}
+
+.st_tour_ver_cf7 textarea {
+    height: 320px
+}
+
+.st_tour_ver_submit {
+    padding: 15px 60px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+.st_tour_quote blockquote::before {
+    display: none
+}
+
+.st_tour_quote blockquote {
+    margin: 0;
+    padding: 0 0 0 50px;
+    font-size: inherit
+}
+
+.st-header-center .logo_big_center img {
+    margin-top: 100px
+}
+
+.cs-content * {
+    color: #fff;
+    font-family: 'Open Sans', Tahoma, Arial, helvetica, sans-serif
+}
+
+.cs-content > h1:first-child {
+    font-size: 60px
+}
+
+.cs-content h4.email {
+    margin-top: 35px
+}
+
+.cs-content h4.email i {
+    font-size: .75em;
+    color: #ccc
+}
+
+.cs-content h1.title {
+    margin-top: 80px
+}
+
+.timer .table-cell {
+    display: inline-block
+}
+
+.st_tour_ver_countdown {
+    margin-top: 20px
+}
+
+.st_tour_ver_countdown .tab-val {
+    background-color: #666;
+    font-size: 70px;
+    line-height: 70px;
+    border: 0 solid #fff;
+    font-weight: 700
+}
+
+.st_tour_ver_countdown .tab-metr {
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #666;
+    font-weight: 700;
+    margin-top: 20px
+}
+
+.logo_big_center img {
+    max-width: 60%
+}
+
+@media screen and (max-width: 767px) {
+    .st_tour_ver_countdown .table-cell {
+        margin: 10px
+    }
+
+    .st_tour_ver_countdown .tab-val {
+        font-size: 14px;
+        padding: 0
+    }
+
+    .cs-content > h1.title {
+        font-size: 40px;
+        margin-top: 40px
+    }
+
+    .st_tour_ver_countdown .tab-metr {
+        font-size: 14px
+    }
+
+    .st-header-center .logo_big_center img {
+        margin-top: 50px
+    }
+
+    .cs-content .progress-striped {
+        margin-top: 10px
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .st_tour_ver_countdown .tab-val {
+        padding: 2px 52px
+    }
+
+    .st_tour_ver_countdown .table-cell {
+        margin: 20px
+    }
+
+    .cs-content .progress-striped {
+        margin-top: 200px
+    }
+}
+
+.st_fix_gallery .row {
+    position: relative;
+    overflow: hidden
+}
+
+.st_fix_gallery .row .st_image_title {
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+    color: #fff;
+    z-index: 2;
+    padding: 0 15px;
+    line-height: 35px;
+    width: 100%;
+    transition: all .7s ease-in-out
+}
+
+.st_fix_gallery .row:hover .st_image_title {
+    opacity: 0
+}
+
+.st_image_title > div {
+    overflow: hidden
+}
+
+.fotorama__stage * {
+    text-align: center
+}
+
+.st_tour_ver_fotorama .fotorama__arr--prev:before {
+    content: "\f060"
+}
+
+.st_tour_ver_fotorama .fotorama__arr--next:before {
+    content: "\f061"
+}
+
+.st_tour_grid .post-header .post-title {
+    font-size: 30px
+}
+
+.st_tour_grid .post, .st_tour_grid .post .post-meta, .st_tour_grid .post-header, .st_tour_list .post, .st_tour_list .post .post-meta, .st_tour_list .post-header {
+    border: none
+}
+
+.st_tour_grid .post-desciption {
+    margin-top: 20px
+}
+
+.st_tour_grid .post-desciption p {
+    line-height: 21pt;
+    font-size: 14px;
+    text-align: justify
+}
+
+.st_tour_ver_btn {
+    background-color: #666;
+    float: right;
+    padding: 4px 25px
+}
+
+.st_tour_list .st_tour_ver_btn {
+    float: left
+}
+
+.st_tour_grid .st_tour_category, .st_tour_list .st_tour_category {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 1;
+    padding: 4px 10px
+}
+
+.st_tour_category {
+    background-color: #666;
+    cursor: pointer
+}
+
+.st_tour_grid > div, .st_tour_list > div {
+    margin-top: 60px
+}
+
+.post-desciption span, .st_tour_grid, .st_tour_list {
+    font-weight: 100;
+    line-height: 23pt;
+    text-align: justify
+}
+
+.media-responsive.st_tour_grid {
+    height: 228px
+}
+
+.st_tour_grid .post .post-header blockquote, .st_tour_list .post .post-header blockquote {
+    height: 228px;
+    text-align: justify;
+    color: #fff;
+    margin: 0;
+    padding-right: 30px;
+    padding-left: 180px;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 23pt
+}
+
+.st_tour_grid .post .post-header blockquote:before, .st_tour_list .post .post-header blockquote:before {
+    content: '\f10d';
+    font-size: 80px;
+    top: 100px;
+    left: 40px
+}
+
+.st_tour_grid .post .post-header blockquote {
+    vertical-align: middle;
+    display: table-cell
+}
+
+.post .post-header .post-link.st_tour_grid_link {
+    width: 100%;
+    height: 228px;
+    line-height: 228px;
+    padding: 0 15px 0 0;
+    white-space: pre-wrap
+}
+
+body .st_tour_ver_hover_white:hover {
+    background-color: #fff
+}
+
+.st_tour_grid .hover-img .hover-icon, .st_tour_ver_btn {
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s
+}
+
+.st_tour_grid .post-header, .st_tour_grid .post-inner {
+    float: left;
+    width: 100%
+}
+
+.st_tour_grid .hover-img .hover-icon {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0)
+}
+
+.st_tour_grid blockquote, .st_tour_list blockquote {
+    display: table
+}
+
+.st_tour_grid blockquote span, .st_tour_list blockquote span {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.pagination li a.st_tour_ver_pag {
+    font-size: 14px;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    padding: 0;
+    text-align: center;
+    line-height: 36px;
+    width: 36px
+}
+
+.pagination li a.st_tour_ver_pag .fa {
+    font-size: 18px;
+    font-weight: 700
+}
+
+ul.st_tour_ver_pag {
+    text-align: center
+}
+
+ul.st_tour_ver_pag li {
+    margin-right: 30px;
+    float: none;
+    display: inline-block
+}
+
+@media screen and (max-width: 992px) {
+    .st_sale_class {
+        right: 0
+    }
+}
+
+.st_tour_ver.st_rating_count {
+    overflow: hidden;
+    position: relative
+}
+
+.st_tour_ver.st_rating_count > i.fa {
+    font-size: 65px;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    margin-left: -4px;
+    padding-top: 8px;
+    position: absolute
+}
+
+.st_rating_count_inner {
+    padding: 15px;
+    line-height: 35px
+}
+
+.st_rating_count_inner b {
+    font-size: 1.7em;
+    border-bottom-style: solid;
+    border-bottom-width: 1px
+}
+
+.st_tour_ver .div_review_half {
+    width: 0;
+    float: left;
+    height: 0;
+    border-width: 20px;
+    border-style: solid;
+    background-color: transparent !important
+}
+
+.st_tour_ver .div_review_half:hover {
+    border-color: #666;
+    cursor: pointer
+}
+
+.st_tour_ver .div_review_half.right {
+    float: right;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important
+}
+
+.st_tour_ver .div_review_half.left {
+    float: left;
+    border-bottom-color: transparent !important;
+    border-right-color: transparent !important
+}
+
+.st_tour_ver .div_review_half i {
+    position: absolute;
+    top: 8px;
+    font-size: 12px
+}
+
+.st_tour_ver .div_review_half.left i {
+    left: 8px
+}
+
+.st_tour_ver .div_review_half.right i {
+    right: 8px
+}
+
+.st_tour_ver_review {
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.st_tour_ver_review .st_reviews {
+    font-size: 13px;
+    text-align: justify
+}
+
+.st_tour_ver_review .st_reviews .author {
+    background-color: rgba(0, 0, 0, .1);
+    padding-bottom: 8px;
+    padding-top: 8px
+}
+
+.st_tour_ver_review .st_reviews .content::first-letter {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-right: 2px
+}
+
+.lh21 {
+    line-height: 21pt
+}
+
+

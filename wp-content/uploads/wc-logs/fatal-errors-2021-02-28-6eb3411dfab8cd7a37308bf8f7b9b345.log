@@ -1,0 +1,23 @@
+2021-02-28T06:15:13+00:00 CRITICAL Uncaught Error: Class 'STActivity' not found in C:\xampp\htdocs\tourphoria\wp-content\themes\traveler\inc\vc-elements\shortcodes.php:704
+Stack trace:
+#0 C:\xampp\htdocs\tourphoria\wp-includes\shortcodes.php(343): st_vc_header('', '', 'st_header')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\tourphoria\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(st_lis...', 'do_shortcode_ta...', '[st_title][st_h...')
+#3 C:\xampp\htdocs\tourphoria\wp-content\plugins\js_composer\include\helpers\helpers.php(236): do_shortcode('[st_title][st_h...')
+#4 C:\xampp\htdocs\tourphoria\wp-content\themes\traveler\vc_templates\vc_column.php(48): wpb_js_remove_wpautop('[st_title][st_h...')
+#5 C:\xampp\htdocs\tourphoria\wp-content\plugins\js_composer\include\classes\shortcodes\shortcodes.php(478): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\tourphoria\wp-content\plugins\js_composer\include\classes\shortcodes\shortcodes.php(458): WPBakeryShortCode->loadTemplate(Array, '[st_title][st_h...')
+#7 in C:\xampp\htdocs\tourphoria\wp-content\themes\traveler\inc\vc-elements\shortcodes.php on line 704
+
+2021-02-28T07:04:58+00:00 CRITICAL Uncaught Error: Class 'Hotel_Alone_Helper' not found in C:\xampp\htdocs\tourphoria\wp-content\themes\traveler\header-hotel-activity.php:19
+Stack trace:
+#0 C:\xampp\htdocs\tourphoria\wp-includes\template.php(730): require_once()
+#1 C:\xampp\htdocs\tourphoria\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\tourphoria\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\tourphoria\wp-content\themes\traveler\template-hotel-activity.php(6): get_header('hotel-activity')
+#4 C:\xampp\htdocs\tourphoria\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\tourphoria\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\tourphoria\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\tourphoria\wp-content\themes\traveler\header-hotel-activity.php on line 19
+

@@ -1,0 +1,171 @@
+.fc-toolbar{
+	margin-bottom: 0px;
+	position: relative;
+	border: 1px solid #AAA;
+	margin-bottom: 10px;
+}
+.fc-center , .fc-left, .fc-right{height: 40px;}
+.fc-toolbar .fc-left{
+	width: 30%;
+}
+.fc-toolbar .fc-left .fc-button-group {
+	width: 100%;
+	position: relative;
+}
+.fc-toolbar .fc-right{
+	width: 30%;
+	/*position: absolute;*/
+	top: 0;
+	left: 0;
+}
+.fc-toolbar .fc-center{ width: 40%; float: left}
+.fc-toolbar .fc-center h2{width: 100%}
+.fc-toolbar .fc-button{
+	/*position: absolute;*/
+	/*top: 10px;*/
+	/*width: 40px;*/
+	height: 40px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	border: none;
+	color: #FFF;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+.fc-toolbar .fc-button:not(.fc-state-disabled):hover{
+	background: #ED8323;
+}
+.fc-toolbar .fc-today-button{
+	/*padding: 0;*/
+	/*width: 50px;*/
+	color: #464646;
+	/*left: 10px;*/
+}
+.fc-toolbar .fc-reloadButton-button{
+	/*left: 70px;*/
+	/*width: 80px;*/
+	color: #464646;
+}
+.fc-toolbar .fc-prev-button{
+	position: absolute;
+	right: 34px
+}
+.fc-toolbar .fc-next-button{
+	right: 0px;
+	position: absolute;
+}
+.fc-toolbar .fc-left h2{
+	width: 100%;
+	text-align: center;
+	color: #464646;
+}
+
+.fc-widget-header .fc-day-header{
+	color: #FFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid #ED8323;
+	background-color: #454341;
+}
+.fc-day-number{
+	padding-left: 5px !important;
+	text-align: left !important;
+	border-color: #AAA #AAA transparent #FFF !important;
+	border-width: 1px !important;
+	border-style: solid !important;
+	background-color: rgb(229,229,229) !important;
+}
+.fc-unthemed .fc-divider, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead{
+	border-color: #AAA !important;
+}
+.calendar-wrapper .form-group{
+	margin-bottom: 20px !important;
+}
+.calendar-wrapper .form-control{
+	width: 100% !important;
+}
+.calendar-wrapper label{
+	display: block;
+	margin-bottom: 10px !important;
+}
+.fc-event{
+	background-color: rgb(237, 131, 35);
+	border-color: rgb(237, 131, 35);
+}
+.fc-highlight{
+	opacity: 0.7 !important;
+}
+
+.fc-row .fc-highlight-skeleton{
+	z-index: 5;
+}
+.calendar-wrapper .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.calendar-wrapper .overlay.open{
+	z-index: 999;
+}
+.calendar-wrapper .overlay .spinner{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%)
+}
+.fc-day-grid-event{
+	min-height: 40px;
+}
+@media screen and (max-width: 992px) {
+	.fc-center {width: 30% !important ;overflow: hidden}
+	.fc-left {width: 35% !important}
+	.fc-right{width:35% !important}
+}
+@media screen and (max-width: 450px) {
+	.fc-toolbar .fc-reloadButton-button {position: absolute; right: 0}
+}
+.fc-state-default {
+	background-image: none;
+	background-color: #CCC;
+}
+.joverlay{
+	background: rgba(0,0,0,0.5);
+	z-index: 5 !important;
+}
+.fc-widget-content table tr td.fc-day{
+	cursor: pointer;
+}
+/*.joverlay .fc-today.fc-state-highlight{
+	background: transparent !important;
+}*/
+/*.fc-highlight {
+	opacity: 0 !important;
+}*/
+/*.joverlayhr{
+	background: transparent !important;
+}
+.joverlayh ~ .fc-highlight-skeleton table tr td{
+	background: rgba(0,0,0,0.5);
+	z-index: 5 !important;
+}
+.joverlayh ~ .fc-highlight-skeleton table tr td.fc-highlight{
+	background: transparent;
+	z-index: 0;
+}*/
+/*.fc-highlight-skeleton .fc-highlight{
+	border-left: 4px solid #AAA !important;
+	border-right: 4px solid #AAA !important;
+}*/
+/*.fc-highlight-skeleton .fc-highlight:after{
+	content: '';
+}*/

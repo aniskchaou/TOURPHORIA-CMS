@@ -1,0 +1,443 @@
+.fc-event {
+    border-radius: 0
+}
+
+.calendar-wrapper,
+.calendar-starttime-wrapper {
+    position: relative;
+    clear: both
+}
+
+.calendar-content.fc-unthemed,
+.calendar-starttime-content.fc-unthemed{
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 4px
+}
+
+.calendar-wrapper .overlay,
+.calendar-starttime-wrapper .overlay {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    z-index: 2;
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+}
+
+.calendar-content.fc-unthemed .fc-toolbar button:not (.fc-right button:last-child),
+.calendar-starttime-content.fc-unthemed .fc-toolbar button:not (.fc-right button:last-child) {
+    margin-right: 5px
+}
+
+.calendar-content.fc-unthemed .fc-center h2,
+.calendar-starttime-content.fc-unthemed .fc-center h2 {
+    font-size: 2em
+}
+
+.calendar-content.fc-unthemed th,
+.calendar-starttime-content.fc-unthemed th {
+    border-left: 0;
+    border-right: 0;
+    padding: 1em 0
+}
+
+.calendar-content.fc-unthemed td,
+.calendar-starttime-content.fc-unthemed td {
+    border-width: 0;
+    /* text-align: center */
+}
+
+.calendar-content.fc-unthemed .fc-basic-view .fc-head,
+.calendar-starttime-content.fc-unthemed .fc-basic-view .fc-head {
+    background-color: rgba(204, 204, 204, .2);
+    border-bottom: 1px solid #ccc
+}
+
+.calendar-content.fc-unthemed .fc-content-skeleton .fc-day-number,
+.calendar-starttime-content.fc-unthemed .fc-content-skeleton .fc-day-number {
+    text-align: center
+}
+
+.calendar-content.fc-unthemed .fc-basic-view .fc-body .fc-row,
+.calendar-starttime-content.fc-unthemed .fc-basic-view .fc-body .fc-row {
+    min-height: auto;
+    display: table
+}
+
+.calendar-content.fc-unthemed .tooltip-inner,
+.calendar-starttime-content.fc-unthemed .tooltip-inner {
+    min-width: 150px;
+    background-color: #666;
+    color: #fff;
+    padding: 10px;
+    line-height: 1.5em;
+    opacity: 1;
+    border-radius: 4px
+}
+
+.calendar-content.fc-unthemed .tooltip-arrow,
+.calendar-starttime-content.fc-unthemed .tooltip-arrow {
+    border-top-color: #666!important;
+    opacity: 1
+}
+
+.calendar-content.fc-unthemed .tooltip.in,
+.calendar-starttime-content.fc-unthemed .tooltip.in {
+    opacity: 1!important
+}
+
+.calendar-content.fc-unthemed .fc-content-skeleton .fc-event,
+.calendar-starttime-content.fc-unthemed .fc-content-skeleton .fc-event {
+    border: none;
+    background: 0 0;
+    color: #666;
+    font-size: 14px
+}
+
+.calendar-bottom .cellgrey .color,
+.calendar-content.fc-unthemed .btn-disabled,
+.calendar-starttime-content.fc-unthemed .btn-disabled {
+    background-color: #ccc
+}
+
+.calendar-content.fc-unthemed .btn-disabled,
+.calendar-content.fc-unthemed .btn.btn-available,
+.calendar-starttime-content.fc-unthemed .btn-disabled,
+.calendar-startime-content.fc-unthemed .btn.btn-available {
+    height: auto;
+    width: 100%;
+    line-height: 35px;
+    color: #fff
+}
+
+.calendar-content.fc-unthemed .btn,
+.calendar-startime-content.fc-unthemed .btn {
+    border: 1px solid #ccc;
+    color: #666
+}
+
+.calendar-content.fc-unthemed .btn.btn-available.selected,
+.calendar-content.fc-unthemed .btn.btn-available:hover,
+.calendar-content.fc-unthemed .st-active .btn.btn-available,
+.calendar-starttime-content.fc-unthemed .btn.btn-available.selected,
+.calendar-starttime-content.fc-unthemed .btn.btn-available:hover,
+.calendar-starttime-content.fc-unthemed .st-active .btn.btn-available {
+    color: #fff
+}
+
+.calendar-content.fc-unthemed .fc-day-grid-event .fc-content,
+.calendar-starttime-content.fc-unthemed .fc-day-grid-event .fc-content {
+    overflow: initial;
+    font-size: 12px;
+    color: #fff
+}
+
+.calendar-content.fc-unthemed .fc-day-grid-event .fc-content .bgr-main,
+.calendar-starttime-content.fc-unthemed .fc-day-grid-event .fc-content .bgr-main {
+    margin: 0 5px;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 11px
+}
+
+.calendar-content.fc-unthemed .fc-content,
+.calendar-starttime-content.fc-unthemed .fc-content {
+    margin: 0 2px
+}
+
+.calendar-content.fc-unthemed .fc-content .btn,
+.calendar-starttime-content.fc-unthemed .fc-content .btn {
+    padding: 0
+}
+
+.calendar-content.fc-unthemed .fc-content span,
+.calendar-starttime-content.fc-unthemed .fc-content span {
+    line-height: 35px
+}
+
+.calendar-bottom {
+    margin-top: 20px;
+    padding-bottom: 20px
+}
+
+.calendar-bottom .item {
+    display: inline-block;
+    margin-right: 30px
+}
+
+.calendar-bottom .color {
+    display: inline-block;
+    width: 20px;
+    height: 20px
+}
+
+.calendar-bottom .color.available {
+    border: 1px solid #ccc
+}
+
+.triangle {
+    display: inline-block;
+    right: 12px;
+    bottom: 12px;
+    position: absolute
+}
+
+.triangle::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-top-color: #ccc
+}
+
+.calendar-content.fc-unthemed .btn.btn-available:hover .triangle::before,
+.calendar-content.fc-unthemed .st-active .triangle::before,
+.calendar-content.fc-unthemed button.btn-disabled .triangle::before,
+.calendar-starttime-content.fc-unthemed .btn.btn-available:hover .triangle::before,
+.calendar-starttime-content.fc-unthemed .st-active .triangle::before,
+.calendar-starttime-content.fc-unthemed button.btn-disabled .triangle::before {
+    border-top-color: #fff
+}
+
+.calendar-content.fc-unthemed .fc-today,
+.calendar-starttime-content.fc-unthemed .fc-today {
+    background: 0 0
+}
+
+.calendar-content.fc-unthemed button,
+.calendar-wrapper .calendar-wrapper-inner,
+.calendar-starttime-content.fc-unthemed button,
+.calendar-starttime-wrapper .calendar-starttime-wrapper-inner {
+    position: relative
+}
+
+.calendar-content.fc-unthemed .btn[disabled],
+.calendar-starttime-content.fc-unthemed .btn[disabled] {
+    opacity: 1
+}
+
+.template-user .calendar-content .fc-toolbar,
+.template-user .calendar-starttime-content .fc-toolbar {
+    background-color: #333
+}
+
+.calendar-content.fc-unthemed .fc-day-grid-container,
+.calendar-starttime-content.fc-unthemed .fc-day-grid-container {
+    height: auto!important
+}
+
+.template-user .calendar-content.fc-unthemed .fc-day-grid-container,
+.template-user .calendar-starttime-content.fc-unthemed .fc-day-grid-container {
+    overflow: hidden
+}
+
+.template-user .calendar-content.fc-unthemed .fc-content-skeleton thead,
+.template-user .calendar-starttime-content.fc-unthemed .fc-content-skeleton thead {
+    display: table-header-group
+}
+
+body.add-activity-booking .qtip-wrapper .calendar-content.fc-unthemed .fc-state-default,
+body.add-tour-booking .qtip-wrapper .calendar-content.fc-unthemed .fc-state-default,
+body.add-activity-booking .qtip-wrapper .calendar-starttime-content.fc-unthemed .fc-state-default,
+body.add-tour-booking .qtip-wrapper .calendar-starttime-content.fc-unthemed .fc-state-default {
+    padding: 5px
+}
+
+body.add-activity-booking .qtip .calendar-wrapper,
+body.add-tour-booking .qtip .calendar-wrapper,
+body.add-activity-booking .qtip .calendar-starttime-wrapper,
+body.add-tour-booking .qtip .calendar-starttime-wrapper {
+    padding: 0!important
+}
+
+body.add-activity-booking .qtip .calendar-wrapper .calendar-content.fc-unthemed,
+body.add-tour-booking .qtip .calendar-wrapper .calendar-content.fc-unthemed,
+body.add-activity-booking .qtip .calendar-starttime-wrapper .calendar-starttime-content.fc-unthemed,
+body.add-tour-booking .qtip .calendar-starttime-wrapper .calendar-starttime-content.fc-unthemed {
+    border: none!important
+}
+
+#form-bulk-edit,
+#form-bulk-starttime-edit,
+#flight-form-bulk-edit{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(0, 0, 0, .7);
+    display: none
+}
+
+#form-bulk-edit .form-container,
+#form-bulk-starttime-edit .form-container,
+#flight-form-bulk-edit .form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    background: #fff;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid #242323;
+    padding: 15px;
+    max-width: 100%;
+    width: 950px
+}
+
+#form-bulk-edit .form-container h3,
+#form-bulk-edit .form-container h4,
+#form-bulk-starttime-edit .form-container h3,
+#form-bulk-starttime-edit .form-container h4,
+#flight-form-bulk-edit .form-container h3,
+#flight-form-bulk-edit .form-container h4{
+    margin: 0;
+    padding: 0
+}
+
+#form-bulk-edit .form-container .form-title,
+#form-bulk-starttime-edit .form-container .form-title,
+#flight-form-bulk-edit .form-container .form-title{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #CCC
+}
+
+#form-bulk-edit .form-container h3,
+#form-bulk-starttime-edit .form-container h3,
+#flight-form-bulk-edit .form-container h3{
+    font-size: 20px
+}
+
+#form-bulk-edit .form-container h4,
+#form-bulk-starttime-edit .form-container h4,
+#flight-form-bulk-edit .form-container h4{
+    font-size: 18px
+}
+
+#form-bulk-edit .form-container .form-footer,
+#form-bulk-starttime-edit .form-container .form-footer,
+#flight-form-bulk-edit .form-container .form-footer{
+    padding-top: 15px;
+    border-top: 1px solid #CCC
+}
+
+#form-bulk-edit .form-container .form-content,
+#form-bulk-starttime-edit .form-container .form-content,
+#flight-form-bulk-edit .form-container .form-content{
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+#form-bulk-edit .form-container .form-content .form-group,
+#form-bulk-starttime-edit .form-container .form-content .form-group,
+#flight-form-bulk-edit .form-container .form-content .form-group{
+    width: auto!important;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    margin-bottom: 10px
+}
+
+#form-bulk-edit .form-container .form-content .form-group label,
+#form-bulk-starttime-edit .form-container .form-content .form-group label,
+#flight-form-bulk-edit .form-container .form-content .form-group label{
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 13px
+}
+
+#form-bulk-edit .form-container .form-content .form-group label.block,
+#form-bulk-starttime-edit .form-container .form-content .form-group label.block,
+#flight-form-bulk-edit .form-container .form-content .form-group label.block{
+    display: block;
+    margin-bottom: 5px
+}
+
+@media (max-width:1750px) {
+    #form-bulk-edit .form-container,
+    #form-bulk-starttime-edit .form-container,
+    #flight-form-bulk-edit .form-container{
+        max-height: 550px;
+        overflow-y: scroll
+    }
+}
+
+@media (max-width:1040px) {
+    #form-bulk-edit .form-container,
+    #form-bulk-starttime-edit .form-container,
+    #flight-form-bulk-edit .form-container{
+        max-height: 480px;
+        overflow-y: scroll
+    }
+}
+
+#form-bulk-edit .overlay,
+#form-bulk-starttime-edit .overlay,
+#flight-form-bulk-edit .overlay{
+    display: none;
+    z-index: 10;
+    background: rgba(255, 255, 255, .7)
+}
+
+#form-bulk-edit .overlay.open,
+#form-bulk-starttime-edit .overlay.open,
+#flight-form-bulk-edit .overlay.open{
+    display: block
+}
+
+#form-bulk-edit .form-message,
+#form-bulk-starttime-edit .form-message,
+#flight-form-bulk-edit .form-message{
+    font-style: italic
+}
+
+#form-bulk-edit .form-message.error,
+#form-bulk-starttime-edit .form-message.error,
+#flight-form-bulk-edit .form-message.error{
+    color: #A81212
+}
+
+#form-bulk-edit .form-message.success,
+#form-bulk-starttime-edit .form-message.success,
+#flight-form-bulk-edit .form-message.success{
+    color: #1E59DF
+}
+/* Css for starttime  */
+.starttime-tag{
+    white-space: normal;
+    text-align: left;
+    padding: 0 3px;
+}
+.activity-cstarttime{
+    margin-top: 5px;
+    white-space: normal;
+}
+
+.activity-cstarttime span{
+    font-size: 15px;
+    width: auto;
+    height: auto;
+    line-height:15px !important;
+}
+.partner-starttime .calendar-starttime-wraper.starttime-origin,
+.bulk-starttime .calendar-starttime-wraper.starttime-origin{
+    display: none;
+}
+.bulk-starttime .calendar_starttime_hour,
+.bulk-starttime .calendar_starttime_minute,
+.bulk-starttime .calendar_starttime_format{
+    padding: 5px 10px;
+}

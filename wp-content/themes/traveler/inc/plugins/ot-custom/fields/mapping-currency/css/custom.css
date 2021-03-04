@@ -1,0 +1,30 @@
+.mapping-currency{
+    
+}
+.row-mapping,
+.row-mapping-content{
+    overflow: hidden;
+    padding: 10px 0;
+}
+.col-mapping-lang{
+    float: left;
+    width: 10%;
+    line-height: 29px;
+}
+.col-mapping-currency{
+    float: left;
+    width: 90%;
+}
+.mapping-currency-head,
+.mapping-lang-head{
+    line-height: 29px;
+    font-weight: bold;
+}
+.mapping-loading{
+    visibility: hidden;
+    float: none;
+    margin: 0;
+}
+.mapping-loading.mapping-loading-visible{
+    visibility: visible;
+}

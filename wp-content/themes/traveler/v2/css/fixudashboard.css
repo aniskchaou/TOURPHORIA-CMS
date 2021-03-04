@@ -1,0 +1,100 @@
+.page-template-template-user {
+  font-family: 'Poppins', sans-serif !important; }
+  .page-template-template-user footer#main-footer {
+    color: gray;
+    font-size: 13px;
+    line-height: 1.4em;
+    border-top: 1px solid #dfdfdf;
+    padding-top: 13px; }
+  @media screen and (min-width: 1555px) {
+    .page-template-template-user {
+      padding: 0 100px; } }
+  .page-template-template-user .text-hero, .page-template-template-user h1, .page-template-template-user h2, .page-template-template-user h3, .page-template-template-user h4, .page-template-template-user h5, .page-template-template-user ul.slimmenu li a {
+    font-family: 'Poppins', sans-serif !important; }
+  .page-template-template-user .user-content {
+    margin-bottom: 40px; }
+
+.user-left-menu .st-page-sidebar-new {
+  margin-top: 0px !important;
+  position: relative;
+  background: #1A2B47 !important; }
+  .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.logo {
+    border-bottom: 1px solid #243553;
+    padding-top: 9px;
+    padding-bottom: 28px; }
+    .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.logo a {
+      padding-top: 0px;
+      padding-bottom: 0px; }
+  .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.user-profile-sidebar {
+    padding: 0;
+    border-bottom: 1px solid #243553;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    background: #1A2B47 !important; }
+    .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.user-profile-sidebar .user-profile-avatar {
+      padding: 0;
+      margin: 0px;
+      overflow: hidden; }
+      .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.user-profile-sidebar .user-profile-avatar .avatar-new {
+        width: 50px;
+        float: left;
+        margin-right: 15px; }
+        .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.user-profile-sidebar .user-profile-avatar .avatar-new img {
+          margin-bottom: 0px; }
+      .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.user-profile-sidebar .user-profile-avatar .info-new {
+        padding-top: 7px;
+        float: left; }
+        .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.user-profile-sidebar .user-profile-avatar .info-new .gap-upgrade-yes {
+          margin-top: 0px;
+          display: block;
+          height: 1px;
+          width: 100%; }
+        .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.user-profile-sidebar .user-profile-avatar .info-new .gap-upgrade-no {
+          margin-top: 7px;
+          display: block;
+          height: 1px;
+          width: 100%; }
+        .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.user-profile-sidebar .user-profile-avatar .info-new p {
+          margin-bottom: 5px;
+          line-height: 15px; }
+      .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.user-profile-sidebar .user-profile-avatar.has-button .avatar-new {
+        padding-top: 10px; }
+      .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.user-profile-sidebar .user-profile-avatar.has-button .info-new {
+        padding-top: 0px; }
+  .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.logout {
+    border-top: 1px solid #243553;
+    padding-top: 15px !important;
+    padding-bottom: 0px;
+    margin-top: 15px; }
+    .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.logout a {
+      padding-bottom: 5px; }
+  .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.backtohome a {
+    color: #1CB69A; }
+  .user-left-menu .st-page-sidebar-new .page-sidebar-menu li .sub-menu li.active a {
+    background: transparent;
+    color: #5191FA !important; }
+  .user-left-menu .st-page-sidebar-new .page-sidebar-menu li .sub-menu li a {
+    padding-left: 30px; }
+  .user-left-menu .st-page-sidebar-new .page-sidebar-menu li a:hover {
+    background: transparent;
+    color: #5191FA !important; }
+  .user-left-menu .st-page-sidebar-new .page-sidebar-menu li > a {
+    /*padding-left: 0px;*/
+    padding-top: 12px;
+    padding-bottom: 12px; }
+  .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.active > a {
+    background: transparent;
+    color: #5191FA !important; }
+    .user-left-menu .st-page-sidebar-new .page-sidebar-menu li.active > a .arrow:before {
+      color: #fff; }
+  .user-left-menu .st-page-sidebar-new:after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background-color: #1A2B47;
+    top: 0;
+    min-height: 100%;
+    display: block;
+    left: -200%; }

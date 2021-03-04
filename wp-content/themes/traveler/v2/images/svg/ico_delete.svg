@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>ico_delete</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="add-hotel-step-5" transform="translate(-1110.000000, -241.000000)" stroke="#1A2B48">
+            <g id="right" transform="translate(270.000000, 0.000000)">
+                <g id="block" transform="translate(30.000000, 100.000000)">
+                    <g id="ip" transform="translate(30.000000, 129.135135)">
+                        <g id="ico_delete" transform="translate(781.000000, 12.459459)">
+                            <g id="bin-1">
+                                <path d="M0,1.66126126 L14,1.66126126" id="Shape"></path>
+                                <path d="M8.5,0 L5.5,0 C4.94771525,0 4.5,0.371886001 4.5,0.830630631 L4.5,1.66126126 L9.5,1.66126126 L9.5,0.830630631 C9.5,0.371886001 9.05228475,0 8.5,0 Z" id="Shape"></path>
+                                <path d="M5.5,8.72162162 L5.5,4.56846847" id="Shape"></path>
+                                <path d="M8.5,8.72162162 L8.5,4.56846847" id="Shape"></path>
+                                <path d="M11.5766667,10.8668637 C11.5336578,11.2975359 11.100269,11.6288675 10.58,11.6288288 L3.42066667,11.6288288 C2.9003977,11.6288675 2.4670089,11.2975359 2.424,10.8668637 L1.5,1.66126126 L12.5,1.66126126 L11.5766667,10.8668637 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

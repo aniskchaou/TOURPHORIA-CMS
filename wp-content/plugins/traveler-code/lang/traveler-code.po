@@ -1,0 +1,471 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Traveler Code\n"
+"POT-Creation-Date: 2015-04-29 17:10+0700\n"
+"PO-Revision-Date: 2015-04-29 17:10+0700\n"
+"Last-Translator: \n"
+"Language-Team: Shinetheme\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;_n;__\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../importer/parsers.php:43 ../importer/parsers.php:75
+#: ../importer/parsers.php:83
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: ../importer/parsers.php:44
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: ../importer/parsers.php:87 ../importer/parsers.php:92
+#: ../importer/parsers.php:283 ../importer/parsers.php:474
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: ../importer/st.importer.php:280 ../update_taxonomy.php:102
+msgid "Import data could not be read. Please try a different file."
+msgstr ""
+
+#: ../importer/st.importer.php:316 ../update_taxonomy.php:138
+msgid "Sidebar does not exist in theme (using Inactive)"
+msgstr ""
+
+#: ../importer/st.importer.php:333 ../update_taxonomy.php:155
+msgid "Site does not support widget"
+msgstr ""
+
+#: ../importer/st.importer.php:350 ../update_taxonomy.php:172
+msgid "Widget already exists"
+msgstr ""
+
+#: ../importer/st.importer.php:388 ../update_taxonomy.php:210
+msgid "Imported"
+msgstr ""
+
+#: ../importer/st.importer.php:391 ../update_taxonomy.php:213
+msgid "Imported to Inactive"
+msgstr ""
+
+#: ../importer/st.importer.php:396 ../update_taxonomy.php:218
+msgid "No Title"
+msgstr ""
+
+#: ../importer/st.init.php:89
+msgid "Easily import content by only one click"
+msgstr ""
+
+#: ../importer/st.init.php:91
+msgid "Import now"
+msgstr ""
+
+#: ../importer/st.init.php:92
+msgid "No import"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:125
+#: ../importer/wordpress-importer.php:134
+#: ../importer/wordpress-importer.php:185
+#: ../importer/wordpress-importer.php:189
+#: ../importer/wordpress-importer.php:198
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:126
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:169
+msgid "All done."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:169
+msgid "Have fun!"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:170
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:190
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:206
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:231
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:257
+msgid "Assign Authors"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:258
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:260
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:270
+msgid "Import Attachments"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:273
+msgid "Download and import file attachments"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:290
+msgid "Import author:"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:301
+msgid "or create new user with login name:"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:304
+msgid "as a new user:"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:312
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:314
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:315
+msgid "- Select -"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:365
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:416
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:456
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:502
+#: ../importer/wordpress-importer.php:643
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:528
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:550
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:609
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:774
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:781
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:844
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:857
+msgid "Invalid file type"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:901
+msgid "Remote server did not respond"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:907
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:914
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:919
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:925
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:1024
+msgid "Import WordPress"
+msgstr ""
+
+#: ../importer/wordpress-importer.php:1031
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:1046
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: ../importer/wordpress-importer.php:1047
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: ../inc/class.language.php:86
+msgid "Update translate successfully !"
+msgstr ""
+
+#: ../inc/class.language.php:91
+msgid "Update translate not successfully !"
+msgstr ""
+
+#: ../inc/class.language.php:136
+msgid "Create successfully !"
+msgstr ""
+
+#: ../inc/class.language.php:142
+msgid "Create not successfully !"
+msgstr ""
+
+#: ../inc/class.language.php:148
+msgid "Name existed !"
+msgstr ""
+
+#: ../inc/class.language.php:154
+msgid "Name empty !"
+msgstr ""
+
+#: ../inc/class.language.php:160
+msgid "Name only contains valid characters: a-z, A-Z, 0-9 , -"
+msgstr ""
+
+#: ../inc/class.language.php:190
+msgid "Delete : \""
+msgstr ""
+
+#: ../inc/class.language.php:222
+msgid "Set Language default : \""
+msgstr ""
+
+#: ../inc/language/add.php:3
+msgid "Add Language"
+msgstr ""
+
+#: ../inc/language/add.php:13 ../inc/language/show.php:43
+msgid "Name Language"
+msgstr ""
+
+#: ../inc/language/add.php:21 ../inc/language/show.php:44
+msgid "Description"
+msgstr ""
+
+#: ../inc/language/add.php:29
+msgid "Save"
+msgstr ""
+
+#: ../inc/language/add.php:30 ../inc/language/translate.php:43
+msgid "Cancel"
+msgstr ""
+
+#: ../inc/language/list_file.php:3
+msgid "Language : "
+msgstr ""
+
+#: ../inc/language/list_file.php:18
+msgid "File Name"
+msgstr ""
+
+#: ../inc/language/list_file.php:19
+msgid "Url"
+msgstr ""
+
+#: ../inc/language/list_file.php:43 ../inc/language/translate.php:17
+msgid "Back"
+msgstr ""
+
+#: ../inc/language/show.php:3
+msgid "ST Language"
+msgstr ""
+
+#: ../inc/language/show.php:18
+msgid "Set Language default"
+msgstr ""
+
+#: ../inc/language/show.php:31
+msgid "Save Changes"
+msgstr ""
+
+#: ../inc/language/show.php:32 ../include/class.order.php:29
+msgid "Add New"
+msgstr ""
+
+#: ../inc/language/show.php:56 ../inc/language/translate.php:27
+msgid "Translate"
+msgstr ""
+
+#: ../inc/language/show.php:59
+msgid "Delete"
+msgstr ""
+
+#: ../inc/language/translate.php:3
+msgid "Edit Language : "
+msgstr ""
+
+#: ../inc/language/translate.php:6
+msgid "File : "
+msgstr ""
+
+#: ../inc/language/translate.php:25
+msgid "Title"
+msgstr ""
+
+#: ../inc/language/translate.php:42
+msgid "Save Change"
+msgstr ""
+
+#: ../include/class.order.php:25 ../include/class.order.php:27
+msgid "Orders"
+msgstr ""
+
+#: ../include/class.order.php:26 ../include/class.order.php:28
+msgid "Order"
+msgstr ""
+
+#: ../include/class.order.php:30
+msgid "Add New Order"
+msgstr ""
+
+#: ../include/class.order.php:31
+msgid "New Order"
+msgstr ""
+
+#: ../include/class.order.php:32
+msgid "Edit Order"
+msgstr ""
+
+#: ../include/class.order.php:33
+msgid "View Order"
+msgstr ""
+
+#: ../include/class.order.php:34
+msgid "All Orders"
+msgstr ""
+
+#: ../include/class.order.php:35
+msgid "Search Orders"
+msgstr ""
+
+#: ../include/class.order.php:36
+msgid "Parent Orders:"
+msgstr ""
+
+#: ../include/class.order.php:37
+msgid "No Orders found."
+msgstr ""
+
+#: ../include/class.order.php:38
+msgid "No Orders found in Trash."
+msgstr ""
+
+#: ../plugins/Tax-meta-class/Tax-meta-class.php:373
+#: ../plugins/Tax-meta-class/Tax-meta-class.php:420
+msgid "Remove"
+msgstr ""
+
+#: ../plugins/Tax-meta-class/Tax-meta-class.php:386
+msgid "Add"
+msgstr ""
+
+#: ../plugins/Tax-meta-class/Tax-meta-class.php:719
+msgid "Remove Image"
+msgstr ""
+
+#: ../plugins/Tax-meta-class/Tax-meta-class.php:721
+msgid "Upload Image"
+msgstr ""
+
+#: ../plugins/Tax-meta-class/Tax-meta-class.php:741
+msgid "Select a color"
+msgstr ""
+
+#: ../plugins/class-wp-twitter-api.php:68
+msgid "Can't get the bearer token, check your credentials"
+msgstr ""
+
+#: ../plugins/class-wp-twitter-api.php:124
+msgid "Bearer Token is good, check your query"
+msgstr ""
+
+#: ../update_taxonomy.php:41
+msgid "Update OptionTree -> OK"
+msgstr ""
+
+#: ../update_taxonomy.php:47
+msgid "Add Taxonomy before import XML -> OK"
+msgstr ""
+
+#: ../update_taxonomy.php:53
+msgid "Update widget -> OK"
+msgstr ""
+
+#: ../update_taxonomy.php:69
+msgid "Add Taxonomy after import XML -> OK"
+msgstr ""

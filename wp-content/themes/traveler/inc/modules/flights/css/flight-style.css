@@ -1,0 +1,419 @@
+.st-flight-search .form-group-no .input-icon {
+  top: 29px;
+}
+.st-flight-location .option .label {
+  font-weight: 400;
+  font-size: 12px;
+}
+.st-flight-location .option .label a {
+  color: #444;
+}
+.st-flight-location.option-wrapper .option:hover {
+  background: #ed8323;
+}
+.st-flight-location.option-wrapper .option:hover a {
+  color: #FFF;
+}
+.st-flight-search.one_way .return {
+  display: none;
+  visibility: hidden;
+}
+.booking-item-airline-logo > img {
+  width: auto;
+  height: 35px;
+}
+.st-booking-list {
+  width: 70%;
+  float: left;
+}
+@media (max-width: 991px) {
+  .st-booking-list {
+    width: 100%;
+  }
+}
+.st-booking-list .departure-title {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.st-booking-list .departure-title:before {
+  position: absolute;
+  width: calc(100% - 30px);
+  content: '';
+  border-bottom: 2px dashed #ed8323;
+  bottom: 0;
+  left: 0;
+}
+.st-booking-list .departure-title .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.st-booking-list .departure-title .icon-flight {
+  position: absolute;
+  right: 0;
+  bottom: -9px;
+  color: #ed8323;
+  font-size: 22px;
+}
+.st-booking-list .booking-item-airline-logo {
+  margin-bottom: 10px;
+}
+.st-booking-list .booking-item {
+  padding: 8px 17px 8px 17px;
+}
+.st-booking-list .booking-item-flight-details .booking-item-arrival .booking-item-date,
+.st-booking-list .booking-item-flight-details .booking-item-departure .booking-item-date {
+  padding-left: 0;
+}
+.st-booking-list .booking-item-flight-details .booking-item-departure h5,
+.st-booking-list .booking-item-flight-details .booking-item-arrival h5 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.st-booking-list .booking-item-flight-details .booking-item-departure {
+  width: 100px;
+  margin-right: 0;
+  display: inline-block;
+  padding-right: 8px;
+}
+.st-booking-list .booking-item-flight-details .booking-item-arrival {
+  width: 100px;
+  float: right;
+  display: inline-block;
+  padding-left: 8px;
+  text-align: right;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers {
+  display: inline-block;
+  width: calc(100% - 200px);
+  float: left;
+  text-align: center;
+  min-height: 60px;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line {
+  position: relative;
+  width: 100%;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line:before {
+  width: 100%;
+  border: 1px solid #ed8323;
+  position: absolute;
+  top: 0;
+  height: 0;
+  content: '';
+  left: 0;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .origin {
+  position: absolute;
+  left: -15px;
+  top: 8px;
+  font-size: 13px;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .origin > div {
+  position: relative;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .origin > div:before {
+  width: 10px;
+  border: 2px solid #ed8323;
+  border-radius: 50%;
+  position: absolute;
+  content: '';
+  top: -12px;
+  left: 7px;
+  z-index: 10;
+  height: 10px;
+  display: block;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .destination {
+  position: absolute;
+  right: -15px;
+  top: 8px;
+  font-size: 13px;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .destination > div {
+  position: relative;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .destination > div:before {
+  width: 10px;
+  border: 2px solid #ed8323;
+  border-radius: 50%;
+  position: absolute;
+  content: '';
+  top: -12px;
+  right: 7px;
+  z-index: 10;
+  height: 10px;
+  display: block;
+  background: #FFF;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .stop {
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  font-size: 13px;
+  transform: translateX(-50%);
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .stop > div {
+  position: relative;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .stop > div:before {
+  width: 10px;
+  border: 2px solid #ed8323;
+  border-radius: 50%;
+  position: absolute;
+  content: '';
+  top: -12px;
+  left: 7px;
+  z-index: 10;
+  height: 10px;
+  display: block;
+  background: #FFF;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .stop1 {
+  position: absolute;
+  left: 33.33%;
+  top: 8px;
+  font-size: 13px;
+  transform: translateX(-50%);
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .stop1 > div {
+  position: relative;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .stop1 > div:before {
+  width: 10px;
+  border: 2px solid #ed8323;
+  border-radius: 50%;
+  position: absolute;
+  content: '';
+  top: -12px;
+  left: 7px;
+  z-index: 10;
+  height: 10px;
+  display: block;
+  background: #FFF;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .stop2 {
+  position: absolute;
+  left: 66.66%;
+  top: 8px;
+  font-size: 13px;
+  transform: translateX(-50%);
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .stop2 > div {
+  position: relative;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .flight-line .stop2 > div:before {
+  width: 10px;
+  border: 2px solid #ed8323;
+  border-radius: 50%;
+  position: absolute;
+  content: '';
+  top: -12px;
+  left: 7px;
+  z-index: 10;
+  height: 10px;
+  display: block;
+  background: #FFF;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .duration {
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+.st-booking-list .booking-item-flight-details .flight-layovers .footer {
+  padding-top: 0px;
+  font-size: 12px;
+}
+@media (max-width: 479px) {
+  .st-booking-list .booking-item-flight-details .flight-layovers .footer {
+    display: none;
+  }
+}
+.st-booking-list .st-flight-price {
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+}
+.st-booking-list .st-flight-price .eco-price,
+.st-booking-list .st-flight-price .bus-price {
+  width: 50%;
+  float: left;
+}
+.st-booking-list .st-flight-price .eco-price .i-radio,
+.st-booking-list .st-flight-price .bus-price .i-radio {
+  float: none;
+}
+.st-flight-booking {
+  width: 30%;
+  float: left;
+  padding-left: 20px;
+}
+@media (max-width: 991px) {
+  .st-flight-booking {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px !important;
+  }
+}
+.st-flight-booking .flight-booking {
+  min-height: 200px;
+  border: 1px solid #ed8323;
+}
+.st-flight-booking .flight-booking .flight-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFF;
+  background: #ed8323;
+  text-align: center;
+  padding: 10px 10px;
+}
+.st-flight-booking .flight-booking .your-booking-content {
+  padding: 5px 10px 10px;
+}
+.st-flight-booking .flight-booking .your-booking-content .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ed8323;
+  margin-bottom: 5px;
+}
+.st-flight-booking .flight-booking .your-booking-content .caption {
+  margin-bottom: 15px;
+}
+.st-flight-booking .flight-booking .your-booking-content .caption p {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.st-flight-booking .flight-booking .your-booking-content .passengers {
+  font-size: 13px;
+  font-weight: bold;
+}
+.st-flight-booking .flight-booking .your-booking-content .st-flight-total-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ed8323;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.st-flight-booking .flight-booking .your-booking-content .st-flight-total-price .price {
+  color: #555;
+}
+.st-flight-booking .flight-booking .your-booking-content .st-book-now {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px dashed #ccc;
+}
+.flight-input .st-select-wrapper {
+  z-index: 0;
+  position: initial !important;
+}
+.flight-input .input-icon {
+  z-index: 3;
+}
+@media (min-width: 992px) {
+  .st-flight-search-form.small {
+    padding-right: 30px;
+    border-right: 1px solid #ccc;
+  }
+}
+.st-flight-booking-result {
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .st-sticky {
+    float: right;
+  }
+  .st-sticky.sticky {
+    float: right;
+    position: fixed;
+    z-index: 6;
+    left: auto;
+  }
+}
+.flight-book-now i {
+  display: none;
+}
+.flight-book-now.loading i {
+  display: inline-block;
+}
+.flight-message .st-alert {
+  color: #f00;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  background: rgba(255, 0, 0, 0.14);
+}
+.st-flight-price .booking-item-price {
+  font-size: 20px;
+}
+.input-error {
+  border-color: #ed8323;
+}
+.st-option-wrapper1.option-wrapper1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  max-height: 250px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  z-index: 99999;
+  top: 100%;
+  background: #FFF;
+  display: none;
+  border: 1px solid #CCC;
+  -webkit-box-shadow: 1px 1px 3px #CCC;
+  box-shadow: 1px 1px 3px #CCC;
+}
+.st-tp-field-flights,
+.st-tp-field-hotel-id,
+.st-tp-field-hotel-map,
+.st-tp-field-hotel-city {
+  position: relative;
+}
+.st-select-wrapper1 select {
+  display: none;
+}
+.st-option-wrapper1.option-wrapper1 .option {
+  padding: 8px 5px;
+  font-size: 13px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+.st-option-wrapper1.option-wrapper1 .option .label,
+.st-option-wrapper1.option-wrapper1 .option .label .fa {
+  font-size: 13px;
+}
+.st-option-wrapper1.option-wrapper1 .option .label .fa {
+  margin-left: 10px;
+}
+.st-option-wrapper1.option-wrapper1 .option:hover,
+.st-option-wrapper1.option-wrapper1 .option.active {
+  background: #ed8323;
+}
+.st-option-wrapper1.option-wrapper1 .option:hover a,
+.st-option-wrapper1.option-wrapper1 .option.active a {
+  color: #FFF;
+}
+.panel-st_flight {
+  border-color: #ff892d;
+}
+.panel-st_flight .panel-heading {
+  background-color: #ff892d;
+  border-bottom: #ff892d;
+}
+.panel-st_flight a {
+  color: #ff892d;
+}
+.booking-item-payment-total.booking-fee span {
+  float: right;
+  font-size: 16px;
+  font-weight: normal;
+}
+.booking-item-payment-total.booking-total span {
+  float: right;
+}
+.e-external-alter{
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  padding: 5px 0;
+  margin-top: 14px;
+}

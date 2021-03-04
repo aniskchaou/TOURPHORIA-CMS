@@ -1,0 +1,18 @@
+.console_iport{
+	display:none;
+    background: none repeat scroll 0 0 #eee;
+    height: 200px;
+    margin-top: 30px;
+    overflow: scroll;
+    padding: 20px;
+	font-style: normal;
+    border: solid 1px #ddd;
+	
+}
+.console_iport span{
+	color:#0C0;
+}
+
+#st_import_setting{
+    display: none;
+}

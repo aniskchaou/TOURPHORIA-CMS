@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="16px" viewBox="0 0 19 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>send-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.7">
+        <g id="03_Rooms_Detail" transform="translate(-1286.000000, -4347.000000)" fill="#1A2B48" fill-rule="nonzero">
+            <g id="footer" transform="translate(0.000000, 4256.000000)">
+                <g id="Newsletter" transform="translate(670.000000, 78.000000)">
+                    <g id="send-button" transform="translate(616.000000, 13.000000)">
+                        <polygon id="Shape" points="0 15.973913 18.626087 7.99130435 0 0.00869565217 0 6.2173913 13.3043478 7.99130435 0 9.76521739"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

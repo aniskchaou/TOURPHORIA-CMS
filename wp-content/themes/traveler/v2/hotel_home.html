@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/fotorama/fotorama.css">
+    <link rel="stylesheet" href="js/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="js/ion.rangeSlider/css/ion.rangeSlider.css"/>
+    <link rel="stylesheet" href="js/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search_result.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB-xWz96w2TRMCZ7E86t_XKAtu0vTDncOY"></script>
+</head>
+<body class="home">
+<div class="modal fade" id="st-forgot-form" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="max-width: 520px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/svg/ico_close.svg" alt="">
+                </button>
+                <h4 class="modal-title">Reset Password</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form" method="post">
+                    <p class="c-grey f14">
+                        Enter the e-mail address associated with the account.
+                        We'll e-mail a link to reset your password.
+                    </p>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email">
+                        <i class="input-icon fa fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="form-submit" value="Send Reset Link">
+                    </div>
+                    <div class="text-center mt20">
+                        <a href="" class="st-link font-medium" data-toggle="modal" data-target="#st-login-form">Back to
+                            Log In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="st-login-form" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="max-width: 520px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/svg/ico_close.svg" alt="">
+                </button>
+                <h4 class="modal-title">Log In</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form" method="post">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email">
+                        <i class="input-icon fa fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                        <i class="input-icon fa fa-lock"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="form-submit" value="Log In">
+                    </div>
+                    <div class="mt20 st-flex space-between st-icheck">
+                        <div class="st-icheck-item">
+                            <label for="remember-me" class="c-grey">
+                                <input type="checkbox" name="remember" id="remember-me"> Remember me
+                                <span class="checkmark fcheckbox"></span>
+                            </label>
+                        </div>
+                        <a href="" class="st-link" data-toggle="modal" data-target="#st-forgot-form">Forgot
+                            Password?</a>
+                    </div>
+                    <div class="advanced">
+                        <p class="text-center f14 c-grey">or continue with</p>
+                        <div class="row socials">
+                            <div class="col-xs-4">
+                                <a href=""><img src="images/fbook.png" alt="" class="img-responsive img-full"></a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href=""><img src="images/twitter.png" alt="" class="img-responsive img-full"></a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href=""><img src="images/google.png" alt="" class="img-responsive img-full"></a>
+                            </div>
+                        </div>
+                        <div class="mt20 c-grey font-medium f14 text-center">
+                            Don’t have an account? <a href="" class="st-link" data-toggle="modal"
+                                                      data-target="#st-register-form">Sign Up</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="st-register-form" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="max-width: 520px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/svg/ico_close.svg" alt="">
+                </button>
+                <h4 class="modal-title">Sign Up</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Username *">
+                        <i class="input-icon fa fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="fullname" placeholder="Full Name">
+                        <i class="input-icon fa fa-lock"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email *">
+                        <i class="input-icon fa fa-lock"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="passwor" class="form-control" name="password" placeholder="password *">
+                        <i class="input-icon fa fa-lock"></i>
+                    </div>
+                    <div class="form-group">
+                        <p class="f14 c-grey font-medium">Select User Type</p>
+                        <label for="normal-user">
+                            <input checked id="normal-user" type="radio" class="mr5" name="user_type"
+                                   value="normal_user"> <span class="c-main font-medium">Normal User <span
+                                class="c-grey">(Used for booking services)</span></span>
+                        </label>
+                        <label for="partner-user">
+                            <input id="partner-user" type="radio" class="mr5" name="user_type" value="partner_user">
+                            <span class="c-main font-medium">Partner User <span class="c-grey">(Used for upload and booking services)</span></span>
+                        </label>
+                    </div>
+                    <div class="form-group st-icheck-item">
+                        <label for="term">
+                            <input id="term" type="checkbox" name="term" class="mr5"> I have read and accept the Terms and Privacy
+                            Policy
+                            <span class="checkmark fcheckbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="form-submit" value="Sign Up">
+                    </div>
+                    <div class="advanced">
+                        <p class="text-center f14 c-grey">or continue with</p>
+                        <div class="row socials">
+                            <div class="col-xs-12 col-sm-4">
+                                <a href=""><img src="images/fbook.png" alt="" class="img-responsive img-full"></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <a href=""><img src="images/twitter.png" alt="" class="img-responsive img-full"></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <a href=""><img src="images/google.png" alt="" class="img-responsive img-full"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt20 c-grey font-medium f14 text-center">
+                        Already have an account? <a href="" class="st-link">Log In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<header id="header">
+    <div id="topbar">
+        <div class="topbar-left">
+            <ul class="st-list socials">
+                <li>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+            <ul class="st-list topbar-items">
+                <li class="hidden-xs hidden-sm"><a href="">Call: +00 99 656 888</a></li>
+                <li class="hidden-xs hidden-sm"><a href="">Email: hi@yoursite.com</a></li>
+            </ul>
+        </div>
+        <div class="topbar-right">
+            <ul class="st-list topbar-items">
+                <li class="login-item">
+                    <a href="" class="login" data-toggle="modal" data-target="#st-login-form">Login</a>
+                </li>
+                <li class="signup-item">
+                    <a href="" class="signup" data-toggle="modal" data-target="#st-register-form">Sign Up</a>
+                </li>
+                <li class="dropdown dropdown-currency hidden-xs hidden-sm">
+                    <a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">US$ <i
+                            class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">VND</a></li>
+                        <li><a href="">EUR</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown dropdown-language hidden-xs hidden-sm">
+                    <a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English <i
+                            class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">France</a></li>
+                        <li><a href="">Spanish</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header">
+        <a href="" class="toggle-menu"><i class="fa fa-bars"></i></a>
+        <div class="header-left">
+            <a href="" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <nav id="st-main-menu">
+                <a href="" class="back-menu"><i class="fa fa-angle-left"></i></a>
+                <ul class="main-menu">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li class="menu-item-has-children active">
+                        <a href="">Pages</a>
+                        <i class="fa fa-angle-down"></i>
+                        <ul class="menu-dropdown">
+                            <li class="new"><a href="">Page 1</a></li>
+                            <li><a href="">Page 2</a></li>
+                            <li><a href="">Page 3</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="">Page 4</a>
+                                <i class="fa fa-angle-right"></i>
+                                <ul class="menu-dropdown">
+                                    <li><a href="">Page 3</a></li>
+                                    <li><a href="">Page 3</a></li>
+                                    <li><a href="">Page 3</a></li>
+                                    <li><a href="">Page 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Page 5</a></li>
+                            <li><a href="">Page 6</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Hotels</a></li>
+                    <li><a href="">Cars</a></li>
+                    <li><a href="">Activities</a></li>
+                    <li><a href="">Tours</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <ul class="st-list">
+                <li class="dropdown">
+                    <a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                            src="images/svg/ico_search_header.svg"></a>
+                    <div class="dropdown-menu" aria-labelledby="dLabel">
+                        <form action="" method="get">
+                            <input type="text" class="form-control" name="s" value="">
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <div class="mini-cart">
+                        <div class="cart-caret">12</div>
+                        <img src="images/svg/ico_card.svg">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div id="st-content-wrapper" class="search-result-page">
+    <div class="container-fluid">
+        <div class="row" style="background-image: url('images/hotel.jpg'); padding-top: 100px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="search-form-wrapper">
+                    <h1 class="st-heading">Find Your Perfect Hotels</h1>
+                    <div class="sub-heading">Get the best prices on 20,000+ properties</div>
+                    <div class="search-form">
+                        <!--Address-->
+                        <div class="row">
+                            <div class="col-md-3 border-right">
+                                <div class="form-group has-icon form-extra-field dropdown clearfix field-detination">
+                                    <i class="field-icon fa fa-map-marker"></i>
+                                    <div class="dropdown-toggle" data-toggle="dropdown" id="dropdown-destination"
+                                         aria-haspopup="true" aria-expanded="false">
+                                        <label>Destination</label>
+                                        <div class="render">
+                                            <span class="destination">Where are you going?</span>
+                                        </div>
+                                        <input type="hidden" name="location_name">
+                                        <input type="hidden" name="location_id">
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-destination">
+                                        <li class="item" data-value="1"><i class="fa fa-map-marker"
+                                                                           aria-hidden="true"></i> <span>Gemany</span>
+                                        </li>
+                                        <li class="item" data-value="2"><i class="fa fa-map-marker"
+                                                                           aria-hidden="true"></i> <span>Vietnam</span>
+                                        </li>
+                                        <li class="item" data-value="3"><i class="fa fa-map-marker"
+                                                                           aria-hidden="true"></i> <span>France</span>
+                                        </li>
+                                        <li class="item" data-value="4"><i class="fa fa-map-marker"
+                                                                           aria-hidden="true"></i> <span>Canada</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 border-right">
+                                <div class="form-group has-icon form-date-field clearfix">
+                                    <i class="field-icon fa fa-calendar"></i>
+                                    <div class="date-wrapper">
+                                        <div class="check-in-wrapper">
+                                            <label>Check In</label>
+                                            <div class="render check-in-render">Fri, 26/10</div>
+                                        </div>
+                                        <div class="check-out-wrapper">
+                                            <label>Check Out</label>
+                                            <div class="render check-out-render">Fri, 27/10</div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" class="check-in-input" value="" name="check_in">
+                                    <input type="hidden" class="check-out-input" value="" name="check_out">
+                                    <input type="text" class="check-in-out" value="" name="date">
+                                </div>
+                            </div>
+                            <div class="col-md-3 border-right">
+                                <div class="form-group form-extra-field has-icon dropdown clearfix field-guest">
+                                    <i class="fa fa-user field-icon"></i>
+                                    <div class="dropdown" data-toggle="dropdown" id="dropdown-1">
+                                        <label>Guests</label>
+                                        <div class="render">
+                                            <span class="adult" data-text="Adult"
+                                                  data-text-multi="Adults">1 Adult</span> -
+                                            <span class="children" data-text="Child"
+                                                  data-text-multi="Children">1 Child</span>
+                                        </div>
+                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-1">
+                                        <li class="item">
+                                            <label>Rooms</label>
+                                            <div class="select-wrapper">
+                                                <select name="room" class="form-control">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <label>Adults</label>
+                                            <div class="select-wrapper">
+                                                <select name="adult" class="form-control">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <label>Children</label>
+                                            <div class="select-wrapper">
+                                                <select name="children" class="form-control">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <i class="fa fa-angle-down arrow"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-button">
+                                    <div class="advance">
+                                        <div class="form-group form-extra-field dropdown clearfix field-advance">
+                                            <div class="dropdown" data-toggle="dropdown" id="dropdown-advance">
+                                                <label class="hidden-xs">Advance</label>
+                                                <div class="render">
+                                                    <span class="hidden-xs">More <i class="fa fa-caret-down"></i></span>
+                                                    <span class="hidden-lg hidden-md hidden-sm">More option <i
+                                                            class="fa fa-caret-down"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-advance">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="advance-item range-slider">
+                                                            <div class="item-title">
+                                                                <h4>Filter Price</h4>
+                                                            </div>
+                                                            <div class="item-content">
+                                                                <input type="text" class="price_range"
+                                                                       name="price_range" value="" data-min="0"
+                                                                       data-max="100" readonly/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="advance-item range-slider">
+                                                            <div class="item-title">
+                                                                <h4>Range Kilometers</h4>
+                                                            </div>
+                                                            <div class="item-content">
+                                                                <input type="text" class="price_range"
+                                                                       name="distance_range" value="" data-min="0"
+                                                                       data-max="100"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="advance-item facilities st-icheck">
+                                                            <div class="item-title">
+                                                                <h4>Hotel Facilities</h4>
+                                                            </div>
+                                                            <div class="item-content">
+                                                                <div class="row">
+                                                                    <div class="ovscroll"
+                                                                         style="overflow: hidden; outline: currentcolor none medium;"
+                                                                         tabindex="1">
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="st-icheck-item">
+                                                                                <label>Airport Transport<input
+                                                                                        type="checkbox"
+                                                                                        name="review_score"><span
+                                                                                        class="checkmark fcheckbox"></span>
+                                                                                </label></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary btn-search">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="container pt20">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="st-featured-item image-left">
+                                    <div class="image">
+                                        <img src="images/svg/ico_eath.svg">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">20,000+ properties</h4>
+                                        <div class="desc">Morbi semper fames lobortis ac hac penatibus</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="st-featured-item image-left">
+                                    <div class="image">
+                                        <img src="images/svg/ico_eath.svg">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">20,000+ properties</h4>
+                                        <div class="desc">Morbi semper fames lobortis ac hac penatibus</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="st-featured-item image-left">
+                                    <div class="image">
+                                        <img src="images/svg/ico_eath.svg">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">20,000+ properties</h4>
+                                        <div class="desc">Morbi semper fames lobortis ac hac penatibus</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="st-hr"></div>
+    <div class="container">
+        <h2 class="st-heading-section large">Last Minute Deals</h2>
+        <div class="services-grid">
+            <div class="row">
+                <div class="col-xs-12 col-sm6 col-md-3">
+                    <div class="item">
+                        <div class="featured-image">
+                            <div class="featured">Bestseller</div>
+                            <img src="images/thumb.png" alt="" class="img-responsive img-full">
+                            <div class="st-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="title">Holiday Inn London Oxford Circus</h4>
+                        <div class="sub-title"><i class="fa fa-map-marker"></i> Islington, London</div>
+                        <div class="reviews">
+                            <span class="rate">4.5/5 Excellent</span><span class="summary">32 Reviews</span>
+                        </div>
+                        <div class="price-wrapper">
+                            from <span class="price">$65</span><span class="unit">/night</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm6 col-md-3">
+                    <div class="item">
+                        <div class="featured-image">
+                            <div class="featured sale">Save <span class="percent">10%</span></div>
+                            <img src="images/thumb.png" alt="" class="img-responsive img-full">
+                            <div class="st-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="title">Holiday Inn London Oxford Circus</h4>
+                        <div class="sub-title"><i class="fa fa-map-marker"></i> Islington, London</div>
+                        <div class="reviews">
+                            <span class="rate">4.5/5 Excellent</span><span class="summary">32 Reviews</span>
+                        </div>
+                        <div class="price-wrapper">
+                            from <span class="price">$65</span><span class="unit">/night</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm6 col-md-3">
+                    <div class="item">
+                        <div class="featured-image">
+                            <img src="images/thumb.png" alt="" class="img-responsive img-full">
+                            <div class="st-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="title">Holiday Inn London Oxford Circus</h4>
+                        <div class="sub-title"><i class="fa fa-map-marker"></i> Islington, London</div>
+                        <div class="reviews">
+                            <span class="rate">4.5/5 Excellent</span><span class="summary">32 Reviews</span>
+                        </div>
+                        <div class="price-wrapper">
+                            from <span class="price">$65</span><span class="unit">/night</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm6 col-md-3">
+                    <div class="item">
+                        <div class="featured-image">
+                            <img src="images/thumb.png" alt="" class="img-responsive img-full">
+                            <div class="st-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="title">Holiday Inn London Oxford Circus</h4>
+                        <div class="sub-title"><i class="fa fa-map-marker"></i> Islington, London</div>
+                        <div class="reviews">
+                            <span class="rate">4.5/5 Excellent</span><span class="summary">32 Reviews</span>
+                        </div>
+                        <div class="price-wrapper">
+                            from <span class="price">$65</span><span class="unit">/night</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm6 col-md-3">
+                    <div class="item">
+                        <div class="featured-image">
+                            <img src="images/thumb.png" alt="" class="img-responsive img-full">
+                            <div class="st-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="title">Holiday Inn London Oxford Circus</h4>
+                        <div class="sub-title"><i class="fa fa-map-marker"></i> Islington, London</div>
+                        <div class="reviews">
+                            <span class="rate">4.5/5 Excellent</span><span class="summary">32 Reviews</span>
+                        </div>
+                        <div class="price-wrapper">
+                            from <span class="price">$65</span><span class="unit">/night</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm6 col-md-3">
+                    <div class="item">
+                        <div class="featured-image">
+                            <img src="images/thumb.png" alt="" class="img-responsive img-full">
+                            <div class="st-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="title">Holiday Inn London Oxford Circus</h4>
+                        <div class="sub-title"><i class="fa fa-map-marker"></i> Islington, London</div>
+                        <div class="reviews">
+                            <span class="rate">4.5/5 Excellent</span><span class="summary">32 Reviews</span>
+                        </div>
+                        <div class="price-wrapper">
+                            from <span class="price">$65</span><span class="unit">/night</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm6 col-md-3">
+                    <div class="item">
+                        <div class="featured-image">
+                            <img src="images/thumb.png" alt="" class="img-responsive img-full">
+                            <div class="st-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="title">Holiday Inn London Oxford Circus</h4>
+                        <div class="sub-title"><i class="fa fa-map-marker"></i> Islington, London</div>
+                        <div class="reviews">
+                            <span class="rate">4.5/5 Excellent</span><span class="summary">32 Reviews</span>
+                        </div>
+                        <div class="price-wrapper">
+                            from <span class="price">$65</span><span class="unit">/night</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm6 col-md-3">
+                    <div class="item">
+                        <div class="featured-image">
+                            <img src="images/thumb.png" alt="" class="img-responsive img-full">
+                            <div class="st-stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="title">Holiday Inn London Oxford Circus</h4>
+                        <div class="sub-title"><i class="fa fa-map-marker"></i> Islington, London</div>
+                        <div class="reviews">
+                            <span class="rate">4.5/5 Excellent</span><span class="summary">32 Reviews</span>
+                        </div>
+                        <div class="price-wrapper">
+                            from <span class="price">$65</span><span class="unit">/night</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="st-heading-section large">Top Destinations</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="destination-item">
+                    <div class="image">
+                        <img src="images/thumb.png" class="img-responsive">
+                        <div class="content">
+                            <h4 class="title">Bangkok</h4>
+                            <div class="desc">
+                                32 properties
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="destination-item">
+                    <div class="image">
+                        <img src="images/thumb.png" class="img-responsive">
+                        <div class="content">
+                            <h4 class="title">Bangkok</h4>
+                            <div class="desc">
+                                32 properties
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="destination-item">
+                    <div class="image">
+                        <img src="images/thumb.png" class="img-responsive">
+                        <div class="content">
+                            <h4 class="title">Bangkok</h4>
+                            <div class="desc">
+                                32 properties
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="destination-item">
+                    <div class="image">
+                        <img src="images/thumb.png" class="img-responsive">
+                        <div class="content">
+                            <h4 class="title">Bangkok</h4>
+                            <div class="desc">
+                                32 properties
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="destination-item">
+                    <div class="image">
+                        <img src="images/thumb.png" class="img-responsive">
+                        <div class="content">
+                            <h4 class="title">Bangkok</h4>
+                            <div class="desc">
+                                32 properties
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="destination-item">
+                    <div class="image">
+                        <img src="images/thumb.png" class="img-responsive">
+                        <div class="content">
+                            <h4 class="title">Bangkok</h4>
+                            <div class="desc">
+                                32 properties
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt20">
+            <a href="" class="btn btn-default">View all Destinations</a>
+        </div>
+    </div>
+</div>
+<script src="../../../../wp-includes/js/jquery/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.matchHeight.js"></script>
+<script src="js/fotorama/fotorama.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/ion.rangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/daterangepicker/daterangepicker.js"></script>
+<script src="js/daterangepicker/languages/en_US.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

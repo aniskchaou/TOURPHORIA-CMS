@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="main" transform="translate(-32.000000, -474.000000)" stroke="#A0A9B2">
+            <g id="left">
+                <g id="menu" transform="translate(30.000000, 242.631579)">
+                    <g id="3" transform="translate(3.000000, 229.521531)">
+                        <g id="Group" transform="translate(0.000000, 2.846890)">
+                            <g id="analytics-graph-bar">
+                                <path d="M0.336,15.04 L15.6693333,15.04" id="Shape"></path>
+                                <path d="M3,12.16 C3,11.9832689 2.85076158,11.84 2.66666667,11.84 L1.33333333,11.84 C1.14923842,11.84 1,11.9832689 1,12.16 L1,15.04 L3,15.04 L3,12.16 Z" id="Shape"></path>
+                                <path d="M7,8.96 C7,8.78326888 6.85076158,8.64 6.66666667,8.64 L5.33333333,8.64 C5.14923842,8.64 5,8.78326888 5,8.96 L5,15.04 L7,15.04 L7,8.96 Z" id="Shape"></path>
+                                <path d="M11,10.24 C11,10.0632689 10.8507616,9.92 10.6666667,9.92 L9.33333333,9.92 C9.14923842,9.92 9,10.0632689 9,10.24 L9,15.04 L11,15.04 L11,10.24 Z" id="Shape"></path>
+                                <path d="M15,5.76 C15,5.58326888 14.8507616,5.44 14.6666667,5.44 L13.3333333,5.44 C13.1492384,5.44 13,5.58326888 13,5.76 L13,15.04 L15,15.04 L15,5.76 Z" id="Shape"></path>
+                                <ellipse id="Oval" cx="2.00266667" cy="7.36" rx="1" ry="1"></ellipse>
+                                <ellipse id="Oval" cx="6.00266667" cy="4.16" rx="1" ry="1"></ellipse>
+                                <ellipse id="Oval" cx="10.0026667" cy="5.44" rx="1" ry="1"></ellipse>
+                                <ellipse id="Oval" cx="14.0026667" cy="1.28" rx="1" ry="1"></ellipse>
+                                <path d="M2.84333333,6.688 L5.23466667,4.7744" id="Shape"></path>
+                                <path d="M6.95133333,4.46336 L9.054,5.136" id="Shape"></path>
+                                <path d="M13.2026667,1.856 L10.6966667,4.6624" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

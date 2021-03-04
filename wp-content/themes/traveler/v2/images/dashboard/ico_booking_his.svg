@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>time-clock-circle-1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="main" transform="translate(-34.000000, -355.000000)" stroke="#A0A9B2">
+            <g id="left">
+                <g id="menu" transform="translate(30.000000, 242.631579)">
+                    <g id="3" transform="translate(5.000000, 109.162679)">
+                        <g id="Group" transform="translate(0.000000, 4.000000)">
+                            <g id="time-clock-circle-1">
+                                <circle id="Oval" cx="7" cy="7" r="7"></circle>
+                                <circle id="Oval" cx="7" cy="7" r="1"></circle>
+                                <path d="M7,6 L7,2.5" id="Shape"></path>
+                                <path d="M7.70733333,7.70733333 L9.5,9.5" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,161 @@
+.wb-form-item .wb-advance-field {
+  display: none;
+}
+.wb-form-item .item-type {
+  margin-right: 35px;
+}
+.wb-form-item .item-edit:before {
+  content: '\f111';
+  font-size: 17px;
+  margin-top: 11px;
+}
+.wb-form-item .item-edit {
+  right: 10px;
+  color: #008EC2;
+}
+.wb-form-item .item-edit:hover {
+  color: #09abc2;
+}
+.wb-form-item .wb-item-delete {
+  position: absolute;
+  right: -20px;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 40px;
+  margin-right: 0!important;
+  outline: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #a00;
+}
+.wb-form-item .wb-item-delete i.dashicons {
+  height: 40px;
+  line-height: 40px;
+}
+.wb-form-item .wb-item-delete:hover {
+  color: #da0000;
+}
+.wb-form-item .field-admin-desc {
+  font-size: 11px;
+  color: #aaa;
+}
+.wb-value-table {
+  display: table;
+  width: 100%;
+}
+.wb-value-table .value-row-header,
+.wb-value-table .value-row-content {
+  display: table-row;
+}
+.wb-value-table .value-row-header .value-label,
+.wb-value-table .value-row-content .value-label {
+  display: table-cell;
+}
+.wb-value-table .value-row-header .value-label i.dashicons,
+.wb-value-table .value-row-content .value-label i.dashicons {
+  cursor: pointer;
+  color: red;
+}
+.wb-value-table .value-row-header .value-label input[type=text],
+.wb-value-table .value-row-content .value-label input[type=text] {
+  width: 95%;
+}
+.wb-value-table .value-row-header .value-label:last-child,
+.wb-value-table .value-row-content .value-label:last-child {
+  width: 30px;
+}
+.add_new_row {
+  display: block;
+}
+.add_new_row i.dashicons {
+  margin-top: 5px;
+  cursor: pointer;
+  color: #008EC2;
+}
+.add_new_row i.dashicons:hover {
+  color: #18A6C2;
+}
+.fb_hidden {
+  display: none;
+}
+.menu-item-edit-active .item-edit:before {
+  content: '\f111' !important;
+}
+.metabox-holder-disabled .button.submit-add-to-form {
+  cursor: none;
+  pointer-events: none;
+}
+.menu-item-bar .ui-sortable-handle {
+  transition: all 0.3s;
+}
+.menu-item-bar .ui-sortable-handle:hover {
+  border-color: #F0AD4E;
+}
+.ui-sortable-handle.error {
+  border: 1px solid red !important;
+  background: #fafafa;
+  position: relative;
+  padding-bottom: 20px;
+}
+.ui-sortable-handle.error .error-message {
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  font-size: 11px;
+  font-style: italic;
+  color: red;
+}
+input[name=form-name].error {
+  border: 1px solid red !important;
+}
+.wb-update-form .menu-settings {
+  clear: both;
+}
+.wb-update-form .wb-form-note {
+  width: 100%;
+  float: left;
+  border: 1px solid rgba(255, 236, 5, 0.28);
+  background: rgba(255, 236, 5, 0.28);
+  -webkit-box-shadow: 12px 13px 11px -13px #000000;
+  -moz-box-shadow: 12px 13px 11px -13px #000000;
+  box-shadow: 12px 13px 11px -13px #000000;
+  margin-top: 0px;
+}
+.wb-update-form .wb-form-note > div {
+  padding: 15px 30px;
+}
+@media (min-width: 1300px) {
+  #form-to-edit {
+    width: 450px;
+    float: left;
+  }
+  .wb-update-form .menu-settings {
+    clear: both;
+  }
+  .wb-update-form .wb-form-note {
+    width: calc(100% - 500px);
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1400px) {
+  .wb-update-form .menu-settings {
+    clear: both;
+  }
+  .wb-update-form .wb-form-note {
+    width: 400px;
+  }
+}
+.admin-upload-fields .download-file{
+  position: absolute;
+  bottom: 6px;
+  left: 5px;
+  height: 26px;
+  width: 31px;
+  color: #fff;
+}
+
+.admin-upload-fields .wb-load-image img{
+  height: auto !important;
+}

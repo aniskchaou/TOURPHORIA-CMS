@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_fullscreen</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="map_control" transform="translate(-10.000000, -9.000000)" stroke="#1A2B48">
+            <g id="full">
+                <g>
+                    <g id="ico_fullscreen" transform="translate(10.000000, 10.000000)">
+                        <g id="expand-6">
+                            <polyline id="Shape" points="15.5006667 4.99866667 15.5006667 0.498666667 11.0006667 0.498666667"></polyline>
+                            <path d="M15.5006667,0.498666667 L5.50066667,10.4986667" id="Shape"></path>
+                            <path d="M7.50066667,3.49866667 L1.50066667,3.49866667 C0.948381917,3.49866667 0.500666667,3.94638192 0.500666667,4.49866667 L0.500666667,14.4986667 C0.500666667,15.0509514 0.948381917,15.4986667 1.50066667,15.4986667 L11.5006667,15.4986667 C12.0529514,15.4986667 12.5006667,15.0509514 12.5006667,14.4986667 L12.5006667,8.49866667" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

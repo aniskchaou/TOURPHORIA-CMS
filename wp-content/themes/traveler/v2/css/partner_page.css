@@ -1,0 +1,611 @@
+.st-author-page {
+  padding-bottom: 70px;
+  font-size: 14px;
+  /* Hotel service */ }
+  .st-author-page .banner {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 81px 0;
+    position: relative;
+    margin-bottom: 60px; }
+    @media screen and (max-width: 991px) {
+      .st-author-page .banner {
+        padding: 55px 0; } }
+    .st-author-page .banner h1 {
+      font-size: 36px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      text-align: left;
+      margin: 0; }
+      @media screen and (max-width: 991px) {
+        .st-author-page .banner h1 {
+          font-size: 25px;
+          text-align: center; } }
+  .st-author-page .author-header {
+    background: #F5F5F5;
+    border: 1px solid #D7DCE3;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    text-align: center;
+    padding: 20px 20px 30px 20px; }
+    .st-author-page .author-header .author-avatar img {
+      border-radius: 50%; }
+    .st-author-page .author-header .author-name {
+      font-size: 14px;
+      color: #1A2B48; }
+    .st-author-page .author-header .author-review .author-review-box .author-start-rating {
+      margin-left: 3px;
+      margin-bottom: 5px; }
+      .st-author-page .author-header .author-review .author-review-box .author-start-rating .stm-star-rating .inner {
+        position: relative;
+        display: inline-block;
+        vertical-align: top; }
+        .st-author-page .author-header .author-review .author-review-box .author-start-rating .stm-star-rating .inner .stm-star-rating-upper {
+          position: absolute;
+          top: 0;
+          left: -1px;
+          overflow: hidden; }
+          .st-author-page .author-header .author-review .author-review-box .author-start-rating .stm-star-rating .inner .stm-star-rating-upper:before {
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+            content: "\f005 \f005 \f005 \f005 \f005";
+            font-size: 16px;
+            letter-spacing: 2px;
+            color: #FFDC00; }
+        .st-author-page .author-header .author-review .author-review-box .author-start-rating .stm-star-rating .inner .stm-star-rating-lower {
+          margin-left: -1px; }
+          .st-author-page .author-header .author-review .author-review-box .author-start-rating .stm-star-rating .inner .stm-star-rating-lower:before {
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+            content: "\f006 \f006 \f006 \f006 \f006";
+            letter-spacing: 2px;
+            color: #FFDC00;
+            font-size: 16px; }
+    .st-author-page .author-header .author-review .author-review-box .author-review-label {
+      color: #5E6D77;
+      font-size: 14px; }
+  .st-author-page .author-body {
+    border: 1px solid #D7DCE3;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    padding: 15px 20px; }
+    .st-author-page .author-body .author-list-info {
+      padding: 0;
+      margin: 0; }
+      .st-author-page .author-body .author-list-info li {
+        list-style: none;
+        color: #768092;
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+        .st-author-page .author-body .author-list-info li strong {
+          color: #1A2B48;
+          font-weight: 440; }
+  .st-author-page .author-verify {
+    border: 1px solid #D7DCE3;
+    border-radius: 3px;
+    padding: 30px 20px;
+    margin-top: 20px; }
+    .st-author-page .author-verify .verify-title {
+      font-size: 16px;
+      color: #1A2B48;
+      margin-top: 0px;
+      margin-bottom: 20px; }
+    .st-author-page .author-verify ul {
+      padding: 0;
+      margin: 0; }
+      .st-author-page .author-verify ul li {
+        list-style: none;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #1A2B48; }
+        .st-author-page .author-verify ul li .left-icon {
+          margin-right: 10px;
+          position: relative;
+          top: 3px; }
+        .st-author-page .author-verify ul li .right-icon {
+          position: relative;
+          top: -1px;
+          float: right; }
+        .st-author-page .author-verify ul li:last-child {
+          margin-bottom: 0px; }
+  .st-author-page .author-about {
+    border-bottom: 1px solid #D7DCE3;
+    padding-bottom: 30px;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 1199px) {
+      .st-author-page .author-about {
+        margin-top: 35px; } }
+    .st-author-page .author-about .title {
+      font-size: 24px;
+      color: #1A2B48; }
+    .st-author-page .author-about .about-content {
+      color: #5E6D77;
+      line-height: 23px; }
+      .st-author-page .author-about .about-content br {
+        line-height: 40px; }
+  .st-author-page .search-result-page .st-hotel-result {
+    margin-top: 0px; }
+    .st-author-page .search-result-page .st-hotel-result:before {
+      display: none; }
+    .st-author-page .search-result-page .st-hotel-result .item-service {
+      display: table; }
+      @media screen and (max-width: 575px) {
+        .st-author-page .search-result-page .st-hotel-result .item-service:nth-child(2n+1) {
+          padding-right: 7px; }
+        .st-author-page .search-result-page .st-hotel-result .item-service:nth-child(2n) {
+          padding-left: 7px; } }
+      .st-author-page .search-result-page .st-hotel-result .item-service .thumb {
+        border-radius: 4px;
+        overflow: hidden; }
+      .st-author-page .search-result-page .st-hotel-result .item-service .section-footer {
+        display: table-footer-group;
+        height: 1px; }
+      .st-author-page .search-result-page .st-hotel-result .item-service .service-review {
+        margin-top: 10px; }
+  .st-author-page .search-result-page.st-tours .st-hotel-result .item-service .thumb {
+    border-radius: 4px;
+    overflow: visible; }
+  .st-author-page .author-pag {
+    display: block;
+    width: 100%;
+    /*border-top: 1px solid #D7DCE3;*/
+    margin-top: 25px; }
+    .st-author-page .author-pag .screen-reader-text {
+      display: none; }
+    .st-author-page .author-pag nav .pagination {
+      margin-bottom: 0px;
+      margin-top: 0px; }
+      .st-author-page .author-pag nav .pagination .page-numbers {
+        height: 32px;
+        width: 32px;
+        line-height: 32px;
+        text-decoration: none;
+        display: inline-block;
+        color: #5E6D77;
+        border: none;
+        font-size: 16px;
+        margin-right: 5px; }
+        .st-author-page .author-pag nav .pagination .page-numbers.current {
+          border: 1px solid #5191FA !important;
+          border-radius: 3px;
+          background: transparent !important;
+          color: #5191FA !important; }
+  .st-author-page .author-list-review h4 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400; }
+  .st-author-page .author-list-review .author-review-panel {
+    padding: 0; }
+    .st-author-page .author-list-review .author-review-panel li {
+      list-style: none; }
+      .st-author-page .author-list-review .author-review-panel li a {
+        display: block;
+        padding: 10px 5px;
+        border: 1px solid #dfdfdf;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 4px;
+        position: relative;
+        color: #1A2B48; }
+      .st-author-page .author-list-review .author-review-panel li.active a {
+        background-color: #ededed;
+        color: #5191FA;
+        text-decoration: none; }
+        .st-author-page .author-list-review .author-review-panel li.active a:before {
+          z-index: 2;
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-left: 10px solid #dfdfdf;
+          border-bottom: 10px solid transparent;
+          right: -11px;
+          top: 10px; }
+          @media screen and (max-width: 1199px) {
+            .st-author-page .author-list-review .author-review-panel li.active a:before {
+              display: none; } }
+  .st-author-page .author-list-review .author-review-panel-list {
+    padding: 15px;
+    border: 1px solid #dfdfdf; }
+    .st-author-page .author-list-review .author-review-panel-list .author-review-detail {
+      padding: 10px;
+      margin-bottom: 30px;
+      overflow: hidden; }
+      .st-author-page .author-list-review .author-review-panel-list .author-review-detail .stm-dealer-overall-inner {
+        border-bottom: 1px solid #dedede;
+        padding-bottom: 10px; }
+      .st-author-page .author-list-review .author-review-panel-list .author-review-detail h4 {
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .st-author-page .author-list-review .author-review-panel-list .author-review-detail .author-start-rating {
+        margin-bottom: 5px; }
+        .st-author-page .author-list-review .author-review-panel-list .author-review-detail .author-start-rating .inner {
+          position: relative;
+          display: inline-block;
+          vertical-align: top; }
+          .st-author-page .author-list-review .author-review-panel-list .author-review-detail .author-start-rating .inner .stm-star-rating-upper {
+            position: absolute;
+            top: 0;
+            left: -1px;
+            overflow: hidden;
+            width: 86%; }
+            .st-author-page .author-list-review .author-review-panel-list .author-review-detail .author-start-rating .inner .stm-star-rating-upper:before {
+              font: normal normal normal 14px/1 FontAwesome;
+              font-size: inherit;
+              text-rendering: auto;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+              content: "\f005 \f005 \f005 \f005 \f005";
+              font-size: 16px;
+              letter-spacing: 2px;
+              color: #FFDC00; }
+          .st-author-page .author-list-review .author-review-panel-list .author-review-detail .author-start-rating .inner .stm-star-rating-lower {
+            margin-left: -1px; }
+            .st-author-page .author-list-review .author-review-panel-list .author-review-detail .author-start-rating .inner .stm-star-rating-lower:before {
+              font: normal normal normal 14px/1 FontAwesome;
+              font-size: inherit;
+              text-rendering: auto;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+              content: "\f006 \f006 \f006 \f006 \f006";
+              letter-spacing: 2px;
+              color: #edab1f;
+              font-size: 16px;
+              color: #FFDC00; }
+  .st-author-page .booking-item-reviews.list {
+    list-style: none;
+    padding: 0; }
+    .st-author-page .booking-item-reviews.list > li {
+      margin-bottom: 20px; }
+      @media screen and (max-width: 767px) {
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-person:after {
+          content: '';
+          display: block;
+          clear: both; } }
+      .st-author-page .booking-item-reviews.list > li .booking-item-review-person-avatar {
+        display: table;
+        margin-bottom: 8px;
+        -webkit-transition: .3s;
+        transition: .3s; }
+        @media screen and (max-width: 767px) {
+          .st-author-page .booking-item-reviews.list > li .booking-item-review-person-avatar {
+            float: left;
+            margin-right: 10px; } }
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-person-avatar.round {
+          border-radius: 50%; }
+          .st-author-page .booking-item-reviews.list > li .booking-item-review-person-avatar.round img {
+            border-radius: 50%; }
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-person-avatar > img {
+          max-width: 100%;
+          height: 70px;
+          width: 70px;
+          border: 1px solid #dedede; }
+      .st-author-page .booking-item-reviews.list > li .booking-item-review-person-name {
+        line-height: 1em;
+        margin-bottom: 5px; }
+        @media screen and (max-width: 767px) {
+          .st-author-page .booking-item-reviews.list > li .booking-item-review-person-name {
+            padding-top: 15px; } }
+      .st-author-page .booking-item-reviews.list > li .booking-item-review-content {
+        padding: 15px 17px;
+        border: 1px solid #e6e6e6;
+        position: relative;
+        -webkit-transition: .2s;
+        transition: .2s; }
+        @media screen and (max-width: 767px) {
+          .st-author-page .booking-item-reviews.list > li .booking-item-review-content {
+            margin-top: 10px; } }
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-content:before {
+          z-index: 2;
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: 15px solid transparent;
+          border-right: 20px solid #ededed;
+          border-bottom: 15px solid transparent;
+          left: -20px;
+          top: 14px; }
+          @media screen and (max-width: 767px) {
+            .st-author-page .booking-item-reviews.list > li .booking-item-review-content:before {
+              border-left: 10px solid transparent;
+              border-bottom: 10px solid #ededed;
+              border-right: 10px solid transparent;
+              left: 22px;
+              top: -25px; } }
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-content a {
+          color: #5191FA; }
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-content h5 {
+          margin-bottom: 10px;
+          font-weight: 450;
+          font-size: 16px; }
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-content b {
+          font-weight: 400; }
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-content .booking-item-rating-stars {
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+          margin-bottom: 5px;
+          overflow: hidden; }
+          .st-author-page .booking-item-reviews.list > li .booking-item-review-content .booking-item-rating-stars li {
+            list-style: none;
+            float: left;
+            margin-right: 5px; }
+            .st-author-page .booking-item-reviews.list > li .booking-item-review-content .booking-item-rating-stars li .fa {
+              color: #FFDC00; }
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-content .booking-item-review-expand {
+          position: relative;
+          height: 30px;
+          cursor: pointer; }
+          .st-author-page .booking-item-reviews.list > li .booking-item-review-content .booking-item-review-expand .booking-item-review-expand-more {
+            color: #5191FA; }
+          .st-author-page .booking-item-reviews.list > li .booking-item-review-content .booking-item-review-expand .booking-item-review-expand-less {
+            display: none;
+            color: #5191FA; }
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-content .comment-content {
+          margin-top: 15px; }
+          .st-author-page .booking-item-reviews.list > li .booking-item-review-content .comment-content .booking-item-review-more {
+            display: none; }
+      .st-author-page .booking-item-reviews.list > li .booking-item-review-rate {
+        line-height: 30px;
+        font-size: 12px;
+        margin-bottom: 0; }
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-rate .st-like-review {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          line-height: 20px;
+          text-align: center;
+          background: transparent;
+          text-decoration: none;
+          font-size: 20px; }
+        .st-author-page .booking-item-reviews.list > li .booking-item-review-rate .number {
+          font-size: 16px; }
+    .st-author-page .booking-item-reviews.list .pagination {
+      margin-bottom: 0px;
+      margin-top: 0px; }
+      .st-author-page .booking-item-reviews.list .pagination .page-numbers {
+        height: 32px;
+        width: 32px;
+        line-height: 32px;
+        text-decoration: none;
+        display: inline-block;
+        color: #5E6D77;
+        border: none;
+        font-size: 16px;
+        margin-right: 5px; }
+        .st-author-page .booking-item-reviews.list .pagination .page-numbers.current {
+          border: 1px solid #5191FA !important;
+          border-radius: 3px;
+          background: transparent !important;
+          color: #5191FA !important; }
+  .st-author-page ul.nav-tabs {
+    border-bottom: 0px; }
+    .st-author-page ul.nav-tabs li {
+      margin-right: 35px; }
+      .st-author-page ul.nav-tabs li a {
+        padding: 15px 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1A2B48;
+        text-transform: uppercase;
+        background: transparent;
+        border: none; }
+      .st-author-page ul.nav-tabs li.active a {
+        color: #5191FA;
+        border: none;
+        border-bottom: 2px solid #5191FA; }
+  .st-author-page .tab-content .tab-pane {
+    overflow: hidden; }
+  .st-author-page .st-review-new {
+    border-top: 1px solid #dfdfdf;
+    margin-top: 30px;
+    padding-top: 30px; }
+    .st-author-page .st-review-new h5 {
+      font-size: 24px;
+      color: #1A2B48;
+      margin-bottom: 20px; }
+    .st-author-page .st-review-new .author-list-review .author-review-panel {
+      margin: 0;
+      margin-bottom: 20px;
+      overflow: hidden; }
+      .st-author-page .st-review-new .author-list-review .author-review-panel li {
+        list-style: none;
+        float: left;
+        margin-right: 20px; }
+        .st-author-page .st-review-new .author-list-review .author-review-panel li a {
+          background: transparent;
+          border: none;
+          font-weight: 450;
+          padding: 3px 0; }
+          .st-author-page .st-review-new .author-list-review .author-review-panel li a:before {
+            display: none; }
+        .st-author-page .st-review-new .author-list-review .author-review-panel li.active a {
+          border-bottom: 2px solid #5191FA; }
+    .st-author-page .st-review-new .author-list-review .author-review-panel-list {
+      padding: 0;
+      border: none; }
+      .st-author-page .st-review-new .author-list-review .author-review-panel-list .author-review-detail {
+        border: 1px solid #dfdfdf;
+        border-radius: 3px;
+        padding: 20px 30px; }
+        .st-author-page .st-review-new .author-list-review .author-review-panel-list .author-review-detail .stm-dealer-overall-inner {
+          border-bottom: none;
+          padding-bottom: 0px; }
+          .st-author-page .st-review-new .author-list-review .author-review-panel-list .author-review-detail .stm-dealer-overall-inner .stm-dealer-rate-part {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end; }
+            @media screen and (max-width: 767px) {
+              .st-author-page .st-review-new .author-list-review .author-review-panel-list .author-review-detail .stm-dealer-overall-inner .stm-dealer-rate-part {
+                display: block; } }
+            .st-author-page .st-review-new .author-list-review .author-review-panel-list .author-review-detail .stm-dealer-overall-inner .stm-dealer-rate-part h4 {
+              font-size: 14px;
+              font-weight: 450;
+              margin-right: 15px;
+              float: right; }
+              @media screen and (max-width: 767px) {
+                .st-author-page .st-review-new .author-list-review .author-review-panel-list .author-review-detail .stm-dealer-overall-inner .stm-dealer-rate-part h4 {
+                  display: block;
+                  float: none;
+                  margin-top: 10px;
+                  margin-bottom: 0px; } }
+            .st-author-page .st-review-new .author-list-review .author-review-panel-list .author-review-detail .stm-dealer-overall-inner .stm-dealer-rate-part .process {
+              height: 7px;
+              background: #dfdfdf;
+              border-radius: 10px;
+              position: relative;
+              width: 60%;
+              overflow: hidden;
+              float: right; }
+              .st-author-page .st-review-new .author-list-review .author-review-panel-list .author-review-detail .stm-dealer-overall-inner .stm-dealer-rate-part .process .inner {
+                top: 0;
+                left: 0;
+                height: 100%;
+                position: absolute;
+                background: #5191FA;
+                border-radius: 10px; }
+              @media screen and (max-width: 767px) {
+                .st-author-page .st-review-new .author-list-review .author-review-panel-list .author-review-detail .stm-dealer-overall-inner .stm-dealer-rate-part .process {
+                  display: inline-block;
+                  float: none; } }
+            .st-author-page .st-review-new .author-list-review .author-review-panel-list .author-review-detail .stm-dealer-overall-inner .stm-dealer-rate-part .statistic {
+              width: 10%;
+              font-size: 14px;
+              font-weight: 400;
+              float: right;
+              margin-left: 15px; }
+              @media screen and (max-width: 767px) {
+                .st-author-page .st-review-new .author-list-review .author-review-panel-list .author-review-detail .stm-dealer-overall-inner .stm-dealer-rate-part .statistic {
+                  display: inline-block;
+                  float: none; } }
+    .st-author-page .st-review-new .author-list-review .booking-item-reviews {
+      margin-top: 25px;
+      padding-top: 0px;
+      border-top: 2px solid #dfdfdf; }
+      .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list {
+        margin-top: 30px; }
+        .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item {
+          padding-top: 30px;
+          padding-bottom: 30px;
+          border-top: 1px solid #EAEEF3;
+          font-size: 14px; }
+          .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item:last-child {
+            border-bottom: 1px solid #EAEEF3; }
+          .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-head .media {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-right: 100px; }
+          .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-head .media-left {
+            padding-right: 20px; }
+            .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-head .media-left img {
+              border-radius: 50%; }
+          .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-head .media-body .media-heading {
+            font-size: 14px;
+            color: #1A2B48;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 4px; }
+          .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-head .media-body .date {
+            color: #AEB4C0; }
+          .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-head .like {
+            float: right;
+            margin-top: -35px;
+            color: #AEB4C0; }
+            .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-head .like .btn-like {
+              color: #1A2B48;
+              margin-left: 5px;
+              font-size: 20px; }
+          .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body {
+            margin-top: 30px; }
+            .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .comment-rate {
+              padding: 5px;
+              background: #5191FA;
+              color: #FFF;
+              border-radius: 3px;
+              font-size: 14px;
+              line-height: 20px; }
+            .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .title {
+              position: relative;
+              font-size: 16px;
+              line-height: 20px;
+              font-weight: 450;
+              display: inline-block;
+              margin: 10px 0;
+              margin-right: 15px; }
+              .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .title .st-stars {
+                display: inline-block;
+                margin-left: 20px; }
+              .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .title .comment-rate {
+                position: absolute;
+                top: -5px;
+                left: 0;
+                display: block; }
+            .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .review-star {
+              padding: 0;
+              margin: 0;
+              overflow: hidden;
+              display: inline-block;
+              vertical-align: middle;
+              position: relative;
+              top: -1px; }
+              .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .review-star li {
+                list-style: none;
+                margin-right: 5px;
+                float: left; }
+                .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .review-star li .fa {
+                  color: #FFDC00;
+                  font-size: 16px; }
+            .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .detail {
+              color: #74818A; }
+              .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .detail .st-link {
+                margin-top: 10px; }
+            .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .table-review {
+              margin-bottom: 0;
+              margin-top: 20px; }
+              .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .table-review .row {
+                padding-top: 5px;
+                padding-bottom: 5px; }
+              .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .table-review .title {
+                font-size: 14px;
+                line-height: 28px; }
+              .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .table-review .rates {
+                font-size: 20px; }
+                .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item .comment-item-body .table-review .rates .fa {
+                  margin-right: 15px; }
+          .st-author-page .st-review-new .author-list-review .booking-item-reviews.review-list .comment-item:first-child {
+            border-top: 0; }

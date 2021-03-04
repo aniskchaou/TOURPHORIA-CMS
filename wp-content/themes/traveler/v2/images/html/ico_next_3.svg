@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="29px" viewBox="0 0 64 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>next</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="12_Restaurant" transform="translate(-1242.000000, -2707.000000)" stroke="#1A2B48">
+            <g id="review" transform="translate(135.000000, 2508.000000)">
+                <g id="next" transform="translate(1108.000000, 199.000000)">
+                    <g id="keyboard-arrow-right">
+                        <polyline id="Shape" points="48.3333333 0.992 61.6666667 14.3253333 48.3333333 27.6586667"></polyline>
+                        <path d="M61.6666667,14.3253333 L0.333333333,14.3253333" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

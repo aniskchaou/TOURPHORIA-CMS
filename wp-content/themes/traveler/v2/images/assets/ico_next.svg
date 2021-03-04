@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="12px" viewBox="0 0 75 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_next</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="06_Blog_detail" transform="translate(-1231.000000, -700.000000)" fill="#1A2B48">
+            <g id="post" transform="translate(135.000000, 638.000000)">
+                <g id="pre---next" transform="translate(0.000000, 36.000000)">
+                    <g id="Group-2" transform="translate(1133.500000, 32.000000) rotate(-90.000000) translate(-1133.500000, -32.000000) translate(1128.000000, -5.000000)">
+                        <g id="ico_next">
+                            <rect id="Rectangle-21" x="4.36363636" y="0" width="2.18181818" height="73"></rect>
+                            <polygon id="Rectangle-22" points="0 67.6529898 0.996404735 67 6.06391764 73.2913434 5.06751291 73.9443332"></polygon>
+                            <polygon id="Rectangle-22" points="10.9904136 67.6529898 5.92290068 73.9443332 4.92649594 73.2913434 9.99400885 67"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

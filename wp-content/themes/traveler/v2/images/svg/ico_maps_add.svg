@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_maps_add</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Detail_1" transform="translate(-135.000000, -323.000000)" stroke="#A0A9B2">
+            <g id="ico_maps_add" transform="translate(135.000000, 323.000000)">
+                <g id="Group">
+                    <g id="Regular">
+                        <ellipse id="Oval" cx="5.5" cy="5.28" rx="2.5" ry="2.4"></ellipse>
+                        <path d="M4.58533333,13.92 C3.14266667,11.7024 0.5,7.20704 0.5,5.28 C0.498472264,2.90915536 2.30025224,0.892373813 4.74128419,0.532614737 C7.18231614,0.172855661 9.53130531,1.57789722 10.2706667,3.84" id="Shape"></path>
+                        <path d="M7.83333333,9.6 L11.6666667,9.6 C11.8507616,9.6 12,9.74326888 12,9.92 L12,14.88 L7.5,14.88 L7.5,9.92 C7.5,9.74326888 7.64923842,9.6 7.83333333,9.6 Z" id="Shape"></path>
+                        <path d="M12,14.88 L15.5,14.88 L15.5,6.24 C15.5,5.97490332 15.2761424,5.76 15,5.76 L10.5,5.76 C10.2238576,5.76 10,5.97490332 10,6.24 L10,9.6" id="Shape"></path>
+                        <path d="M7.5,14.88 L6.5,14.88" id="Shape"></path>
+                        <path d="M10,11.52 L12,11.52" id="Shape"></path>
+                        <path d="M14,7.68 L15.5,7.68" id="Shape"></path>
+                        <path d="M14,9.6 L15.5,9.6" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

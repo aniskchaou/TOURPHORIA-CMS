@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>email-action-download_1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="main" transform="translate(-32.000000, -434.000000)" stroke="#A0A9B2">
+            <g id="left">
+                <g id="menu" transform="translate(30.000000, 242.631579)">
+                    <g id="3" transform="translate(3.000000, 189.401914)">
+                        <g id="Group" transform="translate(0.000000, 3.000000)">
+                            <g id="email-action-download_1">
+                                <circle id="Oval" cx="11.6666667" cy="11.6666667" r="4"></circle>
+                                <path d="M11.6666667,9.66666667 L11.6666667,13.6666667" id="Shape"></path>
+                                <path d="M11.6666667,13.6666667 L10.1666667,12.1666667" id="Shape"></path>
+                                <path d="M11.6666667,13.6666667 L13.1666667,12.1666667" id="Shape"></path>
+                                <path d="M6.33333333,9.66666667 L1.33333333,9.66666667 C0.781048584,9.66666667 0.333333333,9.21895142 0.333333333,8.66666667 L0.333333333,1.33333333 C0.333333333,0.781048584 0.781048584,0.333333333 1.33333333,0.333333333 L13.3333333,0.333333333 C13.8856181,0.333333333 14.3333333,0.781048584 14.3333333,1.33333333 L14.3333333,6.33333333" id="Shape"></path>
+                                <polyline id="Shape" points="14.0446667 0.630666667 7.33333333 6 0.622 0.630666667"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
